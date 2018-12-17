@@ -10,6 +10,7 @@
 #include <utilstrencodings.h>
 #include <crypto/common.h>
 #include <crypto/scrypt.h>
+#include "versionbits.h"
 
 extern "C" void yescrypt_hash(const char *input, char *output);
 
