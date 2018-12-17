@@ -35,7 +35,7 @@ uint256 CBlockHeader::GetPoWNewHash() const
 
 uint256 CBlockHeader::GetPoWHash() const
 {
-	if (nVersion & VERSIONBITS_FORK_GPU)
+	if (nVersion & VERSIONBITS_FORK_CPU)
 		return GetPoWNewHash();
 	else
 		return GetPoWOldHash();
