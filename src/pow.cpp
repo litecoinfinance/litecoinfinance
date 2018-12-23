@@ -16,7 +16,7 @@ unsigned int GetNextWorkRequired_Old(const CBlockIndex* pindexLast, const CBlock
     assert(pindexLast != nullptr);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 	
-	if (pindexLast->nHeight+1 == 9999999)
+	if ((pindexLast->nHeight+1 >= 1550000) && ((pindexLast->nHeight+1 < 1550010))
         return nProofOfWorkLimit;
 
     // Only change once per difficulty adjustment interval
@@ -144,8 +144,8 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
  int DiffMode = 1; 
- if (pindexLast->nHeight+1 < 9999999)    { DiffMode = 1; }
- if (pindexLast->nHeight+1 >= 9999999)   { DiffMode = 2; }
+ if (pindexLast->nHeight+1 < 1550011)    { DiffMode = 1; }
+ if (pindexLast->nHeight+1 >= 1550011)   { DiffMode = 2; }
  if (DiffMode == 1) { return GetNextWorkRequired_Old(pindexLast, pblock, params); }
  if (DiffMode == 2) { return DarkGravityWave(pindexLast, params); }
  return DarkGravityWave(pindexLast, params);
