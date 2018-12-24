@@ -16,7 +16,7 @@ unsigned int GetNextWorkRequired_Old(const CBlockIndex* pindexLast, const CBlock
     assert(pindexLast != nullptr);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 	
-	if ((pindexLast->nHeight+1 >= 1550000) && ((pindexLast->nHeight+1 < 1550010))
+	if ((pindexLast->nHeight+1 >= 1550000) && (pindexLast->nHeight+1 < 1550010))
         return nProofOfWorkLimit;
 
     // Only change once per difficulty adjustment interval
