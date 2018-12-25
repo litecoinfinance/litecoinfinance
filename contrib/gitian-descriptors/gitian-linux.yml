@@ -1,5 +1,5 @@
 ---
-name: "litecoinfinance-linux-0.16"
+name: "litecoinfinance-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"
