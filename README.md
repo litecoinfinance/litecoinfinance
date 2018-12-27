@@ -60,3 +60,5 @@ Maximum coin supply: 94m
 Network magic: a7b388e9
 
 Postmine: 10m
+
+Segwit: yes
