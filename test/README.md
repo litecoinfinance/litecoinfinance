@@ -8,7 +8,7 @@ This directory contains the following sets of tests:
 - [functional](/test/functional) which test the functionality of
 bitcoind and bitcoin-qt by interacting with them through the RPC and P2P
 interfaces.
-- [util](/test/util) which tests the bitcoin utilities, currently only
+- [util](/test/util) which tests the litecoin finance utilities, currently only
 bitcoin-tx.
 - [lint](/test/lint/) which perform various static analysis checks.
 

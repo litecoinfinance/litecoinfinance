@@ -44,7 +44,7 @@ and receiving addresses.
 New context menu on addresses to copy/edit/delete them.
 
 New Sign Message dialog that allows you to prove that you
-own a bitcoin address by creating a digital
+own a litecoin finance address by creating a digital
 signature.
 
 New wallets created with this version will
@@ -117,7 +117,7 @@ PRELIMINARY SUPPORT FOR MULTISIGNATURE TRANSACTIONS
 This release has preliminary support for multisignature
 transactions-- transactions that require authorization
 from more than one person or device before they
-will be accepted by the bitcoin network.
+will be accepted by the litecoin finance network.
 
 Prior to this release, multisignature transactions
 were considered 'non-standard' and were ignored;
@@ -131,7 +131,7 @@ once enough of the network has upgraded so relaying
 and validating them is robust.
 
 For this release, creation and testing of multisignature
-transactions is limited to the bitcoin test network using
+transactions is limited to the litecoin finance test network using
 the "addmultisigaddress" JSON-RPC api call.
 
 Short multisignature address support is included in this

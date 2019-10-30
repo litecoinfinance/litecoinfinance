@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Lommeboken din er nå kryptert. Husk at kryptering ikke er tilstrekkelig for å beskytte dine bitcoin i lommeboken fra å bli stjålet av skadelig programvare som har infisert maskinen din.</translation>
+        <translation>Lommeboken din er nå kryptert. Husk at kryptering ikke er tilstrekkelig for å beskytte dine litecoin finance i lommeboken fra å bli stjålet av skadelig programvare som har infisert maskinen din.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>

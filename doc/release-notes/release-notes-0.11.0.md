@@ -82,7 +82,7 @@ Block file pruning
 
 This release supports running a fully validating node without maintaining a copy 
 of the raw block and undo data on disk. To recap, there are four types of data 
-related to the blockchain in the bitcoin system: the raw blocks as received over 
+related to the blockchain in the litecoin finance system: the raw blocks as received over 
 the network (blk???.dat), the undo data (rev???.dat), the block index and the 
 UTXO set (both LevelDB databases). The databases are built from the raw data.
 
@@ -347,7 +347,7 @@ git merge commit are mentioned.
 - #5683 `c7b22aa` add new osx dmg background picture
 - #5620 `7823598` Payment request expiration bug fix
 - #5729 `9c4a5a5` Allow unit changes for read-only BitcoinAmountField
-- #5753 `0f44672` Add bitcoin logo to about screen
+- #5753 `0f44672` Add litecoin finance logo to about screen
 - #5629 `a956586` Prevent amount overflow problem with payment requests
 - #5830 `215475a` Don't save geometry for options and about/help window
 - #5793 `d26f0b2` Honor current network when creating autostart link

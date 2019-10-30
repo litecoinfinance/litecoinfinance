@@ -290,9 +290,9 @@ Low-level RPC changes
    `fee`, `modifiedfee`, `ancestorfee` and `descendantfee`.
 - The new RPC `getzmqnotifications` returns information about active ZMQ
   notifications.
-- When bitcoin is not started with any `-wallet=<path>` options, the name of
+- When litecoin finance is not started with any `-wallet=<path>` options, the name of
   the default wallet returned by `getwalletinfo` and `listwallets` RPCs is
-  now the empty string `""` instead of `"wallet.dat"`. If bitcoin is started
+  now the empty string `""` instead of `"wallet.dat"`. If litecoin finance is started
   with any `-wallet=<path>` options, there is no change in behavior, and the
   name of any wallet is just its `<path>` string.
 - Passing an empty string (`""`) as the `address_type` parameter to
@@ -840,7 +840,7 @@ Support for Python 2 has been discontinued for all test files and tools.
 - #13228 `d792e47` Add script to detect circular dependencies between source modules (sipa)
 - #13320 `e08c130` Ensure gitian-build.sh uses bash (jhfrontz)
 - #13301 `e4082d5` lint: Add linter to error on `#include <*.cpp>` (Empact)
-- #13374 `56f6936` utils and libraries: checking for bitcoin address in translations (kaplanmaxe)
+- #13374 `56f6936` utils and libraries: checking for litecoin finance address in translations (kaplanmaxe)
 - #13230 `7c32b41` Simplify include analysis by enforcing the developer guide's include syntax (practicalswift)
 - #13450 `32bf4c6` Add linter: Enforce the source code file naming convention described in the developer notes (practicalswift)
 - #13479 `fa2ea37` contrib: Fix cve-2018-12356 by hardening the regex (loganaden)

@@ -75,7 +75,7 @@ for nuisance malleability on SIGHASH_ALL P2PKH transactions. On the down-side
 it will block most transactions made by sufficiently out of date software.
 
 Unlike the other avenues to change txids on transactions this
-one was randomly violated by all deployed bitcoin software prior to
+one was randomly violated by all deployed litecoin finance software prior to
 its discovery. So, while other malleability vectors where made
 non-standard as soon as they were discovered, this one has remained
 permitted. Even BIP62 did not propose applying this rule to

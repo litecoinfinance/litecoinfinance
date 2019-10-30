@@ -261,11 +261,11 @@ included many of the RPC "raw transaction" API functions, such as
 createrawtransaction.
 
 bitcoin-tx is a newly introduced command line utility designed to enable easy
-manipulation of bitcoin transactions. A summary of its operation may be
+manipulation of litecoin finance transactions. A summary of its operation may be
 obtained via "bitcoin-tx --help" Transactions may be created or signed in a
 manner similar to the RPC raw tx API. Transactions may be updated, deleting
 inputs or outputs, or appending new inputs and outputs. Custom scripts may be
-easily composed using a simple text notation, borrowed from the bitcoin test
+easily composed using a simple text notation, borrowed from the litecoin finance test
 suite.
 
 This tool may be used for experimenting with new transaction types, signing

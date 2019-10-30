@@ -215,7 +215,7 @@
     </message>
     <message>
         <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Litecoin Finance เพื่อแสดงว่าท่านเป็นเจ้าของ bitcoin นี้จริง</translation>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Litecoin Finance เพื่อแสดงว่าท่านเป็นเจ้าของ litecoin finance นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
@@ -243,11 +243,11 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bitcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง litecoin finance ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bitcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ litecoin finance เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>

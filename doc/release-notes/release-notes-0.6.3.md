@@ -16,7 +16,7 @@ Optimized the process of checking transaction signatures, to
 speed up processing of new block messages and make propagating
 blocks across the network faster.
 
-Fixed an obscure bug that could cause the bitcoin process to get
+Fixed an obscure bug that could cause the litecoin finance process to get
 stuck on an invalid block-chain, if the invalid chain was
 hundreds of blocks long.
 

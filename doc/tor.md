@@ -51,7 +51,7 @@ versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 The directory can be different of course, but (both) port numbers should be equal to
 your bitcoind's P2P listen port (8333 by default).
 
-	-externalip=X   You can tell bitcoin about its publicly reachable address using
+	-externalip=X   You can tell litecoin finance about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your .onion address in
 	                /var/lib/tor/bitcoin-service/hostname. For connections

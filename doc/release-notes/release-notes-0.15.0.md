@@ -759,7 +759,7 @@ Low-level RPC changes
 - #9792 `342b9bc` FastRandomContext improvements and switch to ChaCha20 (sipa)
 - #9505 `67ed40e` Prevector Quick Destruct (JeremyRubin)
 - #10820 `ef37f20` Use cpuid intrinsics instead of asm code (sipa)
-- #9999 `a328904` [LevelDB] Plug leveldb logs to bitcoin logs (NicolasDorier)
+- #9999 `a328904` [LevelDB] Plug leveldb logs to litecoin finance logs (NicolasDorier)
 - #9693 `c5e9e42` Prevent integer overflow in ReadVarInt (gmaxwell)
 - #10129 `351d0ad` scheduler: fix sub-second precision with boost < 1.50 (theuni)
 - #10153 `fade788` logging: Fix off-by-one for shrinkdebugfile default (MarcoFalke)

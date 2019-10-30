@@ -29,13 +29,13 @@ BUG FIXES
 Re-enable SSL support for the JSON-RPC interface (it was unintentionally
 disabled for the 0.5.0 release binaries).
 
-The code that finds peers via "dns seeds" no longer stops bitcoin startup
+The code that finds peers via "dns seeds" no longer stops litecoin finance startup
 if one of the dns seed machines is down.
 
 Tooltips on the transaction list view were rendering incorrectly (as black boxes
 or with a transparent background).
 
-Prevent a denial-of-service attack involving flooding a bitcoin node with
+Prevent a denial-of-service attack involving flooding a litecoin finance node with
 orphan blocks.
 
 The wallet passphrase dialog now warns you if the caps lock key was pressed.

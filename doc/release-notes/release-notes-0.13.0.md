@@ -557,7 +557,7 @@ git merge commit are mentioned.
 - #8014 `77b49ac` Sort transactions by date (Tyler-Hardin)
 - #8073 `eb2f6f7` askpassphrasedialog: Clear pass fields on accept (rat4)
 - #8129 `ee1533e` Fix RPC console auto completer (UdjinM6)
-- #7636 `fb0ac48` Add bitcoin address label to request payment QR code (makevoid)
+- #7636 `fb0ac48` Add litecoin finance address label to request payment QR code (makevoid)
 - #8231 `760a6c7` Fix a bug where the SplashScreen will not be hidden during startup (jonasschnelli)
 - #8256 `af2421c` BUG: bitcoin-qt crash (fsb4000)
 - #8257 `ff03c50` Do not ask a UI question from bitcoind (sipa)

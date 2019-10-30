@@ -168,7 +168,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
         }
         else
 #endif
-        {   // User-entered bitcoin address / amount:
+        {   // User-entered litecoin finance address / amount:
             if(!validateAddress(rcp.address))
             {
                 return InvalidAddress;

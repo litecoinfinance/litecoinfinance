@@ -20,7 +20,7 @@ public:
     State validate(QString &input, int &pos) const;
 };
 
-/** Litecoin Finance address widget validator, checks for a valid bitcoin address.
+/** Litecoin Finance address widget validator, checks for a valid litecoin finance address.
  */
 class BitcoinAddressCheckValidator : public QValidator
 {

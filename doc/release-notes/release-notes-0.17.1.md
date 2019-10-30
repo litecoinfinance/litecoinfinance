@@ -68,7 +68,7 @@ Notable changes
 The `listtransactions` RPC `account` parameter which was deprecated in 0.17.0
 and renamed to `dummy` has been un-deprecated and renamed again to `label`.
 
-When bitcoin is configured with the `-deprecatedrpc=accounts` setting, specifying
+When litecoin finance is configured with the `-deprecatedrpc=accounts` setting, specifying
 a label/account/dummy argument will return both outgoing and incoming
 transactions. Without the `-deprecatedrpc=accounts` setting, it will only return
 incoming transactions (because it used to be possible to create transactions

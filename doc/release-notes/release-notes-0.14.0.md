@@ -711,7 +711,7 @@ and git merge commit are mentioned.
 - #8965 `23e03f8` Mention that PPA doesn't support Debian (anduck)
 - #9115 `bfc7aad` Mention reporting security issues responsibly (paveljanik)
 - #9840 `08e0690` Update sendfrom RPC help to correct coin selection misconception (ryanofsky)
-- #9865 `289204f` Change bitcoin address in RPC help message (marijnfs)
+- #9865 `289204f` Change litecoin finance address in RPC help message (marijnfs)
 
 ### Miscellaneous
 - #8274 `7a2d402` util: Update tinyformat (laanwj)

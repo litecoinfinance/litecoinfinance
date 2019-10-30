@@ -96,7 +96,7 @@ Bitcoin-cli
 
 Another change in the 0.9 release is moving away from the bitcoind executable
 functioning both as a server and as a RPC client. The RPC client functionality
-("tell the running bitcoin daemon to do THIS") was split into a separate
+("tell the running litecoin finance daemon to do THIS") was split into a separate
 executable, 'bitcoin-cli'. The RPC client code will eventually be removed from
 bitcoind, but will be kept for backwards compatibility for a release or two.
 

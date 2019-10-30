@@ -97,7 +97,7 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/bitcoind -daemon # Starts the bitcoin daemon.
+    ./src/bitcoind -daemon # Starts the litecoin finance daemon.
     ./src/bitcoin-cli --help # Outputs a list of command-line options.
     ./src/bitcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 

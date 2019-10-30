@@ -884,7 +884,7 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin finance network, as detailed below.</source>
         <translation>Nedávne transakcie ešte nemusia byť viditeľné takže zostatok vo vašej peňaženke môže byť nesprávny. Táto informácia sa opraví keď sa vaša peňaženka zosynchronizuje s Litecoin Finance sieťou ako je popísané nižšie.</translation>
     </message>
     <message>
@@ -1415,7 +1415,7 @@
     </message>
     <message>
         <source>Enter a Litecoin Finance address (e.g. %1)</source>
-        <translation>Vložte bitcoin adresu (napr. %1)</translation>
+        <translation>Vložte litecoin finance adresu (napr. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
