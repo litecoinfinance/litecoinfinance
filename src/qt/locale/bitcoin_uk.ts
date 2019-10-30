@@ -414,8 +414,8 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Створити запит платежу (генерує QR-код та bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Створити запит платежу (генерує QR-код та litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Показати список адрес і міток, що були використані для отримання</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Відкрити bitcoin: URI чи запит платежу</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Відкрити litecoinfinance: URI чи запит платежу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1324,7 +1324,7 @@
         <translation>Помилка запиту платежу</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation>Не вдається запустити біткойн: обробник клацни-плати</translation>
     </message>
     <message>
@@ -1332,8 +1332,8 @@
         <translation>Обробка URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' не вірний URI. Використовуйте 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' не вірний URI. Використовуйте 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2432,8 +2432,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Введіть мітку для цієї адреси для додавання її в список використаних адрес</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>Повідомлення, що було додане до bitcoin:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу LitecoinFinance.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>Повідомлення, що було додане до litecoinfinance:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу LitecoinFinance.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3167,7 +3167,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Розповсюджується за ліцензією на програмне забезпечення MIT, дивіться супровідний файл %s або %s</translation>

@@ -3,13 +3,13 @@
 //
 // Use fields 100+ for extensions;
 // to avoid conflicts, register extensions at:
-// https://en.bitcoin.it/wiki/Payment_Request
+// https://en.litecoinfinance.it/wiki/Payment_Request
 //
 
 syntax = "proto2";
 
 package payments;
-option java_package = "org.bitcoin.protocols.payments";
+option java_package = "org.litecoinfinance.protocols.payments";
 option java_outer_classname = "Protos";
 
 // Generalized form of "send payment to this/these litecoin finance addresses"

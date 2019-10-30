@@ -414,8 +414,8 @@
         <translation>Barra de ferramentas dos separadores</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicitar pagamentos (gera códigos QR e bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Solicitar pagamentos (gera códigos QR e litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Mostrar a lista de etiquetas e endereços de receção usados</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Abrir URI bitcoin: ou pedido de pagamento</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Abrir URI litecoinfinance: ou pedido de pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1365,16 +1365,16 @@
         <translation>Erro do pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Impossível iniciar o controlador de bitcoin: click-to-pay</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>Impossível iniciar o controlador de litecoinfinance: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Manuseamento de URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' não é um URI válido. Utilize 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' não é um URI válido. Utilize 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2464,8 +2464,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por u
         <translation>Introduza uma etiqueta para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>Uma mensagem que estava anexada ao URI bitcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede LitecoinFinance.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>Uma mensagem que estava anexada ao URI litecoinfinance: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede LitecoinFinance.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3199,7 +3199,7 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por u
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuído sob licença de software MIT, veja o ficheiro %s ou %s</translation>

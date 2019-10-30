@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <qt/walletmodel.h>
@@ -254,7 +254,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction &tran
             }
             else
 #endif
-            if (!rcp.message.isEmpty()) // Message from normal bitcoin:URI (bitcoin:123...?message=example)
+            if (!rcp.message.isEmpty()) // Message from normal litecoinfinance:URI (litecoinfinance:123...?message=example)
                 vOrderForm.emplace_back("Message", rcp.message.toStdString());
         }
 

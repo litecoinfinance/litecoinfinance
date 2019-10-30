@@ -775,7 +775,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

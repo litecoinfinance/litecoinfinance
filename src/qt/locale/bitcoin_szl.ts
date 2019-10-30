@@ -410,8 +410,8 @@
         <translation>Lajsta szkart</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Żōndej płatu (gyneruje kod QR jak tyż URI bitcoin:)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Żōndej płatu (gyneruje kod QR jak tyż URI litecoinfinance:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -422,8 +422,8 @@
         <translation>Pokŏż wykŏz adres i etyket użytych do ôdbiyraniŏ</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Ôdewrzij URI bitcoin: abo żōndanie płatu</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Ôdewrzij URI litecoinfinance: abo żōndanie płatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -885,11 +885,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin finance network, as detailed below.</source>
-        <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym bitcoin, zgodnie z miyniōnym ôpisym.</translation>
+        <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym litecoinfinance, zgodnie z miyniōnym ôpisym.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Prōba wydaniŏ bitcoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
+        <translation>Prōba wydaniŏ litecoinfinanceōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1172,8 +1172,8 @@
         <translation>Bedynōng URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' to niyma nŏleżne URI. Użyj 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' to niyma nŏleżne URI. Użyj 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
@@ -1686,8 +1686,8 @@
         <translation>Wiadōmość:</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI bitcoin:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu LitecoinFinance.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI litecoinfinance:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu LitecoinFinance.</translation>
     </message>
     </context>
 <context>
@@ -1953,7 +1953,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

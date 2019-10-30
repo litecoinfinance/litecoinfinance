@@ -310,6 +310,6 @@ Por favor, utilize uma senha com dez ou mais caracteres, ou com oito ou mais pal
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     </context>
 </TS>

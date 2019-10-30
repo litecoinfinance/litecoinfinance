@@ -6,9 +6,9 @@ for cryptographic algorithms (e.g. SHA1, SHA256, SHA512, RIPEMD160), as well as 
 
 Running
 ---------------------
-After compiling bitcoin-core, the benchmarks can be run with:
+After compiling litecoinfinance-core, the benchmarks can be run with:
 
-    src/bench/bench_bitcoin
+    src/bench/bench_litecoinfinance
 
 The output will look similar to:
 ```
@@ -43,7 +43,7 @@ Help
 ---------------------
 `-?` will print a list of options and exit:
 
-    src/bench/bench_bitcoin -?
+    src/bench/bench_litecoinfinance -?
 
 Notes
 ---------------------

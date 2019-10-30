@@ -44,7 +44,7 @@ Build Litecoin Finance Core
 1. Clone the Litecoin Finance Core source code:
 
         git clone https://github.com/bitcoin/bitcoin
-        cd bitcoin
+        cd litecoinfinance
 
 2.  Build Litecoin Finance Core:
 
@@ -78,17 +78,17 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-Litecoin Finance Core is now available at `./src/bitcoind`
+Litecoin Finance Core is now available at `./src/litecoinfinanced`
 
 Before running, you may create an empty configuration file:
 
     mkdir -p "/Users/${USER}/Library/Application Support/LitecoinFinance"
 
-    touch "/Users/${USER}/Library/Application Support/LitecoinFinance/bitcoin.conf"
+    touch "/Users/${USER}/Library/Application Support/LitecoinFinance/litecoinfinance.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/LitecoinFinance/bitcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/LitecoinFinance/litecoinfinance.conf"
 
-The first time you run bitcoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run litecoinfinanced, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -97,9 +97,9 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/bitcoind -daemon # Starts the litecoin finance daemon.
-    ./src/bitcoin-cli --help # Outputs a list of command-line options.
-    ./src/bitcoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/litecoinfinanced -daemon # Starts the litecoin finance daemon.
+    ./src/litecoinfinance-cli --help # Outputs a list of command-line options.
+    ./src/litecoinfinance-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----
@@ -203,7 +203,7 @@ build process to remain somewhat deterministic. Here's how it works:
   that have been previously (deterministically) built in order to create a
   final dmg.
 - The Apple keyholder uses this unsigned app to create a detached signature,
-  using the script that is also included there. Detached signatures are available from this [repository](https://github.com/bitcoin-core/bitcoin-detached-sigs).
+  using the script that is also included there. Detached signatures are available from this [repository](https://github.com/bitcoin-core/litecoinfinance-detached-sigs).
 - Builders feed the unsigned app + detached signature back into Gitian. It
   uses the pre-built tools to recombine the pieces into a deterministic dmg.
 

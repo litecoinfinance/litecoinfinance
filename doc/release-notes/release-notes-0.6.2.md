@@ -1,5 +1,5 @@
 Litecoin Finance version 0.6.2 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.6.2/
+http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfinance-0.6.2/
 
 This is a bug-fix and code-cleanup release, with no major new features.
 

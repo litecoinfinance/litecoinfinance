@@ -477,7 +477,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Error initializing block database</source>
         <translation>Ошибка инициализации БД блоков</translation>

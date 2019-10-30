@@ -394,8 +394,8 @@
         <translation>Tabs taakbalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Betalingen aanvragen (genereert QR codes en bitcoin: URI's)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Betalingen aanvragen (genereert QR codes en litecoinfinance: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Toon de lijst van gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Open een bitcoin: URI of betaalverzoek</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Open een litecoinfinance: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -995,7 +995,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Informatie</translation>

@@ -1,6 +1,6 @@
 Litecoin Finance Core version 0.18.1 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.18.1/>
+  <https://bitcoincore.org/bin/litecoinfinance-core-0.18.1/>
 
 This is a new minor version release, including new features, various bug
 fixes and performance improvements, as well as updated translations.
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has
 completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-`/Applications/LitecoinFinance-Qt` (on Mac) or `bitcoind`/`bitcoin-qt` (on
+`/Applications/LitecoinFinance-Qt` (on Mac) or `litecoinfinanced`/`litecoinfinance-qt` (on
 Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database
@@ -91,7 +91,7 @@ not to use coin control features with multiple wallets loaded.
 
 ### Build system
 - #15985 Add test for GCC bug 90348 (sipa)
-- #15947 Install bitcoin-wallet manpage (domob1812)
+- #15947 Install litecoinfinance-wallet manpage (domob1812)
 - #15983 build with -fstack-reuse=none (MarcoFalke)
 
 ### Tests and QA
@@ -132,4 +132,4 @@ Thanks to everyone who directly contributed to this release:
 - tecnovert
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

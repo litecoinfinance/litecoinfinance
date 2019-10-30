@@ -274,11 +274,11 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un litecoinfinance: URIs)</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>Atvērt litecoin finance URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
@@ -1185,7 +1185,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

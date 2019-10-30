@@ -1,10 +1,10 @@
 Litecoin Finance version 0.6.0 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.6.0/test/
+http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfinance-0.6.0/test/
 
 This release includes more than 20 language localizations.
 More translations are welcome; join the
 project at Transifex to help:
-https://www.transifex.net/projects/p/bitcoin/
+https://www.transifex.net/projects/p/litecoinfinance/
 
 Please report bugs using the issue tracker at github:
 https://github.com/bitcoin/bitcoin/issues
@@ -17,9 +17,9 @@ https://github.com/bitcoin/bitcoin/zipball/v0.6.0  # .zip
 
 For Ubuntu users, there is a ppa maintained by Matt Corallo which
 you can add to your system so that it will automatically keep
-bitcoin up-to-date.  Just type
-sudo apt-add-repository ppa:bitcoin/bitcoin
-in your terminal, then install the bitcoin-qt package.
+litecoinfinance up-to-date.  Just type
+sudo apt-add-repository ppa:litecoinfinance/litecoinfinance
+in your terminal, then install the litecoinfinance-qt package.
 
 
 KNOWN ISSUES
@@ -50,11 +50,11 @@ signature.
 New wallets created with this version will
 use 33-byte 'compressed' public keys instead of
 65-byte public keys, resulting in smaller
-transactions and less traffic on the bitcoin
+transactions and less traffic on the litecoinfinance
 network. The shorter keys are already supported
 by the network but wallet.dat files containing
 short keys are not compatible with earlier
-versions of LitecoinFinance-Qt/bitcoind.
+versions of LitecoinFinance-Qt/litecoinfinanced.
 
 New command-line argument -blocknotify=<command>
 that will spawn a shell process to run <command> 
@@ -104,11 +104,11 @@ attacks were fixed.
 
 NOT YET IMPLEMENTED FEATURES
 
-Support for clicking on bitcoin: URIs and
+Support for clicking on litecoinfinance: URIs and
 opening/launching LitecoinFinance-Qt is available only on Linux,
 and only if you configure your desktop to launch
 LitecoinFinance-Qt. All platforms support dragging and dropping
-bitcoin: URIs onto the LitecoinFinance-Qt window to start
+litecoinfinance: URIs onto the LitecoinFinance-Qt window to start
 payment.
 
 

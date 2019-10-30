@@ -3,12 +3,12 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <qt/paymentserver.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/litecoinfinanceunits.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
 
@@ -48,15 +48,15 @@
 #include <QUrlQuery>
 
 const int LITECOINFINANCE_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString LITECOINFINANCE_IPC_PREFIX("bitcoin:");
+const QString LITECOINFINANCE_IPC_PREFIX("litecoinfinance:");
 #ifdef ENABLE_BIP70
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
 // BIP71 payment protocol media types
-const char* BIP71_MIMETYPE_PAYMENT = "application/bitcoin-payment";
-const char* BIP71_MIMETYPE_PAYMENTACK = "application/bitcoin-paymentack";
-const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/bitcoin-paymentrequest";
+const char* BIP71_MIMETYPE_PAYMENT = "application/litecoinfinance-payment";
+const char* BIP71_MIMETYPE_PAYMENTACK = "application/litecoinfinance-paymentack";
+const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/litecoinfinance-paymentrequest";
 #endif
 
 //
@@ -101,11 +101,11 @@ void PaymentServer::ipcParseCommandLine(interfaces::Node& node, int argc, char* 
         if (arg.startsWith("-"))
             continue;
 
-        // If the bitcoin: URI contains a payment request, we are not able to detect the
+        // If the litecoinfinance: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
         // That means clicking such an URI which contains a testnet payment request
         // will start a mainnet instance and throw a "wrong network" error.
-        if (arg.startsWith(LITECOINFINANCE_IPC_PREFIX, Qt::CaseInsensitive)) // bitcoin: URI
+        if (arg.startsWith(LITECOINFINANCE_IPC_PREFIX, Qt::CaseInsensitive)) // litecoinfinance: URI
         {
             savedPaymentRequests.append(arg);
 
@@ -207,7 +207,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
 #endif
 
     // Install global event filter to catch QFileOpenEvents
-    // on Mac: sent when you click bitcoin: links
+    // on Mac: sent when you click litecoinfinance: links
     // other OSes: helpful when dealing with payment request files
     if (parent)
         parent->installEventFilter(this);
@@ -224,7 +224,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(nullptr, tr("Payment request error"),
-                tr("Cannot start bitcoin: click-to-pay handler"));
+                tr("Cannot start litecoinfinance: click-to-pay handler"));
         }
         else {
             connect(uriServer, &QLocalServer::newConnection, this, &PaymentServer::handleURIConnection);
@@ -243,7 +243,7 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling bitcoin: URIs and PaymentRequest mime types.
+// OSX-specific way of handling litecoinfinance: URIs and PaymentRequest mime types.
 // Also used by paymentservertests.cpp and when opening a payment request file
 // via "Open URI..." menu entry.
 //
@@ -284,12 +284,12 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("bitcoin://", Qt::CaseInsensitive))
+    if (s.startsWith("litecoinfinance://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'bitcoin://' is not a valid URI. Use 'bitcoin:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
-    else if (s.startsWith(LITECOINFINANCE_IPC_PREFIX, Qt::CaseInsensitive)) // bitcoin: URI
+    else if (s.startsWith(LITECOINFINANCE_IPC_PREFIX, Qt::CaseInsensitive)) // litecoinfinance: URI
     {
         QUrlQuery uri((QUrl(s)));
 #ifdef ENABLE_BIP70
@@ -506,7 +506,7 @@ void PaymentServer::initNetManager()
         return;
     delete netManager;
 
-    // netManager is used to fetch paymentrequests given in bitcoin: URIs
+    // netManager is used to fetch paymentrequests given in litecoinfinance: URIs
     netManager = new QNetworkAccessManager(this);
 
     QNetworkProxy proxy;

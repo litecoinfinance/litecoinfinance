@@ -22,17 +22,17 @@ Communication Channels
 ----------------------
 
 Most communication about Litecoin Finance Core development happens on IRC, in the
-#bitcoin-core-dev channel on Freenode. The easiest way to participate on IRC is
+#litecoinfinance-core-dev channel on Freenode. The easiest way to participate on IRC is
 with the web client, [webchat.freenode.net](https://webchat.freenode.net/). Chat
 history logs can be found
-on [http://www.erisian.com.au/bitcoin-core-dev/](http://www.erisian.com.au/bitcoin-core-dev/)
-and [http://gnusha.org/bitcoin-core-dev/](http://gnusha.org/bitcoin-core-dev/).
+on [http://www.erisian.com.au/litecoinfinance-core-dev/](http://www.erisian.com.au/litecoinfinance-core-dev/)
+and [http://gnusha.org/litecoinfinance-core-dev/](http://gnusha.org/litecoinfinance-core-dev/).
 
 Discussion about code base improvements happens in GitHub issues and on pull
 requests.
 
 The developer
-[mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
+[mailing list](https://lists.linuxfoundation.org/mailman/listinfo/litecoinfinance-dev)
 should be used to discuss complicated or controversial changes before working on
 a patch set.
 
@@ -81,7 +81,7 @@ the pull request affects. Valid areas as:
 
   - *Consensus* for changes to consensus critical code
   - *Docs* for changes to the documentation
-  - *Qt* for changes to bitcoin-qt
+  - *Qt* for changes to litecoinfinance-qt
   - *Mining* for changes to the mining code
   - *Net* or *P2P* for changes to the peer-to-peer network code
   - *RPC/REST/ZMQ* for changes to the RPC, REST or ZMQ APIs

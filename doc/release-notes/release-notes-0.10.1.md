@@ -1,6 +1,6 @@
 Litecoin Finance Core version 0.10.1 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.10.1/>
+  <https://bitcoin.org/bin/litecoinfinance-core-0.10.1/>
 
 This is a new minor version release, bringing bug fixes and translation 
 updates. It is recommended to upgrade to this version.
@@ -18,7 +18,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/LitecoinFinance-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+litecoinfinanced/litecoinfinance-qt (on Linux).
 
 Downgrade warning
 ------------------
@@ -140,4 +140,4 @@ And all those who contributed additional code review and/or security research:
 - Sergio Demian Lerner
 - Sharon Goldberg
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

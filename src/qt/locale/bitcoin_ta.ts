@@ -378,7 +378,7 @@
         <translation>தாவல்கள் கருவிப்பட்டி</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>கொடுப்பனவுகளை கோருதல் (QR குறியீடுகள் மற்றும் litecoin finance உருவாக்குகிறது: URI கள்)</translation>
     </message>
     <message>
@@ -390,7 +390,7 @@
         <translation>பயன்படுத்திய முகவரிகள் மற்றும் லேபிள்களின் பட்டியலைக் காட்டு</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>ஒரு Litecoin Finance திறக்க: URI அல்லது பணம் கோரிக்கை</translation>
     </message>
     <message>
@@ -1172,7 +1172,7 @@
         <translation>கட்டணம் கோரிக்கை பிழை</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation>Litecoin Finance தொடங்க முடியாது: கிளிக் க்கு ஊதியம் கையாளுதல்</translation>
     </message>
     <message>
@@ -1180,8 +1180,8 @@
         <translation>URI கையாளுதல்</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin: //' சரியான URI அல்ல. அதற்கு பதிலாக 'பிட்கின்:' பயன்படுத்தவும்.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance: //' சரியான URI அல்ல. அதற்கு பதிலாக 'பிட்கின்:' பயன்படுத்தவும்.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2129,7 +2129,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance மையம்</translation>

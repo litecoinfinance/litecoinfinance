@@ -5,7 +5,7 @@
 #ifndef LITECOINFINANCE_QT_TRANSACTIONTABLEMODEL_H
 #define LITECOINFINANCE_QT_TRANSACTIONTABLEMODEL_H
 
-#include <qt/bitcoinunits.h>
+#include <qt/litecoinfinanceunits.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>

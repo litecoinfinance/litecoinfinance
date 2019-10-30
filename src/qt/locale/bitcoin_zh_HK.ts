@@ -362,8 +362,8 @@
         <translation>說明 &amp;H</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>要求付款 (產生QR碼 bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>要求付款 (產生QR碼 litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -675,7 +675,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>資訊</translation>

@@ -29,11 +29,11 @@ FUZZ_TARGETS = \
 if ENABLE_FUZZ
 noinst_PROGRAMS += $(FUZZ_TARGETS:=)
 else
-bin_PROGRAMS += test/test_bitcoin
+bin_PROGRAMS += test/test_litecoinfinance
 endif
 
 TEST_SRCDIR = test
-TEST_BINARY=test/test_bitcoin$(EXEEXT)
+TEST_BINARY=test/test_litecoinfinance$(EXEEXT)
 
 JSON_TEST_FILES = \
   test/data/script_tests.json \
@@ -51,15 +51,15 @@ RAW_TEST_FILES =
 GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
 LITECOINFINANCE_TEST_SUITE = \
-  test/test_bitcoin_main.cpp \
-  test/test_bitcoin.h \
-  test/test_bitcoin.cpp
+  test/test_litecoinfinance_main.cpp \
+  test/test_litecoinfinance.h \
+  test/test_litecoinfinance.cpp
 
 FUZZ_SUITE = \
   test/fuzz/fuzz.cpp \
   test/fuzz/fuzz.h
 
-# test_bitcoin binary #
+# test_litecoinfinance binary #
 LITECOINFINANCE_TESTS =\
   test/arith_uint256_tests.cpp \
   test/scriptnum10.h \
@@ -155,22 +155,22 @@ LITECOINFINANCE_TEST_SUITE += \
   wallet/test/init_test_fixture.h
 endif
 
-test_test_bitcoin_SOURCES = $(LITECOINFINANCE_TEST_SUITE) $(LITECOINFINANCE_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_bitcoin_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
-test_test_bitcoin_LDADD =
+test_test_litecoinfinance_SOURCES = $(LITECOINFINANCE_TEST_SUITE) $(LITECOINFINANCE_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_litecoinfinance_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_litecoinfinance_LDADD =
 if ENABLE_WALLET
-test_test_bitcoin_LDADD += $(LIBLITECOINFINANCE_WALLET)
+test_test_litecoinfinance_LDADD += $(LIBLITECOINFINANCE_WALLET)
 endif
 
-test_test_bitcoin_LDADD += $(LIBLITECOINFINANCE_SERVER) $(LIBLITECOINFINANCE_CLI) $(LIBLITECOINFINANCE_COMMON) $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_CONSENSUS) $(LIBLITECOINFINANCE_CRYPTO) $(LIBUNIVALUE) \
+test_test_litecoinfinance_LDADD += $(LIBLITECOINFINANCE_SERVER) $(LIBLITECOINFINANCE_CLI) $(LIBLITECOINFINANCE_COMMON) $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_CONSENSUS) $(LIBLITECOINFINANCE_CRYPTO) $(LIBUNIVALUE) \
   $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS)
-test_test_bitcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_litecoinfinance_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
-test_test_bitcoin_LDADD += $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(RAPIDCHECK_LIBS)
-test_test_bitcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+test_test_litecoinfinance_LDADD += $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(RAPIDCHECK_LIBS)
+test_test_litecoinfinance_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
-test_test_bitcoin_LDADD += $(ZMQ_LIBS)
+test_test_litecoinfinance_LDADD += $(ZMQ_LIBS)
 endif
 
 if ENABLE_FUZZ
@@ -532,7 +532,7 @@ test_fuzz_blocktransactionsrequest_deserialize_LDADD = \
 test_fuzz_blocktransactionsrequest_deserialize_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 endif # ENABLE_FUZZ
 
-nodist_test_test_bitcoin_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_litecoinfinance_SOURCES = $(GENERATED_TEST_FILES)
 
 $(LITECOINFINANCE_TESTS): $(GENERATED_TEST_FILES)
 
@@ -541,32 +541,32 @@ CLEAN_LITECOINFINANCE_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES) $(L
 CLEANFILES += $(CLEAN_LITECOINFINANCE_TEST)
 
 if TARGET_WINDOWS
-bitcoin_test: $(TEST_BINARY)
+litecoinfinance_test: $(TEST_BINARY)
 else
 if ENABLE_BENCH
-bitcoin_test: $(TEST_BINARY) $(BENCH_BINARY)
+litecoinfinance_test: $(TEST_BINARY) $(BENCH_BINARY)
 else
-bitcoin_test: $(TEST_BINARY)
+litecoinfinance_test: $(TEST_BINARY)
 endif
 endif
 
-bitcoin_test_check: $(TEST_BINARY) FORCE
+litecoinfinance_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-bitcoin_test_clean : FORCE
-	rm -f $(CLEAN_LITECOINFINANCE_TEST) $(test_test_bitcoin_OBJECTS) $(TEST_BINARY)
+litecoinfinance_test_clean : FORCE
+	rm -f $(CLEAN_LITECOINFINANCE_TEST) $(test_test_litecoinfinance_OBJECTS) $(TEST_BINARY)
 
 check-local: $(LITECOINFINANCE_TESTS:.cpp=.cpp.test)
 if BUILD_LITECOINFINANCE_TX
-	@echo "Running test/util/bitcoin-util-test.py..."
-	$(PYTHON) $(top_builddir)/test/util/bitcoin-util-test.py
+	@echo "Running test/util/litecoinfinance-util-test.py..."
+	$(PYTHON) $(top_builddir)/test/util/litecoinfinance-util-test.py
 endif
 	@echo "Running test/util/rpcauth-test.py..."
 	$(PYTHON) $(top_builddir)/test/util/rpcauth-test.py
 if TARGET_WINDOWS
 else
 if ENABLE_BENCH
-	@echo "Running bench/bench_bitcoin -evals=1 -scaling=0..."
+	@echo "Running bench/bench_litecoinfinance -evals=1 -scaling=0..."
 	$(BENCH_BINARY) -evals=1 -scaling=0 > /dev/null
 endif
 endif

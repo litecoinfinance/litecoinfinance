@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <init.h>
@@ -97,7 +97,7 @@ static const char* FEE_ESTIMATES_FILENAME="fee_estimates.dat";
 /**
  * The PID file facilities.
  */
-static const char* LITECOINFINANCE_PID_FILENAME = "bitcoind.pid";
+static const char* LITECOINFINANCE_PID_FILENAME = "litecoinfinanced.pid";
 
 static fs::path GetPidFile()
 {
@@ -147,7 +147,7 @@ NODISCARD static bool CreatePidFile()
 /**
  * This is a minimally invasive approach to shutdown on LevelDB read errors from the
  * chainstate, while keeping user interface out of the common library, which is shared
- * between bitcoind, and bitcoin-qt and non-server tools.
+ * between litecoinfinanced, and litecoinfinance-qt and non-server tools.
 */
 class CCoinsViewErrorCatcher final : public CCoinsViewBacked
 {
@@ -202,7 +202,7 @@ void Shutdown(InitInterfaces& interfaces)
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("bitcoin-shutoff");
+    RenameThread("litecoinfinance-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -657,7 +657,7 @@ static void CleanupBlockRevFiles()
 static void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("bitcoin-loadblk");
+    RenameThread("litecoinfinance-loadblk");
     ScheduleBatchPriority();
 
     {

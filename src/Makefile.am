@@ -24,37 +24,37 @@ LITECOINFINANCE_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVEL
 LITECOINFINANCE_INCLUDES += -I$(srcdir)/secp256k1/include
 LITECOINFINANCE_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBLITECOINFINANCE_SERVER=libbitcoin_server.a
-LIBLITECOINFINANCE_COMMON=libbitcoin_common.a
-LIBLITECOINFINANCE_CONSENSUS=libbitcoin_consensus.a
-LIBLITECOINFINANCE_CLI=libbitcoin_cli.a
-LIBLITECOINFINANCE_UTIL=libbitcoin_util.a
-LIBLITECOINFINANCE_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
-LIBLITECOINFINANCEQT=qt/libbitcoinqt.a
+LIBLITECOINFINANCE_SERVER=liblitecoinfinance_server.a
+LIBLITECOINFINANCE_COMMON=liblitecoinfinance_common.a
+LIBLITECOINFINANCE_CONSENSUS=liblitecoinfinance_consensus.a
+LIBLITECOINFINANCE_CLI=liblitecoinfinance_cli.a
+LIBLITECOINFINANCE_UTIL=liblitecoinfinance_util.a
+LIBLITECOINFINANCE_CRYPTO_BASE=crypto/liblitecoinfinance_crypto_base.a
+LIBLITECOINFINANCEQT=qt/liblitecoinfinanceqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBLITECOINFINANCE_ZMQ=libbitcoin_zmq.a
+LIBLITECOINFINANCE_ZMQ=liblitecoinfinance_zmq.a
 endif
 if BUILD_LITECOINFINANCE_LIBS
-LIBLITECOINFINANCECONSENSUS=libbitcoinconsensus.la
+LIBLITECOINFINANCECONSENSUS=liblitecoinfinanceconsensus.la
 endif
 if ENABLE_WALLET
-LIBLITECOINFINANCE_WALLET=libbitcoin_wallet.a
-LIBLITECOINFINANCE_WALLET_TOOL=libbitcoin_wallet_tool.a
+LIBLITECOINFINANCE_WALLET=liblitecoinfinance_wallet.a
+LIBLITECOINFINANCE_WALLET_TOOL=liblitecoinfinance_wallet_tool.a
 endif
 
 LIBLITECOINFINANCE_CRYPTO= $(LIBLITECOINFINANCE_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBLITECOINFINANCE_CRYPTO_SSE41 = crypto/libbitcoin_crypto_sse41.a
+LIBLITECOINFINANCE_CRYPTO_SSE41 = crypto/liblitecoinfinance_crypto_sse41.a
 LIBLITECOINFINANCE_CRYPTO += $(LIBLITECOINFINANCE_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBLITECOINFINANCE_CRYPTO_AVX2 = crypto/libbitcoin_crypto_avx2.a
+LIBLITECOINFINANCE_CRYPTO_AVX2 = crypto/liblitecoinfinance_crypto_avx2.a
 LIBLITECOINFINANCE_CRYPTO += $(LIBLITECOINFINANCE_CRYPTO_AVX2)
 endif
 if ENABLE_SHANI
-LIBLITECOINFINANCE_CRYPTO_SHANI = crypto/libbitcoin_crypto_shani.a
+LIBLITECOINFINANCE_CRYPTO_SHANI = crypto/liblitecoinfinance_crypto_shani.a
 LIBLITECOINFINANCE_CRYPTO += $(LIBLITECOINFINANCE_CRYPTO_SHANI)
 endif
 
@@ -82,18 +82,18 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_LITECOINFINANCED
-  bin_PROGRAMS += bitcoind
+  bin_PROGRAMS += litecoinfinanced
 endif
 
 if BUILD_LITECOINFINANCE_CLI
-  bin_PROGRAMS += bitcoin-cli
+  bin_PROGRAMS += litecoinfinance-cli
 endif
 if BUILD_LITECOINFINANCE_TX
-  bin_PROGRAMS += bitcoin-tx
+  bin_PROGRAMS += litecoinfinance-tx
 endif
 if ENABLE_WALLET
 if BUILD_LITECOINFINANCE_WALLET
-  bin_PROGRAMS += bitcoin-wallet
+  bin_PROGRAMS += litecoinfinance-wallet
 endif
 endif
 
@@ -232,12 +232,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh "$(abs_top_builddir)/src/obj/build.h" \
 	  "$(abs_top_srcdir)"
-libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
+liblitecoinfinance_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between bitcoind and bitcoin-qt
-libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_server_a_SOURCES = \
+# server: shared between litecoinfinanced and litecoinfinance-qt
+liblitecoinfinance_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+liblitecoinfinance_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_server_a_SOURCES = \
   addrdb.cpp \
   addrman.cpp \
   banman.cpp \
@@ -288,13 +288,13 @@ libbitcoin_server_a_SOURCES = \
   $(LITECOINFINANCE_CORE_H)
 
 if !ENABLE_WALLET
-libbitcoin_server_a_SOURCES += dummywallet.cpp
+liblitecoinfinance_server_a_SOURCES += dummywallet.cpp
 endif
 
 if ENABLE_ZMQ
-libbitcoin_zmq_a_CPPFLAGS = $(LITECOINFINANCE_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
+liblitecoinfinance_zmq_a_CPPFLAGS = $(LITECOINFINANCE_INCLUDES) $(ZMQ_CFLAGS)
+liblitecoinfinance_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp \
@@ -302,11 +302,11 @@ libbitcoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between bitcoind and bitcoin-qt, but only linked
+# wallet: shared between litecoinfinanced and litecoinfinance-qt, but only linked
 # when wallet enabled
-libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_wallet_a_SOURCES = \
+liblitecoinfinance_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_wallet_a_SOURCES = \
   interfaces/wallet.cpp \
   wallet/coincontrol.cpp \
   wallet/crypter.cpp \
@@ -323,16 +323,16 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/coinselection.cpp \
   $(LITECOINFINANCE_CORE_H)
 
-libbitcoin_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_wallet_tool_a_SOURCES = \
+liblitecoinfinance_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_wallet_tool_a_SOURCES = \
   wallet/wallettool.cpp \
   $(LITECOINFINANCE_CORE_H)
 
 # crypto primitives library
-crypto_libbitcoin_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libbitcoin_crypto_base_a_SOURCES = \
+crypto_liblitecoinfinance_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_liblitecoinfinance_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_liblitecoinfinance_crypto_base_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha20.h \
@@ -354,31 +354,31 @@ crypto_libbitcoin_crypto_base_a_SOURCES = \
   crypto/siphash.h
 
 if USE_ASM
-crypto_libbitcoin_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
+crypto_liblitecoinfinance_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
-crypto_libbitcoin_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libbitcoin_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
-crypto_libbitcoin_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
-crypto_libbitcoin_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
+crypto_liblitecoinfinance_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_liblitecoinfinance_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_liblitecoinfinance_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
+crypto_liblitecoinfinance_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
+crypto_liblitecoinfinance_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
 
-crypto_libbitcoin_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libbitcoin_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
-crypto_libbitcoin_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
-crypto_libbitcoin_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
+crypto_liblitecoinfinance_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_liblitecoinfinance_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_liblitecoinfinance_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
+crypto_liblitecoinfinance_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
+crypto_liblitecoinfinance_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
 
-crypto_libbitcoin_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libbitcoin_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
-crypto_libbitcoin_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
-crypto_libbitcoin_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
+crypto_liblitecoinfinance_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_liblitecoinfinance_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_liblitecoinfinance_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
+crypto_liblitecoinfinance_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
+crypto_liblitecoinfinance_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
-libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_consensus_a_SOURCES = \
+liblitecoinfinance_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -395,7 +395,7 @@ libbitcoin_consensus_a_SOURCES = \
   primitives/transaction.h \
   pubkey.cpp \
   pubkey.h \
-  script/bitcoinconsensus.cpp \
+  script/litecoinfinanceconsensus.cpp \
   script/interpreter.cpp \
   script/interpreter.h \
   script/script.cpp \
@@ -411,10 +411,10 @@ libbitcoin_consensus_a_SOURCES = \
   util/strencodings.h \
   version.h
 
-# common: shared between bitcoind, and bitcoin-qt and non-server tools
-libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_common_a_SOURCES = \
+# common: shared between litecoinfinanced, and litecoinfinance-qt and non-server tools
+liblitecoinfinance_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_common_a_SOURCES = \
   base58.cpp \
   bech32.cpp \
   chainparams.cpp \
@@ -442,9 +442,9 @@ libbitcoin_common_a_SOURCES = \
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_util_a_SOURCES = \
+liblitecoinfinance_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -467,31 +467,31 @@ libbitcoin_util_a_SOURCES = \
   $(LITECOINFINANCE_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
+liblitecoinfinance_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between bitcoin-cli and bitcoin-qt
-libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_cli_a_SOURCES = \
+# cli: shared between litecoinfinance-cli and litecoinfinance-qt
+liblitecoinfinance_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+liblitecoinfinance_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinance_cli_a_SOURCES = \
   rpc/client.cpp \
   $(LITECOINFINANCE_CORE_H)
 
-nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_liblitecoinfinance_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# bitcoind binary #
-bitcoind_SOURCES = bitcoind.cpp
-bitcoind_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-bitcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bitcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# litecoinfinanced binary #
+litecoinfinanced_SOURCES = litecoinfinanced.cpp
+litecoinfinanced_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+litecoinfinanced_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoinfinanced_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bitcoind_SOURCES += bitcoind-res.rc
+litecoinfinanced_SOURCES += litecoinfinanced-res.rc
 endif
 
-bitcoind_LDADD = \
+litecoinfinanced_LDADD = \
   $(LIBLITECOINFINANCE_SERVER) \
   $(LIBLITECOINFINANCE_WALLET) \
   $(LIBLITECOINFINANCE_SERVER) \
@@ -506,38 +506,38 @@ bitcoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-bitcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+litecoinfinanced_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# bitcoin-cli binary #
-bitcoin_cli_SOURCES = bitcoin-cli.cpp
-bitcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(EVENT_CFLAGS)
-bitcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bitcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# litecoinfinance-cli binary #
+litecoinfinance_cli_SOURCES = litecoinfinance-cli.cpp
+litecoinfinance_cli_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(EVENT_CFLAGS)
+litecoinfinance_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoinfinance_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bitcoin_cli_SOURCES += bitcoin-cli-res.rc
+litecoinfinance_cli_SOURCES += litecoinfinance-cli-res.rc
 endif
 
-bitcoin_cli_LDADD = \
+litecoinfinance_cli_LDADD = \
   $(LIBLITECOINFINANCE_CLI) \
   $(LIBUNIVALUE) \
   $(LIBLITECOINFINANCE_UTIL) \
   $(LIBLITECOINFINANCE_CRYPTO)
 
-bitcoin_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+litecoinfinance_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# bitcoin-tx binary #
-bitcoin_tx_SOURCES = bitcoin-tx.cpp
-bitcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-bitcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bitcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# litecoinfinance-tx binary #
+litecoinfinance_tx_SOURCES = litecoinfinance-tx.cpp
+litecoinfinance_tx_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+litecoinfinance_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoinfinance_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bitcoin_tx_SOURCES += bitcoin-tx-res.rc
+litecoinfinance_tx_SOURCES += litecoinfinance-tx-res.rc
 endif
 
-bitcoin_tx_LDADD = \
+litecoinfinance_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBLITECOINFINANCE_COMMON) \
   $(LIBLITECOINFINANCE_UTIL) \
@@ -545,20 +545,20 @@ bitcoin_tx_LDADD = \
   $(LIBLITECOINFINANCE_CRYPTO) \
   $(LIBSECP256K1)
 
-bitcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+litecoinfinance_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# bitcoin-wallet binary #
-bitcoin_wallet_SOURCES = bitcoin-wallet.cpp
-bitcoin_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
-bitcoin_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bitcoin_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# litecoinfinance-wallet binary #
+litecoinfinance_wallet_SOURCES = litecoinfinance-wallet.cpp
+litecoinfinance_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES)
+litecoinfinance_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoinfinance_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bitcoin_wallet_SOURCES += bitcoin-wallet-res.rc
+litecoinfinance_wallet_SOURCES += litecoinfinance-wallet-res.rc
 endif
 
-bitcoin_wallet_LDADD = \
+litecoinfinance_wallet_LDADD = \
   $(LIBLITECOINFINANCE_WALLET_TOOL) \
   $(LIBLITECOINFINANCE_WALLET) \
   $(LIBLITECOINFINANCE_SERVER) \
@@ -571,22 +571,22 @@ bitcoin_wallet_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-bitcoin_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+litecoinfinance_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
-# bitcoinconsensus library #
+# litecoinfinanceconsensus library #
 if BUILD_LITECOINFINANCE_LIBS
-include_HEADERS = script/bitcoinconsensus.h
-libbitcoinconsensus_la_SOURCES = $(crypto_libbitcoin_crypto_base_a_SOURCES) $(libbitcoin_consensus_a_SOURCES)
+include_HEADERS = script/litecoinfinanceconsensus.h
+liblitecoinfinanceconsensus_la_SOURCES = $(crypto_liblitecoinfinance_crypto_base_a_SOURCES) $(liblitecoinfinance_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libbitcoinconsensus_la_SOURCES += compat/glibc_compat.cpp
+  liblitecoinfinanceconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libbitcoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libbitcoinconsensus_la_LIBADD = $(LIBSECP256K1)
-libbitcoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_LITECOINFINANCE_INTERNAL
-libbitcoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liblitecoinfinanceconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+liblitecoinfinanceconsensus_la_LIBADD = $(LIBSECP256K1)
+liblitecoinfinanceconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_LITECOINFINANCE_INTERNAL
+liblitecoinfinanceconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #
@@ -616,12 +616,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST = $(CTAES_DIST)
 
 
-config/bitcoin-config.h: config/stamp-h1
+config/litecoinfinance-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/bitcoin-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/litecoinfinance-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/bitcoin-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/bitcoin-config.h.in
+$(top_srcdir)/$(subdir)/config/litecoinfinance-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/litecoinfinance-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

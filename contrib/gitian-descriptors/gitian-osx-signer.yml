@@ -1,5 +1,5 @@
 ---
-name: "bitcoin-dmg-signer"
+name: "litecoinfinance-dmg-signer"
 suites:
 - "bionic"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/bitcoin-core/bitcoin-detached-sigs.git"
+- "url": "https://github.com/bitcoin-core/litecoinfinance-detached-sigs.git"
   "dir": "signature"
 files:
-- "bitcoin-osx-unsigned.tar.gz"
+- "litecoinfinance-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -29,8 +29,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=bitcoin-osx-unsigned.tar.gz
-  SIGNED=bitcoin-osx-signed.dmg
+  UNSIGNED=litecoinfinance-osx-unsigned.tar.gz
+  SIGNED=litecoinfinance-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

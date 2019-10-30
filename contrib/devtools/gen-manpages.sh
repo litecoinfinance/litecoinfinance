@@ -7,11 +7,11 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-LITECOINFINANCED=${LITECOINFINANCED:-$BINDIR/bitcoind}
-LITECOINFINANCECLI=${LITECOINFINANCECLI:-$BINDIR/bitcoin-cli}
-LITECOINFINANCETX=${LITECOINFINANCETX:-$BINDIR/bitcoin-tx}
-WALLET_TOOL=${WALLET_TOOL:-$BINDIR/bitcoin-wallet}
-LITECOINFINANCEQT=${LITECOINFINANCEQT:-$BINDIR/qt/bitcoin-qt}
+LITECOINFINANCED=${LITECOINFINANCED:-$BINDIR/litecoinfinanced}
+LITECOINFINANCECLI=${LITECOINFINANCECLI:-$BINDIR/litecoinfinance-cli}
+LITECOINFINANCETX=${LITECOINFINANCETX:-$BINDIR/litecoinfinance-tx}
+WALLET_TOOL=${WALLET_TOOL:-$BINDIR/litecoinfinance-wallet}
+LITECOINFINANCEQT=${LITECOINFINANCEQT:-$BINDIR/qt/litecoinfinance-qt}
 
 [ ! -x $LITECOINFINANCED ] && echo "$LITECOINFINANCED not found or not executable." && exit 1
 
@@ -19,8 +19,8 @@ LITECOINFINANCEQT=${LITECOINFINANCEQT:-$BINDIR/qt/bitcoin-qt}
 BTCVER=($($LITECOINFINANCECLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
-# This gets autodetected fine for bitcoind if --version-string is not set,
-# but has different outcomes for bitcoin-qt and bitcoin-cli.
+# This gets autodetected fine for litecoinfinanced if --version-string is not set,
+# but has different outcomes for litecoinfinance-qt and litecoinfinance-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $LITECOINFINANCED --version | sed -n '1!p' >> footer.h2m
 

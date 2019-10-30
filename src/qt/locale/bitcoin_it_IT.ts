@@ -402,8 +402,8 @@
         <translation>Barra degli strumenti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -414,8 +414,8 @@
         <translation>Mostra la lista degli indirizzi di ricezione usati e le relative etichette</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Apri un bitcoin: URI o una richiesta di pagamento</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Apri un litecoinfinance: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -759,7 +759,7 @@
     <name>ModalOverlay</name>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin finance network, as detailed below.</source>
-        <translation>Le transazioni recenti potrebbero non essere ancora visibili, e quindi il saldo del wallet potrebbe essere incorretto. Questa informazione verra' corretta non appena il tuo wallet ha finito di sincronizzarsi con la rete bitcoin, come specificato di seguito.</translation>
+        <translation>Le transazioni recenti potrebbero non essere ancora visibili, e quindi il saldo del wallet potrebbe essere incorretto. Questa informazione verra' corretta non appena il tuo wallet ha finito di sincronizzarsi con la rete litecoinfinance, come specificato di seguito.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -830,8 +830,8 @@
         <translation>Gestione URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' non è un URI valido. Usa invece 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' non è un URI valido. Usa invece 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
@@ -1099,7 +1099,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Informazione</translation>

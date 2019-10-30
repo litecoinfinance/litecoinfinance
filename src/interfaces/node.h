@@ -32,7 +32,7 @@ namespace interfaces {
 class Handler;
 class Wallet;
 
-//! Top-level interface for a litecoin finance node (bitcoind process).
+//! Top-level interface for a litecoin finance node (litecoinfinanced process).
 class Node
 {
 public:

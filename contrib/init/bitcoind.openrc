@@ -2,26 +2,26 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/bitcoin/.bitcoin" ]; then
-	LITECOINFINANCED_DEFAULT_DATADIR="/var/lib/bitcoin/.bitcoin"
+if [ -d "/var/lib/litecoinfinance/.litecoinfinance" ]; then
+	LITECOINFINANCED_DEFAULT_DATADIR="/var/lib/litecoinfinance/.litecoinfinance"
 else
-	LITECOINFINANCED_DEFAULT_DATADIR="/var/lib/bitcoind"
+	LITECOINFINANCED_DEFAULT_DATADIR="/var/lib/litecoinfinanced"
 fi
 
-LITECOINFINANCED_CONFIGFILE=${LITECOINFINANCED_CONFIGFILE:-/etc/bitcoin/bitcoin.conf}
-LITECOINFINANCED_PIDDIR=${LITECOINFINANCED_PIDDIR:-/var/run/bitcoind}
-LITECOINFINANCED_PIDFILE=${LITECOINFINANCED_PIDFILE:-${LITECOINFINANCED_PIDDIR}/bitcoind.pid}
+LITECOINFINANCED_CONFIGFILE=${LITECOINFINANCED_CONFIGFILE:-/etc/litecoinfinance/litecoinfinance.conf}
+LITECOINFINANCED_PIDDIR=${LITECOINFINANCED_PIDDIR:-/var/run/litecoinfinanced}
+LITECOINFINANCED_PIDFILE=${LITECOINFINANCED_PIDFILE:-${LITECOINFINANCED_PIDDIR}/litecoinfinanced.pid}
 LITECOINFINANCED_DATADIR=${LITECOINFINANCED_DATADIR:-${LITECOINFINANCED_DEFAULT_DATADIR}}
-LITECOINFINANCED_USER=${LITECOINFINANCED_USER:-${LITECOINFINANCE_USER:-bitcoin}}
-LITECOINFINANCED_GROUP=${LITECOINFINANCED_GROUP:-bitcoin}
-LITECOINFINANCED_BIN=${LITECOINFINANCED_BIN:-/usr/bin/bitcoind}
+LITECOINFINANCED_USER=${LITECOINFINANCED_USER:-${LITECOINFINANCE_USER:-litecoinfinance}}
+LITECOINFINANCED_GROUP=${LITECOINFINANCED_GROUP:-litecoinfinance}
+LITECOINFINANCED_BIN=${LITECOINFINANCED_BIN:-/usr/bin/litecoinfinanced}
 LITECOINFINANCED_NICE=${LITECOINFINANCED_NICE:-${NICELEVEL:-0}}
 LITECOINFINANCED_OPTS="${LITECOINFINANCED_OPTS:-${LITECOINFINANCE_OPTS}}"
 
 name="Litecoin Finance Core Daemon"
 description="Litecoin Finance cryptocurrency P2P network daemon"
 
-command="/usr/bin/bitcoind"
+command="/usr/bin/litecoinfinanced"
 command_args="-pid=\"${LITECOINFINANCED_PIDFILE}\" \
 		-conf=\"${LITECOINFINANCED_CONFIGFILE}\" \
 		-datadir=\"${LITECOINFINANCED_DATADIR}\" \
@@ -71,7 +71,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${LITECOINFINANCED_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run bitcoind."
+		eerror "ERROR: You must set a secure rpcpassword to run litecoinfinanced."
 		eerror "The setting must appear in ${LITECOINFINANCED_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

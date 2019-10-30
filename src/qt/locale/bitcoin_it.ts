@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l'indirizzo a cui inviare bitcoin</translation>
+        <translation>Scegli l'indirizzo a cui inviare litecoinfinance</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l'indirizzo con cui ricevere bitcoin</translation>
+        <translation>Scegli l'indirizzo con cui ricevere litecoinfinance</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i tuoi indirizzi Litecoin Finance per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare bitcoin.</translation>
+        <translation>Questi sono i tuoi indirizzi Litecoin Finance per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare litecoinfinance.</translation>
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -414,8 +414,8 @@
         <translation>Barra degli strumenti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Apri un bitcoin: URI o una richiesta di pagamento</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Apri un litecoinfinance: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -945,7 +945,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin finance network, as detailed below.</source>
-        <translation>Transazioni recenti potrebbero non essere visibili ancora, perciò il saldo del tuo portafoglio potrebbe non essere corretto. Questa informazione risulterà corretta quando il tuo portafoglio avrà terminato la sincronizzazione con la rete bitcoin, come indicato in dettaglio più sotto.</translation>
+        <translation>Transazioni recenti potrebbero non essere visibili ancora, perciò il saldo del tuo portafoglio potrebbe non essere corretto. Questa informazione risulterà corretta quando il tuo portafoglio avrà terminato la sincronizzazione con la rete litecoinfinance, come indicato in dettaglio più sotto.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1220,7 +1220,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di bitcoin.</translation>
+        <translation>Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di litecoinfinance.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1369,16 +1369,16 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Impossibile avviare bitcoin: gestore click-to-pay</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>Impossibile avviare litecoinfinance: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Gestione URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' non è un URI valido. Usa invece 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' non è un URI valido. Usa invece 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2475,7 +2475,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>Inserisci un'etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation>Messaggio incluso nel litecoin finance URI e che sarà memorizzato con la transazione per tuo riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete LitecoinFinance.</translation>
     </message>
     <message>
@@ -3214,7 +3214,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuito sotto la licenza software del MIT, si veda il file %s o %s incluso</translation>

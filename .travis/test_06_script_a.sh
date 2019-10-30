@@ -34,7 +34,7 @@ BEGIN_FOLD distdir
 DOCKER_EXEC make distdir VERSION=$HOST
 END_FOLD
 
-cd "bitcoin-$HOST" || (echo "could not enter distdir bitcoin-$HOST"; exit 1)
+cd "litecoinfinance-$HOST" || (echo "could not enter distdir litecoinfinance-$HOST"; exit 1)
 
 BEGIN_FOLD configure
 DOCKER_EXEC ./configure --cache-file=../config.cache $LITECOINFINANCE_CONFIG_ALL $LITECOINFINANCE_CONFIG || ( cat config.log && false)

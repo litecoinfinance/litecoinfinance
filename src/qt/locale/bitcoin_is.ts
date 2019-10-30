@@ -394,8 +394,8 @@
         <translation>Tólaborð flipa</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Óska eftir greiðslum (býr til QR kóða og bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Óska eftir greiðslum (býr til QR kóða og litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Sýna færslugildi sem notuð hafa verið til að taka við mynt og merkingar þeirra</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Opna bitcoin: URI eða greiðslubeiðni</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Opna litecoinfinance: URI eða greiðslubeiðni</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -947,7 +947,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Villa við lestur %s! Allir lyklar fóru inn á réttan hátt, en færslugögn eða færslugildi gætu verið röng eða horfin.</translation>

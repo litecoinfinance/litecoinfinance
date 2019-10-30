@@ -6,15 +6,15 @@
 
 #include <chainparams.h>
 #include <init.h>
-#include <qt/bitcoin.h>
-#include <qt/bitcoingui.h>
+#include <qt/litecoinfinance.h>
+#include <qt/litecoinfinancegui.h>
 #include <qt/networkstyle.h>
 #include <qt/rpcconsole.h>
 #include <shutdown.h>
 #include <validation.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 #ifdef ENABLE_WALLET
 #include <wallet/db.h>
@@ -61,7 +61,7 @@ void AppTests::appTests()
         // and fails to handle returned nulls
         // (https://bugreports.qt.io/browse/QTBUG-49686).
         QWARN("Skipping AppTests on mac build with 'minimal' platform set due to Qt bugs. To run AppTests, invoke "
-              "with 'test_bitcoin-qt -platform cocoa' on mac, or else use a linux or windows build.");
+              "with 'test_litecoinfinance-qt -platform cocoa' on mac, or else use a linux or windows build.");
         return;
     }
 #endif

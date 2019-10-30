@@ -410,7 +410,7 @@
         <translation>Трака са картицама</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>Затражи плаћање (генерише QR кодове и биткоин: URI-е)</translation>
     </message>
     <message>
@@ -422,7 +422,7 @@
         <translation>Прегледајте листу коришћених адреса и етикета за пријем уплата</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>Отворите биткоин: URI или захтев за плаћање</translation>
     </message>
     <message>
@@ -1232,7 +1232,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Информације</translation>

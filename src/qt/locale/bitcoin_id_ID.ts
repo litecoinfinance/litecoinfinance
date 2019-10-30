@@ -414,8 +414,8 @@
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Permintaan pembayaran (membuat kode QR dan litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buka URI bitcoin: atau permintaan pembayaran</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Buka URI litecoinfinance: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1332,16 +1332,16 @@
         <translation>Terjadi kesalahan pada permintaan pembayaran</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Tidak bisa memulai bitcoin: handler click-to-pay</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>Tidak bisa memulai litecoinfinance: handler click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Pengelolaan URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' bukanlah alamat URI yang valid. Silakan gunakan 'bitcoin:'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' bukanlah alamat URI yang valid. Silakan gunakan 'litecoinfinance:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2059,7 +2059,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

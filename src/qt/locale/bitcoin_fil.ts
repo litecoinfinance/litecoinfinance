@@ -390,8 +390,8 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Humiling ng bayad (lumilikha ng QR codes at bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Humiling ng bayad (lumilikha ng QR codes at litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -402,8 +402,8 @@
         <translation>Ipakita ang talaan ng mga gamit na address at label para sa pagtanggap</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buksan ang bitcoin: URI o kahilingan ng bayad</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Buksan ang litecoinfinance: URI o kahilingan ng bayad</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1349,7 +1349,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Impormasyon</translation>

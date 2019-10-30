@@ -366,12 +366,12 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja bitcoini: URId)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja litecoinfinancei: URId)</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Ava bitcoini: URI või maksepäring</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Ava litecoinfinancei: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1915,7 +1915,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>LitecoinFinancei tuumik</translation>

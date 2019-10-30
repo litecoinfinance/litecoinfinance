@@ -1,31 +1,31 @@
-# /etc/conf.d/bitcoind: config file for /etc/init.d/bitcoind
+# /etc/conf.d/litecoinfinanced: config file for /etc/init.d/litecoinfinanced
 
 # Config file location
-#LITECOINFINANCED_CONFIGFILE="/etc/bitcoin/bitcoin.conf"
+#LITECOINFINANCED_CONFIGFILE="/etc/litecoinfinance/litecoinfinance.conf"
 
 # What directory to write pidfile to?  (created and owned by $LITECOINFINANCED_USER)
-#LITECOINFINANCED_PIDDIR="/var/run/bitcoind"
+#LITECOINFINANCED_PIDDIR="/var/run/litecoinfinanced"
 
 # What filename to give the pidfile
-#LITECOINFINANCED_PIDFILE="${LITECOINFINANCED_PIDDIR}/bitcoind.pid"
+#LITECOINFINANCED_PIDFILE="${LITECOINFINANCED_PIDDIR}/litecoinfinanced.pid"
 
-# Where to write bitcoind data (be mindful that the blockchain is large)
-#LITECOINFINANCED_DATADIR="/var/lib/bitcoind"
+# Where to write litecoinfinanced data (be mindful that the blockchain is large)
+#LITECOINFINANCED_DATADIR="/var/lib/litecoinfinanced"
 
-# User and group to own bitcoind process
-#LITECOINFINANCED_USER="bitcoin"
-#LITECOINFINANCED_GROUP="bitcoin"
+# User and group to own litecoinfinanced process
+#LITECOINFINANCED_USER="litecoinfinance"
+#LITECOINFINANCED_GROUP="litecoinfinance"
 
-# Path to bitcoind executable
-#LITECOINFINANCED_BIN="/usr/bin/bitcoind"
+# Path to litecoinfinanced executable
+#LITECOINFINANCED_BIN="/usr/bin/litecoinfinanced"
 
-# Nice value to run bitcoind under
+# Nice value to run litecoinfinanced under
 #LITECOINFINANCED_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
 #LITECOINFINANCED_OPTS=""
 
-# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# The timeout in seconds OpenRC will wait for litecoinfinanced to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule

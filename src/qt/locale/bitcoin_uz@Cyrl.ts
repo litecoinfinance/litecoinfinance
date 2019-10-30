@@ -210,7 +210,7 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>Тўловлар (QR кодлари ва litecoin finance ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
@@ -222,7 +222,7 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>LitecoinFinance’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
@@ -1161,7 +1161,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

@@ -1,7 +1,7 @@
 Litecoin Finance version 0.7.0 is now available for download at:
-  http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.7.0/
+  http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfinance-0.7.0/
 
-We recommend that everybody running prior versions of bitcoind/LitecoinFinance-Qt
+We recommend that everybody running prior versions of litecoinfinanced/LitecoinFinance-Qt
 upgrade to this release, except for users running Mac OSX 10.5.
 
 Please report bugs using the issue tracker at github:
@@ -14,11 +14,11 @@ source-only tarballs/zipballs directly from there:
 
 Ubuntu Linux users can use the "Personal Package Archive" (PPA)
 maintained by Matt Corallo to automatically keep 
-bitcoin up-to-date.  Just type
-  sudo apt-add-repository ppa:bitcoin/bitcoin
+litecoinfinance up-to-date.  Just type
+  sudo apt-add-repository ppa:litecoinfinance/litecoinfinance
   sudo apt-get update
-in your terminal, then install the bitcoin-qt package:
-  sudo apt-get install bitcoin-qt
+in your terminal, then install the litecoinfinance-qt package:
+  sudo apt-get install litecoinfinance-qt
 
 
 How to Upgrade
@@ -30,7 +30,7 @@ Code:
 /Applications/LitecoinFinance-Qt
 (on Mac) or
 Code:
-bitcoind/bitcoin-qt
+litecoinfinanced/litecoinfinance-qt
 (on Linux).
 
 If you were running on Linux with a version that might have been compiled
@@ -119,8 +119,8 @@ Qt GUI
 * Much better translations
 * Override progress bar design on platforms with segmented progress bars to assist with readability
 * Added 'immature balance' display on the overview page
-* (Windows only): enable ASLR and DEP for bitcoin-qt.exe
-* (Windows only): add meta-data to bitcoin-qt.exe (e.g. description)
+* (Windows only): enable ASLR and DEP for litecoinfinance-qt.exe
+* (Windows only): add meta-data to litecoinfinance-qt.exe (e.g. description)
 
 Internal codebase
 
@@ -131,7 +131,7 @@ Internal codebase
 Miscellaneous
 
 * Reopen debug.log upon SIGHUP
-* Bash programmable completion for bitcoind(1)
+* Bash programmable completion for litecoinfinanced(1)
 * On supported OS's, each thread is given a useful name
 
 

@@ -391,7 +391,7 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ LitecoinFinance: URLs)</translation>
     </message>
     <message>
@@ -403,8 +403,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Mở bitcoin:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Mở litecoinfinance:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1180,7 +1180,7 @@ Ví của bạn chưa được mã hóa.</translation>
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance Core</translation>

@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <qt/bitcoinamountfield.h>
+#include <qt/litecoinfinanceamountfield.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/litecoinfinanceunits.h>
 #include <qt/guiconstants.h>
 #include <qt/qvaluecombobox.h>
 
@@ -212,7 +212,7 @@ Q_SIGNALS:
     void valueChanged();
 };
 
-#include <qt/bitcoinamountfield.moc>
+#include <qt/litecoinfinanceamountfield.moc>
 
 LitecoinFinanceAmountField::LitecoinFinanceAmountField(QWidget *parent) :
     QWidget(parent),

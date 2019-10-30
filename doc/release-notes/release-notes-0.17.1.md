@@ -1,10 +1,10 @@
 Litecoin Finance Core version 0.17.1 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.17.1/>
+  <https://bitcoincore.org/bin/litecoinfinance-core-0.17.1/>
 
 or through BitTorrent:
 
-    magnet:?xt=urn:btih:c56c87ccfaa8e6fbccc90d549121e61efd97cb6f&dn=bitcoin-core-0.17.1&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fexplodie.org%3A6969    
+    magnet:?xt=urn:btih:c56c87ccfaa8e6fbccc90d549121e61efd97cb6f&dn=litecoinfinance-core-0.17.1&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fexplodie.org%3A6969    
 
 This is a new minor version release, with various bugfixes
 and performance improvements, as well as updated translations.
@@ -23,7 +23,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/LitecoinFinance-Qt` (on Mac)
-or `bitcoind`/`bitcoin-qt` (on Linux).
+or `litecoinfinanced`/`litecoinfinance-qt` (on Linux).
 
 If your node has a txindex, the txindex db will be migrated the first time you run 0.17.0 or newer, which may take up to a few hours. Your node will not be functional until this migration completes.
 
@@ -112,7 +112,7 @@ confusion.
 
 ### Build system
 - #14647 `7edebed` Remove illegal spacing in darwin.mk (ch4ot1c)
-- #14698 `ec71f06` Add bitcoin-tx.exe into Windows installer (ken2812221)
+- #14698 `ec71f06` Add litecoinfinance-tx.exe into Windows installer (ken2812221)
 
 ### Tests and QA
 - #13965 `29899ec` Fix extended functional tests fail (ken2812221)
@@ -165,4 +165,4 @@ Thanks to everyone who directly contributed to this release:
 - Walter
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

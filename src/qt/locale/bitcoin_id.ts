@@ -414,8 +414,8 @@
         <translation>Toolbar Tabs</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Meminta pembayaran (generate kode QR dan bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Meminta pembayaran (generate kode QR dan litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Perlihatkan daftar address penerima dan labelnya</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buka bitcoin: URI atau permintaan pembayaran</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Buka litecoinfinance: URI atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1081,7 +1081,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Informasi</translation>

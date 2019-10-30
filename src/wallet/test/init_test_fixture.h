@@ -6,7 +6,7 @@
 #define LITECOINFINANCE_WALLET_TEST_INIT_TEST_FIXTURE_H
 
 #include <interfaces/chain.h>
-#include <test/test_bitcoin.h>
+#include <test/test_litecoinfinance.h>
 
 
 struct InitWalletDirTestingSetup: public BasicTestingSetup {

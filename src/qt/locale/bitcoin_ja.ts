@@ -414,8 +414,8 @@
         <translation>タブツールバー</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>支払いをリクエストする (QRコードと bitcoin: URIを生成する)&lt;</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>支払いをリクエストする (QRコードと litecoinfinance: URIを生成する)&lt;</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>受け取ったことがあるアドレスとラベルの一覧を表示する</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>bitcoin: URIや支払いリクエストを開く</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>litecoinfinance: URIや支払いリクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1364,7 +1364,7 @@
         <translation>支払いリクエスト エラー</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation>Litecoin Finance を起動できません: click-to-pay handler</translation>
     </message>
     <message>
@@ -1372,8 +1372,8 @@
         <translation>URIの処理</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' は正しいURIではありません｡ 'bitcoin:'を使用してください｡</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' は正しいURIではありません｡ 'litecoinfinance:'を使用してください｡</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2470,8 +2470,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>このアドレスに対するラベルを入力することで、送金したことがあるアドレスの一覧に追加することができます</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>bitcoin: URIに添付されていたメッセージです。これは参照用として取引とともに保存されます。注意: メッセージは Litecoin Finance ネットワーク上へ送信されません。</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>litecoinfinance: URIに添付されていたメッセージです。これは参照用として取引とともに保存されます。注意: メッセージは Litecoin Finance ネットワーク上へ送信されません。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3217,7 +3217,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>MIT ソフトウェアライセンスのもとで配布されています。付属の %s ファイルか、 %s を参照してください</translation>

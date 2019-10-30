@@ -3,11 +3,11 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
-#include <qt/bitcoin.h>
-#include <qt/bitcoingui.h>
+#include <qt/litecoinfinance.h>
+#include <qt/litecoinfinancegui.h>
 
 #include <chainparams.h>
 #include <qt/clientmodel.h>
@@ -113,11 +113,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in bitcoin.qrc)
+    // Load e.g. litecoinfinance_de.qm (shortcut "de" needs to be defined in litecoinfinance.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in bitcoin.qrc)
+    // Load e.g. litecoinfinance_de_DE.qm (shortcut "de_DE" needs to be defined in litecoinfinance.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -365,7 +365,7 @@ void LitecoinFinanceApplication::initializeResult(bool success)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // bitcoin: URIs or payment requests:
+        // litecoinfinance: URIs or payment requests:
         if (paymentServer) {
             connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &LitecoinFinanceGUI::handlePaymentRequest);
             connect(window, &LitecoinFinanceGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
@@ -434,8 +434,8 @@ int GuiMain(int argc, char* argv[])
     // Do not refer to data directory yet, this can be overridden by Intro::pickDataDirectory
 
     /// 1. Basic Qt initialization (not dependent on parameters or configuration)
-    Q_INIT_RESOURCE(bitcoin);
-    Q_INIT_RESOURCE(bitcoin_locale);
+    Q_INIT_RESOURCE(litecoinfinance);
+    Q_INIT_RESOURCE(litecoinfinance_locale);
 
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
@@ -497,7 +497,7 @@ int GuiMain(int argc, char* argv[])
     if (!Intro::pickDataDirectory(*node))
         return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data and blocks directory and parse bitcoin.conf
+    /// 6. Determine availability of data and blocks directory and parse litecoinfinance.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false)))
     {
@@ -547,7 +547,7 @@ int GuiMain(int argc, char* argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // bitcoin: links repeatedly have their payment requests routed to this process:
+    // litecoinfinance: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

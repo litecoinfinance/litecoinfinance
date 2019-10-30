@@ -673,7 +673,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Loading wallet...</source>
         <translation>Načítání peněženky...</translation>

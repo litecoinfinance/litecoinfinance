@@ -1,6 +1,6 @@
 <!-- This issue tracker is only for technical issues related to Litecoin Finance Core.
 
-General litecoin finance questions and/or support requests are best directed to the Litecoin Finance StackExchange at https://bitcoin.stackexchange.com.
+General litecoin finance questions and/or support requests are best directed to the Litecoin Finance StackExchange at https://litecoinfinance.stackexchange.com.
 
 For reporting security issues, please read instructions at https://bitcoincore.org/en/contact/.
 

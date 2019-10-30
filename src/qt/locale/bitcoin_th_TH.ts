@@ -238,8 +238,8 @@
         <translation>แถบเครื่องมือ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ litecoinfinance: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -250,8 +250,8 @@
         <translation>แสดงรายการ ที่เก็บเงินที่จะรับ litecoin finance เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>เปิด bitcoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>เปิด litecoinfinance: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -843,7 +843,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>ข้อมูล</translation>

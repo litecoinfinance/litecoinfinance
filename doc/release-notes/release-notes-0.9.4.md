@@ -15,7 +15,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/LitecoinFinance-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+litecoinfinanced/litecoinfinance-qt (on Linux).
 
 OpenSSL Warning
 ================
@@ -30,7 +30,7 @@ as are any built with the gitian deterministic build system.
 
 However, if you are running either
 
-- The Ubuntu PPA from https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
+- The Ubuntu PPA from https://launchpad.net/~litecoinfinance/+archive/ubuntu/litecoinfinance
 - A third-party or self-compiled Litecoin Finance Core
 
 upgrade to Litecoin Finance Core 0.9.4, which includes a workaround, **before** updating
@@ -92,4 +92,4 @@ Thanks to who contributed to this release, at least:
 - Sergio Demian Lerner
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

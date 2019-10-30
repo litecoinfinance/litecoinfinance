@@ -47,7 +47,7 @@ operation.
 
 By default, the ZeroMQ feature is automatically compiled in if the
 necessary prerequisites are found.  To disable, use --disable-zmq
-during the *configure* step of building bitcoind:
+during the *configure* step of building litecoinfinanced:
 
     $ ./configure --disable-zmq (other options)
 
@@ -78,8 +78,8 @@ The high water mark value must be an integer greater than or equal to 0.
 
 For instance:
 
-    $ bitcoind -zmqpubhashtx=tcp://127.0.0.1:28332 \
-               -zmqpubrawtx=ipc:///tmp/bitcoind.tx.raw \
+    $ litecoinfinanced -zmqpubhashtx=tcp://127.0.0.1:28332 \
+               -zmqpubrawtx=ipc:///tmp/litecoinfinanced.tx.raw \
                -zmqpubhashtxhwm=10000
 
 Each PUB notification has a topic and body, where the header
@@ -88,7 +88,7 @@ notification `-zmqpubhashtx` the topic is `hashtx` (no null
 terminator) and the body is the transaction hash (32
 bytes).
 
-These options can also be provided in bitcoin.conf.
+These options can also be provided in litecoinfinance.conf.
 
 ZeroMQ endpoint specifiers for TCP (and others) are documented in the
 [ZeroMQ API](http://api.zeromq.org/4-0:_start).
@@ -100,9 +100,9 @@ arriving. Please see `contrib/zmq/zmq_sub.py` for a working example.
 
 ## Remarks
 
-From the perspective of bitcoind, the ZeroMQ socket is write-only; PUB
+From the perspective of litecoinfinanced, the ZeroMQ socket is write-only; PUB
 sockets don't even have a read function. Thus, there is no state
-introduced into bitcoind directly. Furthermore, no information is
+introduced into litecoinfinanced directly. Furthermore, no information is
 broadcast that wasn't already received from the public P2P network.
 
 No authentication or authorization is done on connecting clients; it

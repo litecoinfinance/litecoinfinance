@@ -3,13 +3,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <qt/optionsdialog.h>
 #include <qt/forms/ui_optionsdialog.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/litecoinfinanceunits.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
@@ -73,8 +73,8 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
 #if  defined(MAC_OS_X_VERSION_MIN_REQUIRED) && MAC_OS_X_VERSION_MIN_REQUIRED > 101100
     /* hide launch at startup option if compiled against macOS > 10.11 (removed API) */
-    ui->bitcoinAtStartup->setVisible(false);
-    ui->verticalLayout_Main->removeWidget(ui->bitcoinAtStartup);
+    ui->litecoinfinanceAtStartup->setVisible(false);
+    ui->verticalLayout_Main->removeWidget(ui->litecoinfinanceAtStartup);
     ui->verticalLayout_Main->removeItem(ui->horizontalSpacer_0_Main);
 #endif
 #endif
@@ -87,8 +87,8 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     /* Display elements init */
     QDir translations(":translations");
 
-    ui->bitcoinAtStartup->setToolTip(ui->bitcoinAtStartup->toolTip().arg(tr(PACKAGE_NAME)));
-    ui->bitcoinAtStartup->setText(ui->bitcoinAtStartup->text().arg(tr(PACKAGE_NAME)));
+    ui->litecoinfinanceAtStartup->setToolTip(ui->litecoinfinanceAtStartup->toolTip().arg(tr(PACKAGE_NAME)));
+    ui->litecoinfinanceAtStartup->setText(ui->litecoinfinanceAtStartup->text().arg(tr(PACKAGE_NAME)));
 
     ui->openLitecoinFinanceConfButton->setToolTip(ui->openLitecoinFinanceConfButton->toolTip().arg(tr(PACKAGE_NAME)));
 
@@ -202,7 +202,7 @@ void OptionsDialog::setCurrentTab(OptionsDialog::Tab tab)
 void OptionsDialog::setMapper()
 {
     /* Main */
-    mapper->addMapping(ui->bitcoinAtStartup, OptionsModel::StartAtStartup);
+    mapper->addMapping(ui->litecoinfinanceAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
     mapper->addMapping(ui->prune, OptionsModel::Prune);

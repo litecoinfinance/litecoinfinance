@@ -15,12 +15,12 @@ The following are some helpful notes on how to run Litecoin Finance Core on your
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- `bin/litecoinfinance-qt` (GUI) or
+- `bin/litecoinfinanced` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run bitcoin-qt.exe.
+Unpack the files into a directory, and then run litecoinfinance-qt.exe.
 
 ### macOS
 
@@ -28,10 +28,10 @@ Drag Litecoin Finance Core to your applications folder, and then run Litecoin Fi
 
 ### Need Help?
 
-* See the documentation at the [Litecoin Finance Wiki](https://en.bitcoin.it/wiki/Main_Page)
+* See the documentation at the [Litecoin Finance Wiki](https://en.litecoinfinance.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [#bitcoin](http://webchat.freenode.net?channels=bitcoin) on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net?channels=bitcoin).
-* Ask for help on the [LitecoinFinanceTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
+* Ask for help on [#litecoinfinance](http://webchat.freenode.net?channels=litecoinfinance) on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net?channels=litecoinfinance).
+* Ask for help on the [LitecoinFinanceTalk](https://litecoinfinancetalk.org/) forums, in the [Technical Support board](https://litecoinfinancetalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -54,7 +54,7 @@ The Litecoin Finance repo's [root README](/README.md) contains relevant informat
 - [Productivity Notes](productivity.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/litecoinfinance/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -66,13 +66,13 @@ The Litecoin Finance repo's [root README](/README.md) contains relevant informat
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [LitecoinFinanceTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
-* Discuss project-specific development on #bitcoin-core-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=bitcoin-core-dev).
-* Discuss general Litecoin Finance development on #bitcoin-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=bitcoin-dev).
+* Discuss on the [LitecoinFinanceTalk](https://litecoinfinancetalk.org/) forums, in the [Development & Technical Discussion board](https://litecoinfinancetalk.org/index.php?board=6.0).
+* Discuss project-specific development on #litecoinfinance-core-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=litecoinfinance-core-dev).
+* Discuss general Litecoin Finance development on #litecoinfinance-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=litecoinfinance-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
-- [bitcoin.conf Configuration File](bitcoin-conf.md)
+- [litecoinfinance.conf Configuration File](litecoinfinance-conf.md)
 - [Files](files.md)
 - [Fuzz-testing](fuzzing.md)
 - [Reduce Traffic](reduce-traffic.md)

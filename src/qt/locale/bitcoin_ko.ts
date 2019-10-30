@@ -449,7 +449,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Transaction amounts must not be negative</source>
         <translation>송금액은 마이너스가 될 수 없습니다</translation>

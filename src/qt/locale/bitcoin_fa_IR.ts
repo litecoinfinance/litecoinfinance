@@ -406,7 +406,7 @@
         <translation>نوار ابزار</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>درخواست پرداخت (ساخت کد QR و بیت‌کوین: URIs)</translation>
     </message>
     <message>
@@ -418,7 +418,7 @@
         <translation>نمایش لیست آدرس‌ها و لیبل‌های دریافتی استفاده شده</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>بازکردن بیت‌کوین: آدرس یا درخواست پرداخت</translation>
     </message>
     <message>
@@ -2303,7 +2303,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>هسته بیت کوین</translation>

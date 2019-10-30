@@ -414,7 +414,7 @@
         <translation>分頁工具列</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation>要求付款(產生 QR Code 和 litecoin finance 付款協議的資源識別碼: URI)</translation>
     </message>
     <message>
@@ -426,7 +426,7 @@
         <translation>顯示已使用過的收款位址和標記的清單</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>開啓 litecoin finance 協議的資源識別碼(URI)或付款要求</translation>
     </message>
     <message>
@@ -1344,7 +1344,7 @@
         <translation>要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation>沒辦法啟動 litecoin finance 協議的「按就付」處理器</translation>
     </message>
     <message>
@@ -1352,8 +1352,8 @@
         <translation>URI 處理</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>字首為 bitcoin:// 不是有效的 URI，請改用 bitcoin: 開頭。</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>字首為 litecoinfinance:// 不是有效的 URI，請改用 litecoinfinance: 開頭。</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2395,7 +2395,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoin finances than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 bitcoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
+        <translation>手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 litecoinfinance。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2422,7 +2422,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>請輸入這個位址的標記，來把它加進去已使用過位址的清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation>附加在 Litecoin Finance 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Litecoin Finance 網路上。</translation>
     </message>
     <message>
@@ -3169,7 +3169,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>依據 MIT 軟體授權條款散布，詳情請見附帶的 %s 檔案或是 %s</translation>

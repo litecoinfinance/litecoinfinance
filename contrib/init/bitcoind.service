@@ -1,11 +1,11 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit bitcoind.service
+# $ systemctl edit litecoinfinanced.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/bitcoin/bitcoin.conf, except for those explicitly specified as arguments
+# /etc/litecoinfinance/litecoinfinance.conf, except for those explicitly specified as arguments
 # in ExecStart=
 
 [Unit]
@@ -13,35 +13,35 @@ Description=Litecoin Finance daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/bitcoind -daemon \
-                            -pid=/run/bitcoind/bitcoind.pid \
-                            -conf=/etc/bitcoin/bitcoin.conf \
-                            -datadir=/var/lib/bitcoind
+ExecStart=/usr/bin/litecoinfinanced -daemon \
+                            -pid=/run/litecoinfinanced/litecoinfinanced.pid \
+                            -conf=/etc/litecoinfinance/litecoinfinance.conf \
+                            -datadir=/var/lib/litecoinfinanced
 
 # Process management
 ####################
 
 Type=forking
-PIDFile=/run/bitcoind/bitcoind.pid
+PIDFile=/run/litecoinfinanced/litecoinfinanced.pid
 Restart=on-failure
 
 # Directory creation and permissions
 ####################################
 
-# Run as bitcoin:bitcoin
-User=bitcoin
-Group=bitcoin
+# Run as litecoinfinance:litecoinfinance
+User=litecoinfinance
+Group=litecoinfinance
 
-# /run/bitcoind
-RuntimeDirectory=bitcoind
+# /run/litecoinfinanced
+RuntimeDirectory=litecoinfinanced
 RuntimeDirectoryMode=0710
 
-# /etc/bitcoin
-ConfigurationDirectory=bitcoin
+# /etc/litecoinfinance
+ConfigurationDirectory=litecoinfinance
 ConfigurationDirectoryMode=0710
 
-# /var/lib/bitcoind
-StateDirectory=bitcoind
+# /var/lib/litecoinfinanced
+StateDirectory=litecoinfinanced
 StateDirectoryMode=0710
 
 # Hardening measures

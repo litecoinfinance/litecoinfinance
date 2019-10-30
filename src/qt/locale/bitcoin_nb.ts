@@ -406,8 +406,8 @@
         <translation>Verktøylinje for faner</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Forespør betalinger (genererer QR-koder og bitcoin: URIer)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Forespør betalinger (genererer QR-koder og litecoinfinance: URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -418,7 +418,7 @@
         <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>Åpne en LitecoinFinance: URI eller betalingsetterspørring</translation>
     </message>
     <message>
@@ -929,7 +929,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin finance network, as detailed below.</source>
-        <translation>Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot bitcoin-nettverket er fullført, som anvist nedenfor.</translation>
+        <translation>Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot litecoinfinance-nettverket er fullført, som anvist nedenfor.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1332,8 +1332,8 @@
         <translation>Feil ved betalingsforespørsel</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Kan ikke starte bitcoin: Klikk-og-betal håndterer</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>Kan ikke starte litecoinfinance: Klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1349,7 +1349,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin Finance address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig bitcoin-adresse eller feilformede URI-parametre.</translation>
+        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig litecoinfinance-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2284,7 +2284,7 @@
     </message>
     <message>
         <source>Warning: Invalid Litecoin Finance address</source>
-        <translation>Advarsel Ugyldig bitcoin-adresse</translation>
+        <translation>Advarsel Ugyldig litecoinfinance-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2374,8 +2374,8 @@
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over LitecoinFinance-nettverket.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>En melding som var tilknyttet litecoinfinanceen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over LitecoinFinance-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3113,7 +3113,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Lisensiert MIT. Se tilhørende fil %s eller %s</translation>

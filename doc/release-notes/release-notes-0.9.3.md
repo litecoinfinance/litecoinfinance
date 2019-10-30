@@ -18,7 +18,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/LitecoinFinance-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+litecoinfinanced/litecoinfinance-qt (on Linux).
 
 If you are upgrading from version 0.7.2 or earlier, the first time you run
 0.9.3 your blockchain files will be re-indexed, which will take anywhere from 
@@ -98,4 +98,4 @@ Thanks to everyone who contributed to this release:
 - Wladimir J. van der Laan
 - Zak Wilcox
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

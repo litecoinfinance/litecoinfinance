@@ -2,130 +2,130 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/bitcoin-qt
-EXTRA_LIBRARIES += qt/libbitcoinqt.a
+bin_PROGRAMS += qt/litecoinfinance-qt
+EXTRA_LIBRARIES += qt/liblitecoinfinanceqt.a
 
-# bitcoin qt core #
+# litecoinfinance qt core #
 QT_TS = \
-  qt/locale/bitcoin_af.ts \
-  qt/locale/bitcoin_af_ZA.ts \
-  qt/locale/bitcoin_am.ts \
-  qt/locale/bitcoin_ar.ts \
-  qt/locale/bitcoin_be_BY.ts \
-  qt/locale/bitcoin_bg.ts \
-  qt/locale/bitcoin_bg_BG.ts \
-  qt/locale/bitcoin_bn.ts \
-  qt/locale/bitcoin_bs.ts \
-  qt/locale/bitcoin_ca.ts \
-  qt/locale/bitcoin_ca@valencia.ts \
-  qt/locale/bitcoin_ca_ES.ts \
-  qt/locale/bitcoin_cs.ts \
-  qt/locale/bitcoin_cs_CZ.ts \
-  qt/locale/bitcoin_cy.ts \
-  qt/locale/bitcoin_da.ts \
-  qt/locale/bitcoin_de.ts \
-  qt/locale/bitcoin_de_DE.ts \
-  qt/locale/bitcoin_el.ts \
-  qt/locale/bitcoin_el_GR.ts \
-  qt/locale/bitcoin_en.ts \
-  qt/locale/bitcoin_en_AU.ts \
-  qt/locale/bitcoin_en_GB.ts \
-  qt/locale/bitcoin_eo.ts \
-  qt/locale/bitcoin_es.ts \
-  qt/locale/bitcoin_es_419.ts \
-  qt/locale/bitcoin_es_AR.ts \
-  qt/locale/bitcoin_es_CL.ts \
-  qt/locale/bitcoin_es_CO.ts \
-  qt/locale/bitcoin_es_DO.ts \
-  qt/locale/bitcoin_es_ES.ts \
-  qt/locale/bitcoin_es_MX.ts \
-  qt/locale/bitcoin_es_UY.ts \
-  qt/locale/bitcoin_es_VE.ts \
-  qt/locale/bitcoin_et.ts \
-  qt/locale/bitcoin_et_EE.ts \
-  qt/locale/bitcoin_eu_ES.ts \
-  qt/locale/bitcoin_fa.ts \
-  qt/locale/bitcoin_fa_IR.ts \
-  qt/locale/bitcoin_fi.ts \
-  qt/locale/bitcoin_fil.ts \
-  qt/locale/bitcoin_fr.ts \
-  qt/locale/bitcoin_fr_CA.ts \
-  qt/locale/bitcoin_fr_FR.ts \
-  qt/locale/bitcoin_gl.ts \
-  qt/locale/bitcoin_he.ts \
-  qt/locale/bitcoin_he_IL.ts \
-  qt/locale/bitcoin_hi.ts \
-  qt/locale/bitcoin_hi_IN.ts \
-  qt/locale/bitcoin_hr.ts \
-  qt/locale/bitcoin_hu.ts \
-  qt/locale/bitcoin_hu_HU.ts \
-  qt/locale/bitcoin_id.ts \
-  qt/locale/bitcoin_id_ID.ts \
-  qt/locale/bitcoin_is.ts \
-  qt/locale/bitcoin_it.ts \
-  qt/locale/bitcoin_it_IT.ts \
-  qt/locale/bitcoin_ja.ts \
-  qt/locale/bitcoin_ka.ts \
-  qt/locale/bitcoin_kk_KZ.ts \
-  qt/locale/bitcoin_km_KH.ts \
-  qt/locale/bitcoin_ko.ts \
-  qt/locale/bitcoin_ko_KR.ts \
-  qt/locale/bitcoin_ku_IQ.ts \
-  qt/locale/bitcoin_ky.ts \
-  qt/locale/bitcoin_la.ts \
-  qt/locale/bitcoin_lt.ts \
-  qt/locale/bitcoin_lv_LV.ts \
-  qt/locale/bitcoin_mk_MK.ts \
-  qt/locale/bitcoin_ml.ts \
-  qt/locale/bitcoin_mn.ts \
-  qt/locale/bitcoin_mr_IN.ts \
-  qt/locale/bitcoin_ms.ts \
-  qt/locale/bitcoin_ms_MY.ts \
-  qt/locale/bitcoin_my.ts \
-  qt/locale/bitcoin_nb.ts \
-  qt/locale/bitcoin_nb_NO.ts \
-  qt/locale/bitcoin_ne.ts \
-  qt/locale/bitcoin_nl.ts \
-  qt/locale/bitcoin_nl_BE.ts \
-  qt/locale/bitcoin_nl_NL.ts \
-  qt/locale/bitcoin_pam.ts \
-  qt/locale/bitcoin_pl.ts \
-  qt/locale/bitcoin_pl_PL.ts \
-  qt/locale/bitcoin_pt.ts \
-  qt/locale/bitcoin_pt_BR.ts \
-  qt/locale/bitcoin_pt_PT.ts \
-  qt/locale/bitcoin_ro.ts \
-  qt/locale/bitcoin_ro_RO.ts \
-  qt/locale/bitcoin_ru.ts \
-  qt/locale/bitcoin_ru_RU.ts \
-  qt/locale/bitcoin_si.ts \
-  qt/locale/bitcoin_sk.ts \
-  qt/locale/bitcoin_sk_SK.ts \
-  qt/locale/bitcoin_sl_SI.ts \
-  qt/locale/bitcoin_sn.ts \
-  qt/locale/bitcoin_sq.ts \
-  qt/locale/bitcoin_sr.ts \
-  qt/locale/bitcoin_sr@latin.ts \
-  qt/locale/bitcoin_sv.ts \
-  qt/locale/bitcoin_szl.ts \
-  qt/locale/bitcoin_ta.ts \
-  qt/locale/bitcoin_ta_IN.ts \
-  qt/locale/bitcoin_te.ts \
-  qt/locale/bitcoin_th.ts \
-  qt/locale/bitcoin_th_TH.ts \
-  qt/locale/bitcoin_tr.ts \
-  qt/locale/bitcoin_tr_TR.ts \
-  qt/locale/bitcoin_uk.ts \
-  qt/locale/bitcoin_uk_UA.ts \
-  qt/locale/bitcoin_ur_PK.ts \
-  qt/locale/bitcoin_uz@Cyrl.ts \
-  qt/locale/bitcoin_vi.ts \
-  qt/locale/bitcoin_vi_VN.ts \
-  qt/locale/bitcoin_zh-Hans.ts \
-  qt/locale/bitcoin_zh.ts \
-  qt/locale/bitcoin_zh_CN.ts \
-  qt/locale/bitcoin_zh_HK.ts \
-  qt/locale/bitcoin_zh_TW.ts
+  qt/locale/litecoinfinance_af.ts \
+  qt/locale/litecoinfinance_af_ZA.ts \
+  qt/locale/litecoinfinance_am.ts \
+  qt/locale/litecoinfinance_ar.ts \
+  qt/locale/litecoinfinance_be_BY.ts \
+  qt/locale/litecoinfinance_bg.ts \
+  qt/locale/litecoinfinance_bg_BG.ts \
+  qt/locale/litecoinfinance_bn.ts \
+  qt/locale/litecoinfinance_bs.ts \
+  qt/locale/litecoinfinance_ca.ts \
+  qt/locale/litecoinfinance_ca@valencia.ts \
+  qt/locale/litecoinfinance_ca_ES.ts \
+  qt/locale/litecoinfinance_cs.ts \
+  qt/locale/litecoinfinance_cs_CZ.ts \
+  qt/locale/litecoinfinance_cy.ts \
+  qt/locale/litecoinfinance_da.ts \
+  qt/locale/litecoinfinance_de.ts \
+  qt/locale/litecoinfinance_de_DE.ts \
+  qt/locale/litecoinfinance_el.ts \
+  qt/locale/litecoinfinance_el_GR.ts \
+  qt/locale/litecoinfinance_en.ts \
+  qt/locale/litecoinfinance_en_AU.ts \
+  qt/locale/litecoinfinance_en_GB.ts \
+  qt/locale/litecoinfinance_eo.ts \
+  qt/locale/litecoinfinance_es.ts \
+  qt/locale/litecoinfinance_es_419.ts \
+  qt/locale/litecoinfinance_es_AR.ts \
+  qt/locale/litecoinfinance_es_CL.ts \
+  qt/locale/litecoinfinance_es_CO.ts \
+  qt/locale/litecoinfinance_es_DO.ts \
+  qt/locale/litecoinfinance_es_ES.ts \
+  qt/locale/litecoinfinance_es_MX.ts \
+  qt/locale/litecoinfinance_es_UY.ts \
+  qt/locale/litecoinfinance_es_VE.ts \
+  qt/locale/litecoinfinance_et.ts \
+  qt/locale/litecoinfinance_et_EE.ts \
+  qt/locale/litecoinfinance_eu_ES.ts \
+  qt/locale/litecoinfinance_fa.ts \
+  qt/locale/litecoinfinance_fa_IR.ts \
+  qt/locale/litecoinfinance_fi.ts \
+  qt/locale/litecoinfinance_fil.ts \
+  qt/locale/litecoinfinance_fr.ts \
+  qt/locale/litecoinfinance_fr_CA.ts \
+  qt/locale/litecoinfinance_fr_FR.ts \
+  qt/locale/litecoinfinance_gl.ts \
+  qt/locale/litecoinfinance_he.ts \
+  qt/locale/litecoinfinance_he_IL.ts \
+  qt/locale/litecoinfinance_hi.ts \
+  qt/locale/litecoinfinance_hi_IN.ts \
+  qt/locale/litecoinfinance_hr.ts \
+  qt/locale/litecoinfinance_hu.ts \
+  qt/locale/litecoinfinance_hu_HU.ts \
+  qt/locale/litecoinfinance_id.ts \
+  qt/locale/litecoinfinance_id_ID.ts \
+  qt/locale/litecoinfinance_is.ts \
+  qt/locale/litecoinfinance_it.ts \
+  qt/locale/litecoinfinance_it_IT.ts \
+  qt/locale/litecoinfinance_ja.ts \
+  qt/locale/litecoinfinance_ka.ts \
+  qt/locale/litecoinfinance_kk_KZ.ts \
+  qt/locale/litecoinfinance_km_KH.ts \
+  qt/locale/litecoinfinance_ko.ts \
+  qt/locale/litecoinfinance_ko_KR.ts \
+  qt/locale/litecoinfinance_ku_IQ.ts \
+  qt/locale/litecoinfinance_ky.ts \
+  qt/locale/litecoinfinance_la.ts \
+  qt/locale/litecoinfinance_lt.ts \
+  qt/locale/litecoinfinance_lv_LV.ts \
+  qt/locale/litecoinfinance_mk_MK.ts \
+  qt/locale/litecoinfinance_ml.ts \
+  qt/locale/litecoinfinance_mn.ts \
+  qt/locale/litecoinfinance_mr_IN.ts \
+  qt/locale/litecoinfinance_ms.ts \
+  qt/locale/litecoinfinance_ms_MY.ts \
+  qt/locale/litecoinfinance_my.ts \
+  qt/locale/litecoinfinance_nb.ts \
+  qt/locale/litecoinfinance_nb_NO.ts \
+  qt/locale/litecoinfinance_ne.ts \
+  qt/locale/litecoinfinance_nl.ts \
+  qt/locale/litecoinfinance_nl_BE.ts \
+  qt/locale/litecoinfinance_nl_NL.ts \
+  qt/locale/litecoinfinance_pam.ts \
+  qt/locale/litecoinfinance_pl.ts \
+  qt/locale/litecoinfinance_pl_PL.ts \
+  qt/locale/litecoinfinance_pt.ts \
+  qt/locale/litecoinfinance_pt_BR.ts \
+  qt/locale/litecoinfinance_pt_PT.ts \
+  qt/locale/litecoinfinance_ro.ts \
+  qt/locale/litecoinfinance_ro_RO.ts \
+  qt/locale/litecoinfinance_ru.ts \
+  qt/locale/litecoinfinance_ru_RU.ts \
+  qt/locale/litecoinfinance_si.ts \
+  qt/locale/litecoinfinance_sk.ts \
+  qt/locale/litecoinfinance_sk_SK.ts \
+  qt/locale/litecoinfinance_sl_SI.ts \
+  qt/locale/litecoinfinance_sn.ts \
+  qt/locale/litecoinfinance_sq.ts \
+  qt/locale/litecoinfinance_sr.ts \
+  qt/locale/litecoinfinance_sr@latin.ts \
+  qt/locale/litecoinfinance_sv.ts \
+  qt/locale/litecoinfinance_szl.ts \
+  qt/locale/litecoinfinance_ta.ts \
+  qt/locale/litecoinfinance_ta_IN.ts \
+  qt/locale/litecoinfinance_te.ts \
+  qt/locale/litecoinfinance_th.ts \
+  qt/locale/litecoinfinance_th_TH.ts \
+  qt/locale/litecoinfinance_tr.ts \
+  qt/locale/litecoinfinance_tr_TR.ts \
+  qt/locale/litecoinfinance_uk.ts \
+  qt/locale/litecoinfinance_uk_UA.ts \
+  qt/locale/litecoinfinance_ur_PK.ts \
+  qt/locale/litecoinfinance_uz@Cyrl.ts \
+  qt/locale/litecoinfinance_vi.ts \
+  qt/locale/litecoinfinance_vi_VN.ts \
+  qt/locale/litecoinfinance_zh-Hans.ts \
+  qt/locale/litecoinfinance_zh.ts \
+  qt/locale/litecoinfinance_zh_CN.ts \
+  qt/locale/litecoinfinance_zh_HK.ts \
+  qt/locale/litecoinfinance_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -151,11 +151,11 @@ QT_MOC_CPP = \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoin.cpp \
-  qt/moc_bitcoingui.cpp \
-  qt/moc_bitcoinunits.cpp \
+  qt/moc_litecoinfinanceaddressvalidator.cpp \
+  qt/moc_litecoinfinanceamountfield.cpp \
+  qt/moc_litecoinfinance.cpp \
+  qt/moc_litecoinfinancegui.cpp \
+  qt/moc_litecoinfinanceunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -201,15 +201,15 @@ LITECOINFINANCE_MM = \
   qt/macos_appnap.mm
 
 QT_MOC = \
-  qt/bitcoinamountfield.moc \
+  qt/litecoinfinanceamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_bitcoin.cpp
-QT_QRC = qt/bitcoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
-QT_QRC_LOCALE = qt/bitcoin_locale.qrc
+QT_QRC_CPP = qt/qrc_litecoinfinance.cpp
+QT_QRC = qt/litecoinfinance.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_litecoinfinance_locale.cpp
+QT_QRC_LOCALE = qt/litecoinfinance_locale.qrc
 
 if ENABLE_BIP70
 PROTOBUF_CC = qt/paymentrequest.pb.cc
@@ -226,11 +226,11 @@ LITECOINFINANCE_QT_H = \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
-  qt/bitcoin.h \
-  qt/bitcoingui.h \
-  qt/bitcoinunits.h \
+  qt/litecoinfinanceaddressvalidator.h \
+  qt/litecoinfinanceamountfield.h \
+  qt/litecoinfinance.h \
+  qt/litecoinfinancegui.h \
+  qt/litecoinfinanceunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -283,9 +283,9 @@ RES_ICONS = \
   qt/res/icons/address-book.png \
   qt/res/icons/about.png \
   qt/res/icons/about_qt.png \
-  qt/res/icons/bitcoin.ico \
-  qt/res/icons/bitcoin_testnet.ico \
-  qt/res/icons/bitcoin.png \
+  qt/res/icons/litecoinfinance.ico \
+  qt/res/icons/litecoinfinance_testnet.ico \
+  qt/res/icons/litecoinfinance.png \
   qt/res/icons/chevron.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -338,11 +338,11 @@ RES_ICONS = \
 
 LITECOINFINANCE_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
-  qt/bitcoin.cpp \
-  qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
-  qt/bitcoinunits.cpp \
+  qt/litecoinfinance.cpp \
+  qt/litecoinfinanceaddressvalidator.cpp \
+  qt/litecoinfinanceamountfield.cpp \
+  qt/litecoinfinancegui.cpp \
+  qt/litecoinfinanceunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
@@ -409,22 +409,22 @@ RES_IMAGES =
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-LITECOINFINANCE_RC = qt/res/bitcoin-qt-res.rc
+LITECOINFINANCE_RC = qt/res/litecoinfinance-qt-res.rc
 
 LITECOINFINANCE_QT_INCLUDES = -DQT_NO_KEYWORDS
 
-qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(LITECOINFINANCE_QT_INCLUDES) \
+qt_liblitecoinfinanceqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(LITECOINFINANCE_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+qt_liblitecoinfinanceqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_liblitecoinfinanceqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_libbitcoinqt_a_SOURCES = $(LITECOINFINANCE_QT_CPP) $(LITECOINFINANCE_QT_H) $(QT_FORMS_UI) \
+qt_liblitecoinfinanceqt_a_SOURCES = $(LITECOINFINANCE_QT_CPP) $(LITECOINFINANCE_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 if TARGET_DARWIN
-  qt_libbitcoinqt_a_SOURCES += $(LITECOINFINANCE_MM)
+  qt_liblitecoinfinanceqt_a_SOURCES += $(LITECOINFINANCE_MM)
 endif
 
-nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_qt_liblitecoinfinanceqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -433,76 +433,76 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_liblitecoinfinanceqt_a_OBJECTS) $(qt_litecoinfinance_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# bitcoin-qt binary #
-qt_bitcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(LITECOINFINANCE_QT_INCLUDES) \
+# litecoinfinance-qt binary #
+qt_litecoinfinance_qt_CPPFLAGS = $(AM_CPPFLAGS) $(LITECOINFINANCE_INCLUDES) $(LITECOINFINANCE_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_litecoinfinance_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_bitcoin_qt_SOURCES = qt/main.cpp
+qt_litecoinfinance_qt_SOURCES = qt/main.cpp
 if TARGET_WINDOWS
-  qt_bitcoin_qt_SOURCES += $(LITECOINFINANCE_RC)
+  qt_litecoinfinance_qt_SOURCES += $(LITECOINFINANCE_RC)
 endif
-qt_bitcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBLITECOINFINANCE_SERVER)
+qt_litecoinfinance_qt_LDADD = qt/liblitecoinfinanceqt.a $(LIBLITECOINFINANCE_SERVER)
 if ENABLE_WALLET
-qt_bitcoin_qt_LDADD += $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_WALLET)
+qt_litecoinfinance_qt_LDADD += $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_WALLET)
 endif
 if ENABLE_ZMQ
-qt_bitcoin_qt_LDADD += $(LIBLITECOINFINANCE_ZMQ) $(ZMQ_LIBS)
+qt_litecoinfinance_qt_LDADD += $(LIBLITECOINFINANCE_ZMQ) $(ZMQ_LIBS)
 endif
-qt_bitcoin_qt_LDADD += $(LIBLITECOINFINANCE_CLI) $(LIBLITECOINFINANCE_COMMON) $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_CONSENSUS) $(LIBLITECOINFINANCE_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_litecoinfinance_qt_LDADD += $(LIBLITECOINFINANCE_CLI) $(LIBLITECOINFINANCE_COMMON) $(LIBLITECOINFINANCE_UTIL) $(LIBLITECOINFINANCE_CONSENSUS) $(LIBLITECOINFINANCE_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 if ENABLE_BIP70
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_litecoinfinance_qt_LDADD += $(SSL_LIBS)
 else
 if TARGET_WINDOWS
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_litecoinfinance_qt_LDADD += $(SSL_LIBS)
 endif
 endif
-qt_bitcoin_qt_LDADD += $(CRYPTO_LIBS)
-qt_bitcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_bitcoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_litecoinfinance_qt_LDADD += $(CRYPTO_LIBS)
+qt_litecoinfinance_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_litecoinfinance_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/bitcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_consensus_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/litecoinfinancestrings.cpp: $(liblitecoinfinance_server_a_SOURCES) $(liblitecoinfinance_wallet_a_SOURCES) $(liblitecoinfinance_common_a_SOURCES) $(liblitecoinfinance_zmq_a_SOURCES) $(liblitecoinfinance_consensus_a_SOURCES) $(liblitecoinfinance_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(LITECOINFINANCE_QT_BASE_CPP) qt/bitcoin.cpp $(LITECOINFINANCE_QT_WINDOWS_CPP) $(LITECOINFINANCE_QT_WALLET_CPP) $(LITECOINFINANCE_QT_H) $(LITECOINFINANCE_MM)
+translate: $(srcdir)/qt/litecoinfinancestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(LITECOINFINANCE_QT_BASE_CPP) qt/litecoinfinance.cpp $(LITECOINFINANCE_QT_WINDOWS_CPP) $(LITECOINFINANCE_QT_WALLET_CPP) $(LITECOINFINANCE_QT_H) $(LITECOINFINANCE_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/bitcoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/litecoinfinance_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name litecoinfinance_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name litecoinfinance $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bitcoin_locale.qrc
+CLEAN_QT = $(nodist_qt_liblitecoinfinanceqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_litecoinfinance_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-bitcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) qt/bitcoin-qt$(EXEEXT) $(LIBLITECOINFINANCEQT)
+litecoinfinance_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_liblitecoinfinanceqt_a_OBJECTS) $(qt_litecoinfinance_qt_OBJECTS) qt/litecoinfinance-qt$(EXEEXT) $(LIBLITECOINFINANCEQT)
 
-bitcoin_qt : qt/bitcoin-qt$(EXEEXT)
+litecoinfinance_qt : qt/litecoinfinance-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

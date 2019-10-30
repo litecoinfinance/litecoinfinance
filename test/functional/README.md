@@ -87,10 +87,10 @@ over the network (`CBlock`, `CTransaction`, etc, along with the network-level
 wrappers for them, `msg_block`, `msg_tx`, etc).
 
 - P2P tests have two threads. One thread handles all network communication
-with the bitcoind(s) being tested in a callback-based event loop; the other
+with the litecoinfinanced(s) being tested in a callback-based event loop; the other
 implements the test logic.
 
-- `P2PConnection` is the class used to connect to a bitcoind.  `P2PInterface`
+- `P2PConnection` is the class used to connect to a litecoinfinanced.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
 the Litecoin Finance Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
@@ -101,7 +101,7 @@ Examples tests are `p2p_unrequested_blocks.py`, `p2p_compactblocks.py`.
 ### test-framework modules
 
 #### [test_framework/authproxy.py](test_framework/authproxy.py)
-Taken from the [python-bitcoinrpc repository](https://github.com/jgarzik/python-bitcoinrpc).
+Taken from the [python-litecoinfinancerpc repository](https://github.com/jgarzik/python-litecoinfinancerpc).
 
 #### [test_framework/test_framework.py](test_framework/test_framework.py)
 Base class for functional tests.
@@ -110,13 +110,13 @@ Base class for functional tests.
 Generally useful functions.
 
 #### [test_framework/mininode.py](test_framework/mininode.py)
-Basic code to support P2P connectivity to a bitcoind.
+Basic code to support P2P connectivity to a litecoinfinanced.
 
 #### [test_framework/script.py](test_framework/script.py)
-Utilities for manipulating transaction scripts (originally from python-bitcoinlib)
+Utilities for manipulating transaction scripts (originally from python-litecoinfinancelib)
 
 #### [test_framework/key.py](test_framework/key.py)
-Wrapper around OpenSSL EC_Key (originally from python-bitcoinlib)
+Wrapper around OpenSSL EC_Key (originally from python-litecoinfinancelib)
 
 #### [test_framework/bignum.py](test_framework/bignum.py)
 Helpers for script.py

@@ -349,7 +349,7 @@
 #define PACKAGE_STRING "Litecoin Finance Core 0.17.99"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "bitcoin"
+#define PACKAGE_TARNAME "litecoinfinance"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL "https://bitcoincore.org/"

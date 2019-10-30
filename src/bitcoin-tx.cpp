@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <clientversion.h>
@@ -97,9 +97,9 @@ static int AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || HelpRequested(gArgs)) {
         // First part of help message is specific to this utility
-        std::string strUsage = PACKAGE_NAME " bitcoin-tx utility version " + FormatFullVersion() + "\n\n" +
-            "Usage:  bitcoin-tx [options] <hex-tx> [commands]  Update hex-encoded litecoin finance transaction\n" +
-            "or:     bitcoin-tx [options] -create [commands]   Create hex-encoded litecoin finance transaction\n" +
+        std::string strUsage = PACKAGE_NAME " litecoinfinance-tx utility version " + FormatFullVersion() + "\n\n" +
+            "Usage:  litecoinfinance-tx [options] <hex-tx> [commands]  Update hex-encoded litecoin finance transaction\n" +
+            "or:     litecoinfinance-tx [options] -create [commands]   Create hex-encoded litecoin finance transaction\n" +
             "\n";
         strUsage += gArgs.GetHelpMessage();
 

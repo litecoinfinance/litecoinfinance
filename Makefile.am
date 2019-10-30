@@ -13,7 +13,7 @@ export PYTHONPATH
 
 if BUILD_LITECOINFINANCE_LIBS
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libbitcoinconsensus.pc
+pkgconfig_DATA = liblitecoinfinanceconsensus.pc
 endif
 
 LITECOINFINANCED_BIN=$(top_builddir)/src/$(LITECOINFINANCE_DAEMON_NAME)$(EXEEXT)
@@ -35,14 +35,14 @@ OSX_BACKGROUND_IMAGE_DPIS=36 72
 OSX_DSSTORE_GEN=$(top_srcdir)/contrib/macdeploy/custom_dsstore.py
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
 OSX_FANCY_PLIST=$(top_srcdir)/contrib/macdeploy/fancy.plist
-OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/bitcoin.icns
+OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/litecoinfinance.icns
 OSX_PLIST=$(top_builddir)/share/qt/Info.plist #not installed
 OSX_QT_TRANSLATIONS = da,de,es,hu,ru,uk,zh_CN,zh_TW
 
 DIST_DOCS = $(wildcard doc/*.md) $(wildcard doc/release-notes/*.md)
-DIST_CONTRIB = $(top_srcdir)/contrib/bitcoin-cli.bash-completion \
-	       $(top_srcdir)/contrib/bitcoin-tx.bash-completion \
-	       $(top_srcdir)/contrib/bitcoind.bash-completion \
+DIST_CONTRIB = $(top_srcdir)/contrib/litecoinfinance-cli.bash-completion \
+	       $(top_srcdir)/contrib/litecoinfinance-tx.bash-completion \
+	       $(top_srcdir)/contrib/litecoinfinanced.bash-completion \
 	       $(top_srcdir)/contrib/init \
 	       $(top_srcdir)/contrib/install_db4.sh
 DIST_SHARE = \
@@ -52,7 +52,7 @@ DIST_SHARE = \
 BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/bitcoin.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/litecoinfinance.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
@@ -64,9 +64,9 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline.info \
-  test_bitcoin_filtered.info total_coverage.info \
+  test_litecoinfinance_filtered.info total_coverage.info \
   baseline_filtered.info functional_test.info functional_test_filtered.info \
-  test_bitcoin_coverage.info test_bitcoin.info
+  test_litecoinfinance_coverage.info test_litecoinfinance.info
 
 dist-hook:
 	-$(GIT) archive --format=tar HEAD -- src/clientversion.cpp | $(AMTAR) -C $(top_distdir) -xf -
@@ -94,7 +94,7 @@ $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
+$(OSX_APP)/Contents/Resources/litecoinfinance.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
@@ -107,7 +107,7 @@ $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	echo '{	CFBundleDisplayName = "$(PACKAGE_NAME)"; CFBundleName = "$(PACKAGE_NAME)"; }' > $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
-  $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
+  $(OSX_APP)/Contents/Resources/litecoinfinance.icns $(OSX_APP)/Contents/Info.plist \
   $(OSX_APP)/Contents/MacOS/LitecoinFinance-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 osx_volname:
@@ -187,16 +187,16 @@ baseline_filtered.info: baseline.info
 	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
 	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-test_bitcoin.info: baseline_filtered.info
+test_litecoinfinance.info: baseline_filtered.info
 	$(MAKE) -C src/ check
-	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_bitcoin -o $@
+	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_litecoinfinance -o $@
 	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
-test_bitcoin_filtered.info: test_bitcoin.info
+test_litecoinfinance_filtered.info: test_litecoinfinance.info
 	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
 	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-functional_test.info: test_bitcoin_filtered.info
+functional_test.info: test_litecoinfinance_filtered.info
 	-@TIMEOUT=15 test/functional/test_runner.py $(EXTENDED_FUNCTIONAL_TESTS)
 	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src --t functional-tests -o $@
 	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
@@ -205,13 +205,13 @@ functional_test_filtered.info: functional_test.info
 	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
 	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-test_bitcoin_coverage.info: baseline_filtered.info test_bitcoin_filtered.info
-	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_bitcoin_filtered.info -o $@
+test_litecoinfinance_coverage.info: baseline_filtered.info test_litecoinfinance_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_litecoinfinance_filtered.info -o $@
 
-total_coverage.info: test_bitcoin_filtered.info functional_test_filtered.info
-	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_bitcoin_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+total_coverage.info: test_litecoinfinance_filtered.info functional_test_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_litecoinfinance_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-test_bitcoin.coverage/.dirstamp:  test_bitcoin_coverage.info
+test_litecoinfinance.coverage/.dirstamp:  test_litecoinfinance_coverage.info
 	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
@@ -219,7 +219,7 @@ total.coverage/.dirstamp: total_coverage.info
 	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
-cov: test_bitcoin.coverage/.dirstamp total.coverage/.dirstamp
+cov: test_litecoinfinance.coverage/.dirstamp total.coverage/.dirstamp
 
 endif
 
@@ -232,8 +232,8 @@ EXTRA_DIST += \
     test/fuzz
 
 EXTRA_DIST += \
-    test/util/bitcoin-util-test.py \
-    test/util/data/bitcoin-util-test.json \
+    test/util/litecoinfinance-util-test.py \
+    test/util/data/litecoinfinance-util-test.json \
     test/util/data/blanktxv1.hex \
     test/util/data/blanktxv1.json \
     test/util/data/blanktxv2.hex \
@@ -307,6 +307,6 @@ clean-docs:
 	rm -rf doc/doxygen
 
 clean-local: clean-docs
-	rm -rf coverage_percent.txt test_bitcoin.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
+	rm -rf coverage_percent.txt test_litecoinfinance.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
 	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache share/rpcauth/__pycache__
 

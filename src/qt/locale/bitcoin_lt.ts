@@ -414,8 +414,8 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Reikalauti mokėjimų (sukuria QR kodus ir bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Reikalauti mokėjimų (sukuria QR kodus ir litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Rodyti sąrašą panaudotų gavimo adresų ir žymių</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Atidaryti bitcoin: URI ar apmokėjimo reikalavimą</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Atidaryti litecoinfinance: URI ar apmokėjimo reikalavimą</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -949,7 +949,7 @@
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Tinklas nepriims bandymų išleisti bitcoinus, kurie yra vis dar nematomi.</translation>
+        <translation>Tinklas nepriims bandymų išleisti litecoinfinanceus, kurie yra vis dar nematomi.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1364,16 +1364,16 @@
         <translation>Mokėjimo užklausos klaida</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Negalima paleisti bitcoin: paspauskite sumokėti tvarkytojui</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>Negalima paleisti litecoinfinance: paspauskite sumokėti tvarkytojui</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>URI tvarkymas</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>„bitcoin: //“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>„litecoinfinance: //“ nėra galiojantis URI. Vietoj to naudokite „litecoinfinance:“.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2435,7 +2435,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoin finances than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Mokestis bus atimamas iš siunčiamos sumos. Gavėjas gaus mažiau bitcoinų nei įvesite sumos lauke. Jei pasirenkami keli gavėjai, mokestis padalijamas lygiai.</translation>
+        <translation>Mokestis bus atimamas iš siunčiamos sumos. Gavėjas gaus mažiau litecoinfinanceų nei įvesite sumos lauke. Jei pasirenkami keli gavėjai, mokestis padalijamas lygiai.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2462,8 +2462,8 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
         <translation>Įveskite šio adreso etiketę, kad ją pridėtumėte prie naudojamų adresų sąrašo</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>Pranešimas, kuris buvo pridėtas prie bitcoin: URI, kuris bus saugomas kartu su sandoriu jūsų nuoroda. Pastaba: šis pranešimas nebus išsiųstas per „LitecoinFinance“ tinklą.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>Pranešimas, kuris buvo pridėtas prie litecoinfinance: URI, kuris bus saugomas kartu su sandoriu jūsų nuoroda. Pastaba: šis pranešimas nebus išsiųstas per „LitecoinFinance“ tinklą.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3165,7 +3165,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Litecoin Finance Core</source>
         <translation>Litecoin Finance branduolys</translation>

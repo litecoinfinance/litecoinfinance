@@ -1,6 +1,6 @@
 LitecoinFinance-Qt version 0.8.6 final is now available from:
 
-  http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.8.6/
+  http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfinance-0.8.6/
 
 This is a maintenance release to fix a critical bug; we urge all users to upgrade.
 
@@ -16,7 +16,7 @@ If you already downloaded 0.8.6rc1 you do not need to re-download. This release 
 If you are running an older version, shut it down. Wait
 until it has completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-/Applications/LitecoinFinance-Qt (on Mac) or bitcoind/bitcoin-qt (on Linux).
+/Applications/LitecoinFinance-Qt (on Mac) or litecoinfinanced/litecoinfinance-qt (on Linux).
 
 If you are upgrading from version 0.7.2 or earlier, the first time you
 run 0.8.6 your blockchain files will be re-indexed, which will take

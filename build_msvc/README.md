@@ -25,7 +25,7 @@ The external dependencies required for the Visual Studio build are (see the [dep
 - libevent,
 - ZeroMQ
 
-Additional dependencies required from the [bitcoin-core](https://github.com/bitcoin-core) github repository are:
+Additional dependencies required from the [litecoinfinance-core](https://github.com/bitcoin-core) github repository are:
 - SECP256K1,
 - LevelDB
 

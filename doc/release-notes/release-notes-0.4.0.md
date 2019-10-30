@@ -1,5 +1,5 @@
 Litecoin Finance version 0.4.0 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.4.0/
+http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfinance-0.4.0/
 
 The main feature in this release is wallet private key encryption;
 you can set a passphrase that must be entered before sending coins.
@@ -11,14 +11,14 @@ and will crash on startup if the wallet is encrypted.
 
 Also note: litecoin finance version 0.4 uses a newer version of Berkeley DB
 (bdb version 4.8) than previous versions (bdb 4.7). If you upgrade
-to version 0.4 and then revert back to an earlier version of bitcoin
+to version 0.4 and then revert back to an earlier version of litecoinfinance
 the it may be unable to start because bdb 4.7 cannot read bdb 4.8
 "log" files.
 
 
 Notable bug fixes from version 0.3.24:
 
-Fix several bitcoin-becomes-unresponsive bugs due to multithreading
+Fix several litecoinfinance-becomes-unresponsive bugs due to multithreading
 deadlocks.
 
 Optimize database writes for large (lots of inputs) transactions
@@ -47,7 +47,7 @@ your coins.
 
 It is recommended that you backup your wallet file before you
 encrypt your wallet.  To do this, close the Litecoin Finance client and
-copy the wallet.dat file from ~/.bitcoin/ on Linux, /Users/(user
+copy the wallet.dat file from ~/.litecoinfinance/ on Linux, /Users/(user
 name)/Application Support/LitecoinFinance/ on Mac OSX, and %APPDATA%/LitecoinFinance/
 on Windows (that is /Users/(user name)/AppData/Roaming/Litecoin Finance on
 Windows Vista and 7 and /Documents and Settings/(user name)/Application

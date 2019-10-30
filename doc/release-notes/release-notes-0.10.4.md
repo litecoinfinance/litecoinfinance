@@ -1,6 +1,6 @@
 Litecoin Finance Core version 0.10.4 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.10.4/>
+  <https://bitcoin.org/bin/litecoinfinance-core-0.10.4/>
 
 This is a new minor version release, bringing bug fixes, the BIP65
 (CLTV) consensus change, and relay policy preparation for BIP113. It is
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/LitecoinFinance-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+litecoinfinanced/litecoinfinance-qt (on Linux).
 
 Downgrade warning
 ------------------
@@ -74,10 +74,10 @@ Graphs showing the progress towards block version 4 adoption may be
 found at the URLs below:
 
 - Block versions over the last 50,000 blocks as progress towards BIP65
-  consensus enforcement: <http://bitcoin.sipa.be/ver-50k.png>
+  consensus enforcement: <http://litecoinfinance.sipa.be/ver-50k.png>
 
 - Block versions over the last 2,000 blocks showing the days to the
-  earliest possible BIP65 consensus-enforced block: <http://bitcoin.sipa.be/ver-2k.png>
+  earliest possible BIP65 consensus-enforced block: <http://litecoinfinance.sipa.be/ver-2k.png>
 
 **Notice to miners:** Litecoin Finance Core’s block templates are now for
 version 4 blocks only, and any mining software relying on its
@@ -95,7 +95,7 @@ version FIXME or any version from FIXME onward.
   will affect you at the pool operator’s discretion, which must be no
   later than BIP65 achieving its 951/1001 status.
 
-[BIP65]: https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki
+[BIP65]: https://github.com/litecoinfinance/bips/blob/master/bip-0065.mediawiki
 
 Windows bug fix for corrupted UTXO database on unclean shutdowns
 ----------------------------------------------------------------
@@ -129,8 +129,8 @@ git merge commit are mentioned.
 - #6953 `a2f2fb6` build: disable -Wself-assign
 - #6953 `cf67d8b` Bugfix: Allow mining on top of old tip blocks for testnet (fixes testnet-in-a-box use case)
 - #6953 `b3964e3` Drop "with minimal dependencies" from description
-- #6953 `43c2789` Split bitcoin-tx into its own package
-- #6953 `dfe0d4d` Include bitcoin-tx binary on Debian/Ubuntu
+- #6953 `43c2789` Split litecoinfinance-tx into its own package
+- #6953 `dfe0d4d` Include litecoinfinance-tx binary on Debian/Ubuntu
 - #6953 `612efe8` [Qt] Raise debug window when requested
 - #6953 `3ad96bd` Fix locking in GetTransaction
 - #6953 `9c81005` Fix spelling of Qt
@@ -169,4 +169,4 @@ Thanks to everyone who directly contributed to this release:
 
 And those who contributed additional code review and/or security research.
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/litecoinfinance/).

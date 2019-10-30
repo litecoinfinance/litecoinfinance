@@ -173,7 +173,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Error initializing block database</source>
         <translation>Error initialising block database</translation>

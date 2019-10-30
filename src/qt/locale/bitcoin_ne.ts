@@ -348,7 +348,7 @@
         <translation>यो ठेगानालाई प्रयोग गरिएको ठेगानाको सूचीमा थप्न एउटा लेबल प्रविष्ट गर्नुहोस्</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation>बिटकोइनमा संलग्न गरिएको सन्देश: तपाईंको मध्यस्थको लागि कारोबारको साथमा भण्डारण गरिने URI । नोट: यो सन्देश बिटकोइन नेटवर्क मार्फत पठाइने छैन ।</translation>
     </message>
     </context>
@@ -425,7 +425,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>ब्लक डाटाबेसमा भविष्यबाट आए जस्तो देखिने एउटा ब्लक हुन्छ । तपाईंको कम्प्युटरको मिति र समय गलत तरिकाले सेट गरिएकाले यस्तो हुन सक्छ । तपाईं आफ्नो कम्प्युटरको मिति र समय सही छ भनेर पक्का हुनुहुन्छ भने मात्र ब्लक डाटाबेस पुनर्निर्माण गर्नुहोस् ।</translation>

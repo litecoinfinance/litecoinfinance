@@ -73,7 +73,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const LITECOINFINANCE_CONF_FILENAME = "bitcoin.conf";
+const char * const LITECOINFINANCE_CONF_FILENAME = "litecoinfinance.conf";
 
 ArgsManager gArgs;
 
@@ -215,7 +215,7 @@ public:
         std::pair<bool,std::string> found_result(false, std::string());
 
         // We pass "true" to GetArgHelper in order to return the last
-        // argument value seen from the command line (so "bitcoind -foo=bar
+        // argument value seen from the command line (so "litecoinfinanced -foo=bar
         // -foo=baz" gives GetArg(am,"foo")=={true,"baz"}
         found_result = GetArgHelper(am.m_override_args, arg, true);
         if (found_result.first) {
@@ -661,7 +661,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bitcoin";
+    const char* pszModule = "litecoinfinance";
 #endif
     if (pex)
         return strprintf(
@@ -683,7 +683,7 @@ fs::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\LitecoinFinance
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\LitecoinFinance
     // Mac: ~/Library/Application Support/LitecoinFinance
-    // Unix: ~/.bitcoin
+    // Unix: ~/.litecoinfinance
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "LitecoinFinance";
@@ -699,7 +699,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/LitecoinFinance";
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / ".litecoinfinance";
 #endif
 #endif
 }

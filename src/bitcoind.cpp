@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #include <chainparams.h>
@@ -67,7 +67,7 @@ static bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/litecoinfinance.conf are parsed in qt/litecoinfinance.cpp's main()
     SetupServerArgs();
     std::string error;
     if (!gArgs.ParseParameters(argc, argv, error)) {
@@ -85,7 +85,7 @@ static bool AppInit(int argc, char* argv[])
         }
         else
         {
-            strUsage += "\nUsage:  bitcoind [options]                     Start " PACKAGE_NAME " Daemon\n";
+            strUsage += "\nUsage:  litecoinfinanced [options]                     Start " PACKAGE_NAME " Daemon\n";
             strUsage += "\n" + gArgs.GetHelpMessage();
         }
 
@@ -115,12 +115,12 @@ static bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                tfm::format(std::cerr, "Error: Command line contains unexpected token '%s', see bitcoind -h for a list of options.\n", argv[i]);
+                tfm::format(std::cerr, "Error: Command line contains unexpected token '%s', see litecoinfinanced -h for a list of options.\n", argv[i]);
                 return false;
             }
         }
 
-        // -server defaults to true for bitcoind but not for the GUI so do this here
+        // -server defaults to true for litecoinfinanced but not for the GUI so do this here
         gArgs.SoftSetBoolArg("-server", true);
         // Set this early so that parameter interactions go to console
         InitLogging();
@@ -195,7 +195,7 @@ int main(int argc, char* argv[])
 #endif
     SetupEnvironment();
 
-    // Connect bitcoind signal handlers
+    // Connect litecoinfinanced signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

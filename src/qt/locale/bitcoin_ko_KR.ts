@@ -414,8 +414,8 @@
         <translation>툴바 색인표</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>지불 요청하기 (QR코드와 bitcoin: URI를 생성합니다)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>지불 요청하기 (QR코드와 litecoinfinance: URI를 생성합니다)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>한번 이상 사용된 받는 주소와 라벨의 목록을 보여줍니다</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>bitcoin: URI 또는 지불요청 열기</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>litecoinfinance: URI 또는 지불요청 열기</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1368,16 +1368,16 @@
         <translation>지불 요청 오류</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>bitcoin: 핸들러를 시작할 수 없음</translation>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
+        <translation>litecoinfinance: 핸들러를 시작할 수 없음</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>URI 핸들링</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://"은 잘못된 URI입니다. 'litecoinfinance:'을 사용하십시오.</translation>
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
@@ -2474,8 +2474,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>이 주소에 라벨을 입력하면 사용된 주소 목록에 라벨이 표시됩니다</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
-        <translation>bitcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <translation>litecoinfinance: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3221,7 +3221,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포 됨, 첨부 파일 %s 또는 %s을 참조하십시오.</translation>

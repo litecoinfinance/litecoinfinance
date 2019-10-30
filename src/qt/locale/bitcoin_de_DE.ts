@@ -663,7 +663,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Starting network threads...</source>
         <translation>Starte Netzwerk-Threads...</translation>

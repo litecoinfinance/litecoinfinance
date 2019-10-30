@@ -406,8 +406,8 @@
         <translation>Panel nástrojov</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Vyžiadať platby (vygeneruje sa QR kód a bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Vyžiadať platby (vygeneruje sa QR kód a litecoinfinance: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -418,7 +418,7 @@
         <translation>Ukázať zoznam použitých prijímacích adries a štítkov</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation>Otvoriť LitecoinFinance: URI alebo vyžiadanie platby</translation>
     </message>
     <message>
@@ -889,7 +889,7 @@
     </message>
     <message>
         <source>Attempting to spend litecoin finances that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Pokusy o minutie bitcoinov ktoré sú ovplyvnené ešte nezobrazenými transakciami nebudú prijaté sieťou.</translation>
+        <translation>Pokusy o minutie litecoinfinanceov ktoré sú ovplyvnené ešte nezobrazenými transakciami nebudú prijaté sieťou.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1292,7 +1292,7 @@
         <translation>Chyba pri žiadosti o platbu</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation>Nemôžem spustiť LitecoinFinance: click-to-pay handler</translation>
     </message>
     <message>
@@ -1300,8 +1300,8 @@
         <translation>Narábanie s URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' je nesprávna URI. Namiesto toho použite 'bitcoin'.</translation>
+        <source>'litecoinfinance://' is not a valid URI. Use 'litecoinfinance:' instead.</source>
+        <translation>'litecoinfinance://' je nesprávna URI. Namiesto toho použite 'litecoinfinance'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2362,7 +2362,7 @@ Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o ho
         <translation>Zadajte štítok pre túto adresu aby ste ju pridali do zoznamu použitých adries.</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation>Správa pripojená k Litecoin Finance URI ktorá bude uložená spolu s transakciou pre vašu referenciu. Poznámka: Táto správa nebude odoslaná cez Litecoin Finance sieť.</translation>
     </message>
     <message>
@@ -3097,7 +3097,7 @@ Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o ho
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuované pod licenciou softvéru MIT, pozrite si sprevádzajúci súbor %s alebo %s</translation>

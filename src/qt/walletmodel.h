@@ -11,7 +11,7 @@
 #include <script/standard.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/litecoinfinance-config.h>
 #endif
 
 #ifdef ENABLE_BIP70

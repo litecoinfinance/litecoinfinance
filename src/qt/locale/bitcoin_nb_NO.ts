@@ -414,8 +414,8 @@
         <translation>Hjelpelinje for fliker</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Be om betalinger (genererer QR-koder og bitcoin-URIer)</translation>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Be om betalinger (genererer QR-koder og litecoinfinance-URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Vis lista over brukte mottakeradresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Åpne en bitcoin: URI eller betalingsforespørsel</translation>
+        <source>Open a litecoinfinance: URI or payment request</source>
+        <translation>Åpne en litecoinfinance: URI eller betalingsforespørsel</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -753,7 +753,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Informasjon</translation>

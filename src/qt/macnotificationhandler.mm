@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.bitcoinfoundation.LitecoinFinance-Qt";
+        return @"org.litecoinfinancefoundation.LitecoinFinance-Qt";
     } else {
         return [self __bundleIdentifier];
     }

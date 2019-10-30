@@ -26,16 +26,16 @@
     <ProjectGuid>{2B4ABFF8-D1FD-4845-88C9-1F3C0A6512BF}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\src\qt\bitcoin.qrc">
-      <Command>"$(QTDIR)\bincc.exe" -name bitcoin "%(Fullpath)" -o .\GeneratedFiles\qrc_bitcoin.cpp</Command>
+    <CustomBuild Include="..\..\src\qt\litecoinfinance.qrc">
+      <Command>"$(QTDIR)\bincc.exe" -name litecoinfinance "%(Fullpath)" -o .\GeneratedFiles\qrc_litecoinfinance.cpp</Command>
       <Message>Qt rcc generation for %(Identity)</Message>
-      <Outputs>.\GeneratedFiles\qrc_bitcoin.cpp</Outputs>
+      <Outputs>.\GeneratedFiles\qrc_litecoinfinance.cpp</Outputs>
       <AdditionalInputs>(QTDIR)\bincc.exe</AdditionalInputs>
     </CustomBuild>
-    <CustomBuild Include="..\..\src\qt\bitcoin_locale.qrc">
-      <Command>"$(QTDIR)\bincc.exe" -name bitcoin_locale "%(Fullpath)" -o .\GeneratedFiles\qrc_bitcoin_locale.cpp</Command>
+    <CustomBuild Include="..\..\src\qt\litecoinfinance_locale.qrc">
+      <Command>"$(QTDIR)\bincc.exe" -name litecoinfinance_locale "%(Fullpath)" -o .\GeneratedFiles\qrc_litecoinfinance_locale.cpp</Command>
       <Message>Qt rcc generation for %(Identity)</Message>
-      <Outputs>.\GeneratedFiles\qrc_bitcoin_locale.cpp</Outputs>
+      <Outputs>.\GeneratedFiles\qrc_litecoinfinance_locale.cpp</Outputs>
       <AdditionalInputs>(QTDIR)\bincc.exe</AdditionalInputs>
     </CustomBuild>
     <None Include="..\..\src\qt\forms\addressbookpage.ui" />
@@ -55,361 +55,361 @@
     <None Include="..\..\src\qt\forms\sendcoinsentry.ui" />
     <None Include="..\..\src\qt\forms\signverifymessagedialog.ui" />
     <None Include="..\..\src\qt\forms\transactiondescdialog.ui" />
-    <None Include="..\..\src\qt\locale\bitcoin_af.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_af.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_af_ZA.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_af_ZA.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_am.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_am.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ar.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ar.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_be_BY.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_be_BY.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_bg.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_bg.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_bg_BG.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_bg_BG.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_bn.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_bn.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_bs.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_bs.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ca.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ca.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ca%40valencia.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ca%40valencia.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ca_ES.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ca_ES.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_cs.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_cs.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_cs_CZ.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_cs_CZ.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_cy.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_cy.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_da.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_da.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_de.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_de.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_de_DE.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_de_DE.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_el.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_el.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_el_GR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_el_GR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_en.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_en.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_en_AU.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_en_AU.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_en_GB.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_en_GB.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_eo.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_eo.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_419.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_419.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_AR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_AR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_CL.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_CL.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_CO.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_CO.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_DO.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_DO.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_ES.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_ES.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_MX.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_MX.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_UY.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_UY.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_es_VE.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_es_VE.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_et.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_et.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_et_EE.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_et_EE.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_eu_ES.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_eu_ES.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fa.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fa.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fa_IR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fa_IR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fi.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fi.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fil.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fil.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fr.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fr.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fr_CA.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fr_CA.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_fr_FR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_fr_FR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_gl.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_gl.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_he.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_he.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_he_IL.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_he_IL.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_hi.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_hi.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_hi_IN.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_hi_IN.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_hr.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_hr.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_hu.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_hu.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_hu_HU.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_hu_HU.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_id.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_id.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_id_ID.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_id_ID.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_is.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_is.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_it.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_it.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_it_IT.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_it_IT.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ja.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ja.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ka.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ka.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_kk_KZ.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_kk_KZ.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_km_KH.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_km_KH.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ko.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ko.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ko_KR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ko_KR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ku_IQ.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ku_IQ.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ky.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ky.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_la.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_la.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_lt.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_lt.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_lv_LV.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_lv_LV.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_mk_MK.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_mk_MK.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ml.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ml.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_mn.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_mn.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_mr_IN.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_mr_IN.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ms.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ms.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ms_MY.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ms_MY.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_my.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_my.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_nb.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_nb.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_nb_NO.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_nb_NO.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ne.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ne.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_nl.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_nl.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_nl_BE.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_nl_BE.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_nl_NL.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_nl_NL.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pam.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pam.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pl.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pl.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pl_PL.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pl_PL.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pt.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pt.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pt_BR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pt_BR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_pt_PT.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_pt_PT.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ro.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ro.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ro_RO.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ro_RO.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ru.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ru.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ru_RU.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ru_RU.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_si.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_si.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sk.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sk.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sk_SK.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sk_SK.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sl_SI.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sl_SI.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sn.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sn.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sq.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sq.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sr.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sr.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sr%40latin.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sr%40latin.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_sv.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_sv.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_szl.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_szl.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ta.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ta.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ta_IN.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ta_IN.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_te.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_te.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_th.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_th.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_th_TH.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_th_TH.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_tr.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_tr.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_tr_TR.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_tr_TR.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_uk.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_uk.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_uk_UA.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_uk_UA.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_ur_PK.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_ur_PK.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_uz%40Cyrl.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_uz%40Cyrl.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_vi.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_vi.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_vi_VN.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_vi_VN.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_zh-Hans.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_zh-Hans.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_zh.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_zh.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_zh_CN.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_zh_CN.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_zh_HK.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_zh_HK.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qt\locale\bitcoin_zh_TW.ts">
+    <None Include="..\..\src\qt\locale\litecoinfinance_zh_TW.ts">
       <DeploymentContent>true</DeploymentContent>
     </None>
     <CustomBuild Include="..\..\src\qt\paymentrequest.proto">
@@ -424,10 +424,10 @@
     </CustomBuild>
     <None Include="..\..\src\qt\macdockiconhandler.mm" />
     <None Include="..\..\src\qt\macnotificationhandler.mm" />
-    <None Include="..\..\src\qtes\icons\bitcoin.icns">
+    <None Include="..\..\src\qtes\icons\litecoinfinance.icns">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="..\..\src\qtes\src\bitcoin.svg">
+    <None Include="..\..\src\qtes\src\litecoinfinance.svg">
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="..\..\src\qtes\src\clock_0.svg">
@@ -487,8 +487,8 @@
     <None Include="..\..\src\qtes\src\verify.svg">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="GeneratedFiles\bitcoin.moc" />
-    <None Include="GeneratedFiles\bitcoinamountfield.moc" />
+    <None Include="GeneratedFiles\litecoinfinance.moc" />
+    <None Include="GeneratedFiles\litecoinfinanceamountfield.moc" />
     <None Include="GeneratedFiles\intro.moc" />
     <None Include="GeneratedFiles\overviewpage.moc" />
     <None Include="GeneratedFilespcconsole.moc" />
@@ -506,13 +506,13 @@
     <Image Include="..\..\src\qtes\icons\address-book.png">
       <DeploymentContent>true</DeploymentContent>
     </Image>
-    <Image Include="..\..\src\qtes\icons\bitcoin.ico">
+    <Image Include="..\..\src\qtes\icons\litecoinfinance.ico">
       <DeploymentContent>true</DeploymentContent>
     </Image>
-    <Image Include="..\..\src\qtes\icons\bitcoin.png">
+    <Image Include="..\..\src\qtes\icons\litecoinfinance.png">
       <DeploymentContent>true</DeploymentContent>
     </Image>
-    <Image Include="..\..\src\qtes\icons\bitcoin_testnet.ico">
+    <Image Include="..\..\src\qtes\icons\litecoinfinance_testnet.ico">
       <DeploymentContent>true</DeploymentContent>
     </Image>
     <Image Include="..\..\src\qtes\icons\chevron.png">
@@ -772,15 +772,15 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GeneratedFiles\qrc_bitcoin.cpp" />
-    <ClCompile Include="GeneratedFiles\qrc_bitcoin_locale.cpp" />
-    <CustomBuild Include="..\..\src\qt\bitcoin.cpp">
+    <ClCompile Include="GeneratedFiles\qrc_litecoinfinance.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_litecoinfinance_locale.cpp" />
+    <CustomBuild Include="..\..\src\qt\litecoinfinance.cpp">
       <Command>"$(QTDIR)\bin\moc.exe" "%(Fullpath)" -o .\GeneratedFiles\%(Filename).moc $(MOC_DEF)</Command>
       <Message>Qt moc generation for %(Identity)</Message>
       <Outputs>.\GeneratedFiles\%(Filename).moc</Outputs>
       <AdditionalInputs>(QTDIR)\bin\moc.exe</AdditionalInputs>
     </CustomBuild>
-    <CustomBuild Include="..\..\src\qt\bitcoinamountfield.cpp">
+    <CustomBuild Include="..\..\src\qt\litecoinfinanceamountfield.cpp">
       <Command>"$(QTDIR)\bin\moc.exe" "%(Fullpath)" -o .\GeneratedFiles\%(Filename).moc $(MOC_DEF)</Command>
       <Message>Qt moc generation for %(Identity)</Message>
       <Outputs>.\GeneratedFiles\%(Filename).moc</Outputs>
@@ -808,10 +808,10 @@
     <ClCompile Include="GeneratedFiles\moc_addresstablemodel.cpp" />
     <ClCompile Include="GeneratedFiles\moc_askpassphrasedialog.cpp" />
     <ClCompile Include="GeneratedFiles\moc_bantablemodel.cpp" />
-    <ClCompile Include="GeneratedFiles\moc_bitcoinaddressvalidator.cpp" />
-    <ClCompile Include="GeneratedFiles\moc_bitcoinamountfield.cpp" />
-    <ClCompile Include="GeneratedFiles\moc_bitcoingui.cpp" />
-    <ClCompile Include="GeneratedFiles\moc_bitcoinunits.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_litecoinfinanceaddressvalidator.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_litecoinfinanceamountfield.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_litecoinfinancegui.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_litecoinfinanceunits.cpp" />
     <ClCompile Include="GeneratedFiles\moc_callback.cpp" />
     <ClCompile Include="GeneratedFiles\moc_clientmodel.cpp" />
     <ClCompile Include="GeneratedFiles\moc_coincontroldialog.cpp" />

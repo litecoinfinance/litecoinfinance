@@ -4,8 +4,8 @@
 
 #include <qt/guiutil.h>
 
-#include <qt/bitcoinaddressvalidator.h>
-#include <qt/bitcoinunits.h>
+#include <qt/litecoinfinanceaddressvalidator.h>
+#include <qt/litecoinfinanceunits.h>
 #include <qt/qvalidatedlineedit.h>
 #include <qt/walletmodel.h>
 
@@ -113,8 +113,8 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
 bool parseLitecoinFinanceURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no bitcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("bitcoin"))
+    // return if URI is not valid or is no litecoinfinance: URI
+    if(!uri.isValid() || uri.scheme() != QString("litecoinfinance"))
         return false;
 
     SendCoinsRecipient rv;
@@ -176,7 +176,7 @@ bool parseLitecoinFinanceURI(QString uri, SendCoinsRecipient *out)
 
 QString formatLitecoinFinanceURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("bitcoin:%1").arg(info.address);
+    QString ret = QString("litecoinfinance:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -392,7 +392,7 @@ bool openLitecoinFinanceConf()
 
     configFile.close();
 
-    /* Open bitcoin.conf with the associated application */
+    /* Open litecoinfinance.conf with the associated application */
     bool res = QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 #ifdef Q_OS_MAC
     // Workaround for macOS-specific behavior; see #15409.
@@ -631,8 +631,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "bitcoin.desktop";
-    return GetAutostartDir() / strprintf("bitcoin-%s.lnk", chain);
+        return GetAutostartDir() / "litecoinfinance.desktop";
+    return GetAutostartDir() / strprintf("litecoinfinance-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -672,7 +672,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = gArgs.GetChainName();
-        // Write a bitcoin.desktop file to the autostart directory:
+        // Write a litecoinfinance.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
@@ -728,15 +728,15 @@ LSSharedFileListItemRef findStartupItemInList(CFArrayRef listSnapshot, LSSharedF
 
 bool GetStartOnSystemStartup()
 {
-    CFURLRef bitcoinAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
-    if (bitcoinAppUrl == nullptr) {
+    CFURLRef litecoinfinanceAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
+    if (litecoinfinanceAppUrl == nullptr) {
         return false;
     }
 
     LSSharedFileListRef loginItems = LSSharedFileListCreate(nullptr, kLSSharedFileListSessionLoginItems, nullptr);
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(loginItems, nullptr);
-    bool res = (findStartupItemInList(listSnapshot, loginItems, bitcoinAppUrl) != nullptr);
-    CFRelease(bitcoinAppUrl);
+    bool res = (findStartupItemInList(listSnapshot, loginItems, litecoinfinanceAppUrl) != nullptr);
+    CFRelease(litecoinfinanceAppUrl);
     CFRelease(loginItems);
     CFRelease(listSnapshot);
     return res;
@@ -744,25 +744,25 @@ bool GetStartOnSystemStartup()
 
 bool SetStartOnSystemStartup(bool fAutoStart)
 {
-    CFURLRef bitcoinAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
-    if (bitcoinAppUrl == nullptr) {
+    CFURLRef litecoinfinanceAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
+    if (litecoinfinanceAppUrl == nullptr) {
         return false;
     }
 
     LSSharedFileListRef loginItems = LSSharedFileListCreate(nullptr, kLSSharedFileListSessionLoginItems, nullptr);
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(loginItems, nullptr);
-    LSSharedFileListItemRef foundItem = findStartupItemInList(listSnapshot, loginItems, bitcoinAppUrl);
+    LSSharedFileListItemRef foundItem = findStartupItemInList(listSnapshot, loginItems, litecoinfinanceAppUrl);
 
     if(fAutoStart && !foundItem) {
         // add litecoin finance app to startup item list
-        LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, nullptr, nullptr, bitcoinAppUrl, nullptr, nullptr);
+        LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, nullptr, nullptr, litecoinfinanceAppUrl, nullptr, nullptr);
     }
     else if(!fAutoStart && foundItem) {
         // remove item
         LSSharedFileListItemRemove(loginItems, foundItem);
     }
 
-    CFRelease(bitcoinAppUrl);
+    CFRelease(litecoinfinanceAppUrl);
     CFRelease(loginItems);
     CFRelease(listSnapshot);
     return true;

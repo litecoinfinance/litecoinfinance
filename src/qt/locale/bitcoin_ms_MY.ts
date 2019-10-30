@@ -410,8 +410,8 @@ Alihkan fail data ke dalam tab semasa</translation>
 </translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Request payments (generates QR codes and bitcoin: URIs)
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
+        <translation>Request payments (generates QR codes and litecoinfinance: URIs)
 </translation>
     </message>
     <message>
@@ -654,7 +654,7 @@ Alihkan fail data ke dalam tab semasa</translation>
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <source>Information</source>
         <translation>Notis</translation>

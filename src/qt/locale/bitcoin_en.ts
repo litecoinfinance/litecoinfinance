@@ -310,7 +310,7 @@
 <context>
     <name>LitecoinFinanceGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+318"/>
+        <location filename="../litecoinfinancegui.cpp" line="+318"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -526,7 +526,7 @@
     </message>
     <message>
         <location line="-271"/>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -541,7 +541,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a litecoinfinance: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -777,7 +777,7 @@
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+392"/>
+        <location filename="../litecoinfinance.cpp" line="+392"/>
         <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1739,7 +1739,7 @@
     </message>
     <message>
         <location line="-529"/>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start litecoinfinance: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1754,7 +1754,7 @@
     </message>
     <message>
         <location line="-53"/>
-        <source>&apos;bitcoin://&apos; is not a valid URI. Use &apos;bitcoin:&apos; instead.</source>
+        <source>&apos;litecoinfinance://&apos; is not a valid URI. Use &apos;litecoinfinance:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1907,7 +1907,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoinunits.cpp" line="+197"/>
+        <location filename="../litecoinfinanceunits.cpp" line="+197"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -2027,7 +2027,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+189"/>
+        <location filename="../litecoinfinance.cpp" line="+189"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2040,7 +2040,7 @@
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../bitcoin.cpp" line="-113"/>
+        <location filename="../litecoinfinance.cpp" line="-113"/>
         <source>Error parsing command line arguments: %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3197,7 +3197,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+54"/>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
+        <source>A message that was attached to the litecoinfinance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4017,7 +4017,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+156"/>
+        <location filename="../litecoinfinancegui.cpp" line="+156"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4157,7 +4157,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>litecoinfinance-core</name>
     <message>
         <location filename="../litecoin financestrings.cpp" line="+29"/>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
