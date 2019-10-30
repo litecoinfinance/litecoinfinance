@@ -62,12 +62,12 @@
         <translation>Ontvangstadres</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw LitecoinFinance adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Bitcoin adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw LitecoinFinance adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Bitcoin adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Bevestig portemonnee versleuteling</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINFINANCEFINANCES&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als je je portemonnee versleutelt en je wachtwoord kwijtraakt, raak je &lt;b&gt;AL JE LITECOINFINANCEFINANCES KWIJT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als je je portemonnee versleutelt en je wachtwoord kwijtraakt, raak je &lt;b&gt;AL JE BITCOINS KWIJT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -178,10 +178,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Portemonnee versleuteld</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoinfinances from being stolen by malware infecting your computer.</source>
-        <translation>%1 zal nu sluiten om het versleutel proces te voltooien. Onthoudt dat het versleutelen van je portemonnee jouw litecoinfinances niet volledig van diefstal via malware kan beschermen.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -246,10 +242,6 @@
         <translation>&amp;Overzicht</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Toon algemeen overzicht van portemonnee</translation>
     </message>
@@ -306,14 +298,6 @@
         <translation>&amp;Wachtwoord Veranderen</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Verzendadressen</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Ontvangadressen</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Open &amp;URL...</translation>
     </message>
@@ -338,8 +322,8 @@
         <translation>Blokken op schijf herindexeren...</translation>
     </message>
     <message>
-        <source>Send coins to a LitecoinFinance address</source>
-        <translation>Verstuur coins naar een LitecoinFinance adres</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Verstuur coins naar een Bitcoin adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,12 +346,8 @@
         <translation>&amp;Bericht verifiëren</translation>
     </message>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>LitecoinFinance</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portemonnee</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -390,12 +370,12 @@
         <translation>Versleutel de privé sleutels die bij je portemonnee horen</translation>
     </message>
     <message>
-        <source>Sign messages with your LitecoinFinance addresses to prove you own them</source>
-        <translation>Signeer berichten met je LitecoinFinance adres om te bewijzen dat ze van jou zijn</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Signeer berichten met je Bitcoin adres om te bewijzen dat ze van jou zijn</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LitecoinFinance addresses</source>
-        <translation>Verifieer berichten om er zeker van te zijn dat ze met specifieke LitecoinFinance adressen ondertekent zijn</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verifieer berichten om er zeker van te zijn dat ze met specifieke Bitcoin adressen ondertekent zijn</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +394,8 @@
         <translation>Tabs taakbalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
-        <translation>Betalingen aanvragen (genereert QR codes en litecoinfinance: URI's)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Betalingen aanvragen (genereert QR codes en bitcoin: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +406,8 @@
         <translation>Toon de lijst van gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a litecoinfinance: URI or payment request</source>
-        <translation>Open een litecoinfinance: URI of betaalverzoek</translation>
+        <source>Open a bitcoin: URI or payment request</source>
+        <translation>Open een bitcoin: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -470,8 +450,8 @@
         <translation>Up to date</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible LitecoinFinance command-line options</source>
-        <translation>Open het %1 help bericht om een lijst met LitecoinFinance commando-regel opties te krijgen</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Open het %1 help bericht om een lijst met Bitcoin commando-regel opties te krijgen</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -540,8 +520,8 @@
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; op dit moment &lt;b&gt;vergrendeld&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. LitecoinFinance can no longer continue safely and will quit.</source>
-        <translation>Een fatale error is voorgekomen. LitecoinFinance kan niet langer veilig verder gaan en sluit daardoor af.</translation>
+        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <translation>Een fatale error is voorgekomen. Bitcoin kan niet langer veilig verder gaan en sluit daardoor af.</translation>
     </message>
 </context>
 <context>
@@ -691,8 +671,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>LitecoinFinance</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -708,12 +688,64 @@
 <context>
     <name>OptionsDialog</name>
     <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Gebruike aparte SOCKS&amp;5 proxy om peers te bereiken via Tor hidden services</translation>
+    </message>
+    <message>
+        <source>Hide the icon from the system tray.</source>
+        <translation>Verberg het icoontje van de taakbalk</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>Open Configuratie Bestand</translation>
+    </message>
+    <message>
+        <source>Expert</source>
+        <translation>Expert</translation>
+    </message>
+    <message>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Poort mappen met &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>IPv4</source>
+        <translation>IPv4</translation>
+    </message>
+    <message>
+        <source>IPv6</source>
+        <translation>IPv6</translation>
+    </message>
+    <message>
+        <source>Tor</source>
+        <translation>Tor</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
-    </context>
+    <message>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Het ingegeven proxy adres is ongeldig</translation>
+    </message>
+</context>
 <context>
     <name>OverviewPage</name>
+    <message>
+        <source>Available:</source>
+        <translation>Beschikbaar:</translation>
+    </message>
+    <message>
+        <source>Balances</source>
+        <translation>Saldi</translation>
+    </message>
+    <message>
+        <source>Total:</source>
+        <translation>Totaal:</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Recente transacties</translation>
+    </message>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -765,6 +797,10 @@
     <message>
         <source>Label</source>
         <translation>Label</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
     </message>
     </context>
 <context>
@@ -937,6 +973,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

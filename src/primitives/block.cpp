@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,38 +7,12 @@
 
 #include <hash.h>
 #include <tinyformat.h>
-#include <utilstrencodings.h>
+#include <util/strencodings.h>
 #include <crypto/common.h>
-#include <crypto/scrypt.h>
-#include "versionbits.h"
-
-extern "C" void yescrypt_hash(const char *input, char *output);
 
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
-}
-
-uint256 CBlockHeader::GetPoWOldHash() const
-{
-    uint256 thash;
-    scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
-    return thash;
-}
-
-uint256 CBlockHeader::GetPoWNewHash() const
-{
-    uint256 thash;
-    yescrypt_hash(BEGIN(nVersion), BEGIN(thash));
-    return thash;
-}
-
-uint256 CBlockHeader::GetPoWHash() const
-{
-	if (nVersion & VERSIONBITS_FORK_CPU)
-		return GetPoWNewHash();
-	else
-		return GetPoWOldHash();
 }
 
 std::string CBlock::ToString() const

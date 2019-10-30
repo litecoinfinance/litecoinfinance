@@ -14,6 +14,10 @@
         <translation>Dele active selectam inscriptionem ex enumeratione</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Insere inscriptionem vel titulum ut quaeras</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta data in hac tabella in plicam</translation>
     </message>
@@ -114,8 +118,8 @@
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a LitecoinFinance address</source>
-        <translation>Mitte nummos ad inscriptionem LitecoinFinance</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Mitte nummos ad inscriptionem Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -138,12 +142,8 @@
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>LitecoinFinance</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Cassidile</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -166,12 +166,12 @@
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your LitecoinFinance addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus LitecoinFinance ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Bitcoin ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LitecoinFinance addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus LitecoinFinance</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Bitcoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -220,6 +220,10 @@
     <message>
         <source>Up to date</source>
         <translation>Recentissimo</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Fenestra</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -289,20 +293,12 @@
         <source>Command-line options</source>
         <translation>Optiones mandati initiantis</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Usus:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>Optiones mandati intiantis</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>LitecoinFinance</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -350,8 +346,8 @@
         <translation>Cassidile</translation>
     </message>
     <message>
-        <source>Automatically open the LitecoinFinance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis LitecoinFinance in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Bitcoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -433,8 +429,8 @@
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LitecoinFinance network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete LitecoinFinance postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Bitcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -552,6 +548,10 @@
         <source>Copy &amp;Address</source>
         <translation>&amp;Copia Inscriptionem</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Cassidile</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -597,6 +597,10 @@
     <message>
         <source>S&amp;end</source>
         <translation>&amp;Mitte</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Transactionis merces</translation>
     </message>
     </context>
 <context>
@@ -675,8 +679,8 @@
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LitecoinFinance address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem LitecoinFinance a te possessa esse</translation>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Bitcoin a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -695,8 +699,8 @@
         <translation>&amp;Verifica Nuntium</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LitecoinFinance address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione LitecoinFinance</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Bitcoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -737,6 +741,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -748,48 +755,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Optiones:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Specifica indicem datorum</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Conecta ad nodum acceptare inscriptiones parium, et disconecte</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Specifica tuam propriam publicam inscriptionem</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accipe terminalis et JSON-RPC mandata.</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Operare infere sicut daemon et mandata accipe</translation>
-    </message>
-    <message>
-        <source>Litecoin Finance</source>
-        <translation>LitecoinFinance Nucleus</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Conglutina ad inscriptionem datam et semper in eam ausculta.  Utere [moderatrum]:porta notationem pro IPv6</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Facere mandatum quotiescumque cassidilis transactio mutet (%s in mandato sbstituitur ab TxID)</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Optiones creandi frustorum:</translation>
+        <source>Bitcoin Core</source>
+        <translation>Bitcoin Nucleus</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -836,14 +803,6 @@
         <translation>Informatio</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Mitte informationem vestigii/debug ad terminale potius quam plicam debug.log</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Diminue plicam debug.log ad initium clientis (praedefinitum: 1 nisi -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Signandum transactionis abortum est</translation>
     </message>
@@ -856,24 +815,8 @@
         <translation>Transactio nimis magna</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Nomen utentis pro conexionibus JSON-RPC</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Monitio</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Tessera pro conexionibus JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Pelle mandatum quando optissimum frustum mutat (%s in mandato substituitur ab hash frusti)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Permitte quaerenda DNS pro -addnode, -seednode, et -connect</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>

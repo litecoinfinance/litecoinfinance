@@ -1,6 +1,10 @@
 <TS language="en_AU" version="2.1">
 <context>
     <name>AddressBookPage</name>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Enter address or label to search</translation>
+    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -21,6 +25,10 @@
         <source>Synchronizing with network...</source>
         <translation>Synchronising with network...</translation>
     </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Window</translation>
+    </message>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -33,10 +41,6 @@
     </context>
 <context>
     <name>HelpMessageDialog</name>
-    <message>
-        <source>Start minimized</source>
-        <translation>Start minimised</translation>
-    </message>
     </context>
 <context>
     <name>Intro</name>
@@ -44,8 +48,8 @@
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoinfinance network, as detailed below.</source>
-        <translation>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronising with the litecoinfinance network, as detailed below.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronising with the bitcoin network, as detailed below.</translation>
     </message>
     </context>
 <context>
@@ -73,8 +77,8 @@
 <context>
     <name>OverviewPage</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LitecoinFinance network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the LitecoinFinance network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the Bitcoin network after a connection is established, but this process has not completed yet.</translation>
     </message>
     </context>
 <context>
@@ -104,6 +108,10 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -113,6 +121,10 @@
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Smart fee not initialised yet. This usually takes a few blocks...)</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Transaction fee</translation>
     </message>
     </context>
 <context>
@@ -149,6 +161,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -174,14 +189,6 @@
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>Initialisation sanity check failed. %s is shutting down.</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Randomise credentials for every proxy connection. This enables Tor stream isolation (default: %u)</translation>
-    </message>
-    <message>
-        <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
-        <translation>Sets the serialisation of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</translation>
     </message>
     </context>
 </TS>

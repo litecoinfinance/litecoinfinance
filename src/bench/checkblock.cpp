@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Copyright (c) 2016-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,13 +17,10 @@ namespace block_bench {
 // a block off the wire, but before we can relay the block on to peers using
 // compact block relay.
 
-// LitecoinFinance uses block height 878439, hash 0babe680f55a55d54339511226755f0837261da89a4e78eba4d6436a63026df8
-// which contains 3808 transactions.
-
 static void DeserializeBlockTest(benchmark::State& state)
 {
     CDataStream stream((const char*)block_bench::block413567,
-            (const char*)&block_bench::block413567[sizeof(block_bench::block413567)],
+            (const char*)block_bench::block413567 + sizeof(block_bench::block413567),
             SER_NETWORK, PROTOCOL_VERSION);
     char a = '\0';
     stream.write(&a, 1); // Prevent compaction
@@ -31,14 +28,15 @@ static void DeserializeBlockTest(benchmark::State& state)
     while (state.KeepRunning()) {
         CBlock block;
         stream >> block;
-        assert(stream.Rewind(sizeof(block_bench::block413567)));
+        bool rewound = stream.Rewind(sizeof(block_bench::block413567));
+        assert(rewound);
     }
 }
 
 static void DeserializeAndCheckBlockTest(benchmark::State& state)
 {
     CDataStream stream((const char*)block_bench::block413567,
-            (const char*)&block_bench::block413567[sizeof(block_bench::block413567)],
+            (const char*)block_bench::block413567 + sizeof(block_bench::block413567),
             SER_NETWORK, PROTOCOL_VERSION);
     char a = '\0';
     stream.write(&a, 1); // Prevent compaction
@@ -48,10 +46,12 @@ static void DeserializeAndCheckBlockTest(benchmark::State& state)
     while (state.KeepRunning()) {
         CBlock block; // Note that CBlock caches its checked state, so we need to recreate it here
         stream >> block;
-        assert(stream.Rewind(sizeof(block_bench::block413567)));
+        bool rewound = stream.Rewind(sizeof(block_bench::block413567));
+        assert(rewound);
 
         CValidationState validationState;
-        assert(CheckBlock(block, validationState, chainParams->GetConsensus()));
+        bool checked = CheckBlock(block, validationState, chainParams->GetConsensus());
+        assert(checked);
     }
 }
 

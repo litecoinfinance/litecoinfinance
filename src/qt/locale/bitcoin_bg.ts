@@ -30,6 +30,10 @@
         <translation>Изтрий избрания адрес от списъка</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Търсене по адрес или име</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Запишете данните от текущия раздел във файл</translation>
     </message>
@@ -62,12 +66,12 @@
         <translation>Получаване на адреси</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите LitecoinFinance адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите Биткойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -132,6 +136,10 @@
         <translation>Въведете новата парола повторно</translation>
     </message>
     <message>
+        <source>Show password</source>
+        <translation>Покажи парола</translation>
+    </message>
+    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Въведете новата парола към портфейла.&lt;br/&gt;Моля ползвайте парола съставена от &lt;b&gt;десет или повече произволни символа&lt;/b&gt;, или &lt;b&gt;осем или повече думи&lt;/b&gt;.</translation>
     </message>
@@ -168,7 +176,7 @@
         <translation>Потвърдете на шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINFINANCEFINANCES&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -242,10 +250,6 @@
         <translation>&amp;Баланс</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Сървър</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Обобщена информация за портфейла</translation>
     </message>
@@ -302,16 +306,12 @@
         <translation>&amp;Смяна на паролата...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Изпращане на адресите...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Получаване на адресите...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Отвори &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Портфейл</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -326,11 +326,15 @@
         <translation>Натиснете за повторно активиране на мрежата.</translation>
     </message>
     <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Синхронизиране на хедъри (%1%)</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a LitecoinFinance address</source>
+        <source>Send coins to a Bitcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -354,12 +358,8 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>LitecoinFinance</source>
+        <source>Bitcoin</source>
         <translation>Биткоин</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Портфейл</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -382,12 +382,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your LitecoinFinance addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя LitecoinFinance адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Биткойн адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LitecoinFinance addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените LitecoinFinance адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Биткойн адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -406,8 +406,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и LitecoinFinance: URIs)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -418,8 +418,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a litecoinfinance: URI or payment request</source>
-        <translation>Отворете LitecoinFinance: URI  или заявка за плащане</translation>
+        <source>Open a bitcoin: URI or payment request</source>
+        <translation>Отворете биткойн: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -462,8 +462,20 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible LitecoinFinance command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни LitecoinFinance команди</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Биткойн команди</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>Портфейл по подразбиране</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Прозорец</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Минимизирай</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -524,8 +536,8 @@
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. LitecoinFinance can no longer continue safely and will quit.</source>
-        <translation>Възникна фатална грешка. LitecoinFinance не може да продължи безопасно и ще се изключи.</translation>
+        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <translation>Възникна фатална грешка. Биткойн не може да продължи безопасно и ще се изключи.</translation>
     </message>
 </context>
 <context>
@@ -694,10 +706,6 @@
         <translation>&amp;Адрес</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Нов адрес за получаване</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Нов адрес за изпращане</translation>
     </message>
@@ -710,12 +718,8 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid LitecoinFinance address.</source>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Вече има адрес "%1" в списъка с адреси.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -767,42 +771,6 @@
         <source>Command-line options</source>
         <translation>Списък с команди</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Използване:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>Списък с налични команди</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Опции на интерфейс:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Избери директория за данни при стартирване (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Избери език, примерно "de_DE" (по подразбиране: system locale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Стартирай минимизиран</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Задай SSL root сертификат за молба за изплащане (по подразбиране: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Покажи splash екран при стартирване (по подразбиране %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Нулиране на всички настройки променени в GUI</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -827,7 +795,7 @@
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
-        <source>LitecoinFinance</source>
+        <source>Bitcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -892,10 +860,6 @@
         <translation>Размер на кеша в &amp;базата данни</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>Мегабайта</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
     </message>
@@ -916,6 +880,10 @@
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
+        <source>GB</source>
+        <translation>ГБ</translation>
+    </message>
+    <message>
         <source>W&amp;allet</source>
         <translation>По&amp;ртфейл</translation>
     </message>
@@ -932,16 +900,24 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the LitecoinFinance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия LitecoinFinance порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Bitcoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the LitecoinFinance network through a SOCKS5 proxy.</source>
-        <translation>Свързване с LitecoinFinance мрежата чрез SOCKS5  прокси.</translation>
+        <source>Accept connections from outside.</source>
+        <translation>Позволи външни връзки</translation>
+    </message>
+    <message>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Позволи входящи връзки</translation>
+    </message>
+    <message>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Биткойн мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -958,6 +934,10 @@
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Порт на прокси сървъра (пр. 9050)</translation>
+    </message>
+    <message>
+        <source>Tor</source>
+        <translation>Тор</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1020,6 +1000,10 @@
         <translation>Изисква се рестартиране на клиента за активиране на извършените промени.</translation>
     </message>
     <message>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>Клиентът ще бъде изключен. Искате ли да продължите?</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
@@ -1039,7 +1023,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LitecoinFinance network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1094,8 +1078,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start litecoinfinance: click-to-pay handler</source>
-        <translation>LitecoinFinance не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>Биткойн не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1176,8 +1160,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a LitecoinFinance address (e.g. %1)</source>
-        <translation>Въведете LitecoinFinance адрес (например: %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Въведете Биткойн адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1519,6 +1503,10 @@
         <translation>Съобщение</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Портфейл</translation>
+    </message>
+    <message>
         <source>Error encoding URI into QR Code.</source>
         <translation>Грешка при създаването на QR Code от URI.</translation>
     </message>
@@ -1681,12 +1669,12 @@
         <translation>Наистина ли искате да изпратите?</translation>
     </message>
     <message>
-        <source>added as transaction fee</source>
-        <translation>добавено като такса за транзакция</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>или</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Такса</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -1713,8 +1701,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid LitecoinFinance address</source>
-        <translation>Внимание: Невалиден LitecoinFinance адрес</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Внимание: Невалиден Биткойн адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1833,7 +1821,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LitecoinFinance address</source>
+        <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1849,7 +1837,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LitecoinFinance address</source>
+        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -1930,10 +1918,6 @@
         <translation>Подлежи на промяна до %1</translation>
     </message>
     <message>
-        <source>%1/offline</source>
-        <translation>%1/офлайн</translation>
-    </message>
-    <message>
         <source>%1/unconfirmed</source>
         <translation>%1/непотвърдени</translation>
     </message>
@@ -1944,10 +1928,6 @@
     <message>
         <source>Status</source>
         <translation>Статус</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, все още не е изпратено</translation>
     </message>
     <message>
         <source>Date</source>
@@ -2080,10 +2060,6 @@
         <translation>Подлежи на промяна до %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Извън линия</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Непотвърдено</translation>
     </message>
@@ -2102,10 +2078,6 @@
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Неплатим (%1 потвърждения, ще бъде платим след %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Блокът не е получен от останалите участници и най-вероятно няма да бъде одобрен.</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -2299,6 +2271,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2311,7 +2286,11 @@
         <source>Send Coins</source>
         <translation>Изпращане</translation>
     </message>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>Портфейл по подразбиране</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2346,40 +2325,12 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Информацията за портфейла беше успешно запазена в %1.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Определете директория за данните</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Свържете се към сървър за да можете да извлечете адресите на пиърите след което се разкачете.</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Въведете Ваш публичен адрес</translation>
-    </message>
-    <message>
-        <source>Litecoin Finance</source>
-        <translation>LitecoinFinance ядро</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може да бъде:</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Приемайте връзки отвън.(по подразбиране:1 в противен случай -proxy или -connect)</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Настройки на връзката:</translation>
+        <source>Bitcoin Core</source>
+        <translation>Биткойн ядро</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2406,20 +2357,8 @@
         <translation>Проверка на блоковете...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Настройки на портфейла:</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Свързване чрез SOCKS5  прокси</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Информация</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Изпрати локализиращата или дебъг информацията към конзолата, вместо файлът debug.log</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
@@ -2434,28 +2373,8 @@
         <translation>Транзакцията е твърде голяма</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Потребителско име за JSON-RPC връзките</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Предупреждение</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Парола за  JSON-RPC връзките</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Назовете конфигурационен файл(по подразбиране %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Задайте време на изключване при проблеми със свързването в милисекунди(минимум:1, по подразбиране %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Задайте pid  файл(по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Starting network threads...</source>

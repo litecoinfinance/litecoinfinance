@@ -62,12 +62,12 @@
         <translation>מקבל כתובות</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>אלו הן כתובות לייטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>אלו הן כתובות הביטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>אלו הן כתובות לייטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>אלו הן כתובות הביטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
     </message>
     </context>
 <context>
@@ -82,12 +82,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>לייטקוין</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>ארנק</translation>
+        <source>Bitcoin</source>
+        <translation>ביטקוין</translation>
     </message>
     </context>
 <context>
@@ -113,8 +109,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>לייטקוין</translation>
+        <source>Bitcoin</source>
+        <translation>ביטקוין</translation>
     </message>
     </context>
 <context>
@@ -156,6 +152,10 @@
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>ארנק</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -207,6 +207,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
