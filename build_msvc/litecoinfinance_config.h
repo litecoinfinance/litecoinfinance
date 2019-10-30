@@ -352,7 +352,7 @@
 #define PACKAGE_TARNAME "litecoinfinance"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://bitcoincore.org/"
+#define PACKAGE_URL "https://ltfn.org/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.17.99"

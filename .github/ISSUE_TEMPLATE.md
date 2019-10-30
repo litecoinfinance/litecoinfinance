@@ -2,7 +2,7 @@
 
 General litecoin finance questions and/or support requests are best directed to the Litecoin Finance StackExchange at https://litecoinfinance.stackexchange.com.
 
-For reporting security issues, please read instructions at https://bitcoincore.org/en/contact/.
+For reporting security issues, please read instructions at https://ltfn.org/en/contact/.
 
 If the node is "stuck" during sync or giving "block checksum mismatch" errors, please ensure your hardware is stable by running memtest and observe CPU temperature with a load-test tool such as linpack before creating an issue! -->
 

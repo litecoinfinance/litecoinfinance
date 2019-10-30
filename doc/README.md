@@ -5,7 +5,7 @@ Setup
 ---------------------
 Litecoin Finance Core is the original Litecoin Finance client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Litecoin Finance transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Litecoin Finance Core, visit [bitcoincore.org](https://bitcoincore.org/en/download/).
+To download Litecoin Finance Core, visit [ltfn.org](https://ltfn.org/en/download/).
 
 Running
 ---------------------
