@@ -1,4 +1,4 @@
-# TOR SUPPORT IN BITCOIN
+# TOR SUPPORT IN LITECOINFINANCE
 
 It is possible to run Litecoin Finance Core as a Tor hidden service, and connect to such services.
 

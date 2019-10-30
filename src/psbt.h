@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_PSBT_H
-#define BITCOIN_PSBT_H
+#ifndef LITECOINFINANCE_PSBT_H
+#define LITECOINFINANCE_PSBT_H
 
 #include <attributes.h>
 #include <node/transaction.h>
@@ -580,4 +580,4 @@ bool FinalizeAndExtractPSBT(PartiallySignedTransaction& psbtx, CMutableTransacti
  */
 NODISCARD TransactionError CombinePSBTs(PartiallySignedTransaction& out, const std::vector<PartiallySignedTransaction>& psbtxs);
 
-#endif // BITCOIN_PSBT_H
+#endif // LITECOINFINANCE_PSBT_H

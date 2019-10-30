@@ -5,8 +5,8 @@
 
 // Compile-time verification of assumptions we make.
 
-#ifndef BITCOIN_COMPAT_ASSUMPTIONS_H
-#define BITCOIN_COMPAT_ASSUMPTIONS_H
+#ifndef LITECOINFINANCE_COMPAT_ASSUMPTIONS_H
+#define LITECOINFINANCE_COMPAT_ASSUMPTIONS_H
 
 #include <limits>
 
@@ -46,4 +46,4 @@ static_assert(sizeof(int) == 4, "32-bit int assumed");
 // * We are NOT assuming a specific value for std::locale("").name().
 // * We are NOT assuming a specific value for std::numeric_limits<char>::is_signed.
 
-#endif // BITCOIN_COMPAT_ASSUMPTIONS_H
+#endif // LITECOINFINANCE_COMPAT_ASSUMPTIONS_H

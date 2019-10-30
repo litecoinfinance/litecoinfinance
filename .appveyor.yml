@@ -43,8 +43,8 @@ before_test:
 - ps:  ${conf_ini} = ${conf_ini}.Replace("@abs_top_builddir@", ${env:APPVEYOR_BUILD_FOLDER})
 - ps:  ${conf_ini} = ${conf_ini}.Replace("@EXEEXT@", ".exe")
 - ps:  ${conf_ini} = ${conf_ini}.Replace("@ENABLE_WALLET_TRUE@", "")
-- ps:  ${conf_ini} = ${conf_ini}.Replace("@BUILD_BITCOIN_CLI_TRUE@", "")
-- ps:  ${conf_ini} = ${conf_ini}.Replace("@BUILD_BITCOIND_TRUE@", "")
+- ps:  ${conf_ini} = ${conf_ini}.Replace("@BUILD_LITECOINFINANCE_CLI_TRUE@", "")
+- ps:  ${conf_ini} = ${conf_ini}.Replace("@BUILD_LITECOINFINANCED_TRUE@", "")
 - ps:  ${conf_ini} = ${conf_ini}.Replace("@ENABLE_ZMQ_TRUE@", "")
 - ps:  ${utf8} = New-Object System.Text.UTF8Encoding ${false}
 - ps:  '[IO.File]::WriteAllLines([IO.Path]::Combine(${env:APPVEYOR_BUILD_FOLDER}, "test", "config.ini"), ${conf_ini}, ${utf8})'

@@ -256,7 +256,7 @@ def main():
 
     logging.debug("Temporary test directory at %s" % tmpdir)
 
-    enable_bitcoind = config["components"].getboolean("ENABLE_BITCOIND")
+    enable_bitcoind = config["components"].getboolean("ENABLE_LITECOINFINANCED")
 
     if not enable_bitcoind:
         print("No functional tests to run.")
