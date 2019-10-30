@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Hierdie is die adresse waar u Bitcoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
+        <translation>Hierdie is die adresse waar u LitecoinFinances sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Teken &amp;boodskap...</translation>
@@ -346,8 +346,8 @@
         <translation>&amp;Verifieer boodskap...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -767,8 +767,8 @@
         <translation>Gebruik 'n persoonlike data gids:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1698,7 +1698,7 @@ transaksievertragingsrisiko.</translation>
     </message>
     <message>
         <source>Warning: Invalid Litecoin Finance address</source>
-        <translation>Waarskuwing: Ongeldige Bitcoinadres</translation>
+        <translation>Waarskuwing: Ongeldige LitecoinFinanceadres</translation>
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
@@ -1731,7 +1731,7 @@ Is u seker?</translation>
     </message>
     <message>
         <source>The Litecoin Finance address to send the payment to</source>
-        <translation>Die Bitcoinadres waarheen die betaling gestuur word</translation>
+        <translation>Die LitecoinFinanceadres waarheen die betaling gestuur word</translation>
     </message>
     <message>
         <source>Alt+A</source>

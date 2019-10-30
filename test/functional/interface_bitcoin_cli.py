@@ -3,10 +3,10 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test bitcoin-cli"""
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import LitecoinFinanceTestFramework
 from test_framework.util import assert_equal, assert_raises_process_error, get_auth_cookie
 
-class TestBitcoinCli(BitcoinTestFramework):
+class TestLitecoinFinanceCli(LitecoinFinanceTestFramework):
 
     def set_test_params(self):
         self.setup_clean_chain = True
@@ -76,4 +76,4 @@ class TestBitcoinCli(BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    TestBitcoinCli().main()
+    TestLitecoinFinanceCli().main()

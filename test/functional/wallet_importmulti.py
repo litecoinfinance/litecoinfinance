@@ -19,7 +19,7 @@ from test_framework.script import (
     CScript,
     OP_NOP,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import LitecoinFinanceTestFramework
 from test_framework.descriptors import descsum_create
 from test_framework.util import (
     assert_equal,
@@ -33,7 +33,7 @@ from test_framework.wallet_util import (
     test_address,
 )
 
-class ImportMultiTest(BitcoinTestFramework):
+class ImportMultiTest(LitecoinFinanceTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [["-addresstype=legacy"], ["-addresstype=legacy"]]

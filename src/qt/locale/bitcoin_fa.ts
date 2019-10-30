@@ -224,7 +224,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;امضای پیام...</translation>
@@ -342,7 +342,7 @@
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>بیت‌کوین</translation>
     </message>
     <message>
@@ -735,7 +735,7 @@
         <translation>استفاده از یک مسیر سفارشی:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>بیت‌کوین</translation>
     </message>
     <message>

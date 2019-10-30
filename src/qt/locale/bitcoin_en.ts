@@ -308,7 +308,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+318"/>
         <source>Sign &amp;message...</source>
@@ -466,8 +466,8 @@
     </message>
     <message>
         <location line="+724"/>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     <message>
         <location line="-797"/>
@@ -1136,8 +1136,8 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+22"/>
-        <source>Bitcoin</source>
-        <translation type="unfinished">Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation type="unfinished">LitecoinFinance</translation>
     </message>
     <message>
         <location line="+6"/>

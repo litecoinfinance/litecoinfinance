@@ -58,7 +58,7 @@ covered by the txid. This provides several immediate benefits:
   multisig spend. This solves all known cases of unwanted transaction
   malleability, which is a problem that makes programming Litecoin Finance wallet
   software more difficult and which seriously complicates the design of smart
-  contracts for Bitcoin.
+  contracts for LitecoinFinance.
 
 - **Capacity increase:** Segwit transactions contain new fields that are not
   part of the data currently used to calculate the size of a block, which
@@ -115,7 +115,7 @@ covered by the txid. This provides several immediate benefits:
   Segwit allows advanced transactions to use the SHA256 hash function instead,
   which provides about 128 bits of security  (that is 281 trillion times as
   much security as 80 bits and is equivalent to the maximum bits of security
-  believed to be provided by Bitcoin's choice of parameters for its Elliptic
+  believed to be provided by LitecoinFinance's choice of parameters for its Elliptic
   Curve Digital Security Algorithm [ECDSA].)
 
 - **More efficient almost-full-node security** Satoshi Nakamoto's original
@@ -123,7 +123,7 @@ covered by the txid. This provides several immediate benefits:
   skip downloading and validating some data from historic blocks that are
   protected by large amounts of proof of work.  Unfortunately, Nakamoto's
   method can't guarantee that a newly-started node using this method will
-  produce an accurate copy of Bitcoin's current ledger (called the UTXO set),
+  produce an accurate copy of LitecoinFinance's current ledger (called the UTXO set),
   making the node vulnerable to falling out of consensus with other nodes.
   Although the problems with Nakamoto's method can't be fixed in a soft fork,
   Segwit accomplishes something similar to his original proposal: it makes it
@@ -135,7 +135,7 @@ covered by the txid. This provides several immediate benefits:
   of this 0.13.1 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
-  Litecoin Finance users to individually opt-in to almost any change in the Bitcoin
+  Litecoin Finance users to individually opt-in to almost any change in the LitecoinFinance
   Script language when those users receive new transactions.  Features
   currently being researched by Litecoin Finance Core contributors that may use this
   capability include support for Schnorr signatures, which can improve the

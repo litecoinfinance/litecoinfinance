@@ -236,7 +236,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>ثبت &amp;پیام</translation>
@@ -358,7 +358,7 @@
         <translation>تایید پیام</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>بیت کوین</translation>
     </message>
     <message>
@@ -753,7 +753,7 @@
         <translation>استفاده کردن از پوشه داده مخصوص:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>بیت کوین</translation>
     </message>
     <message>

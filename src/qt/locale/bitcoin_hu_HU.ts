@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezek az Ön kifizetéseinek küldésekor használandó Bitcoin-címek. Fizetés indítása előtt mindig ellenőrizze az összeget és a fogadó címet!</translation>
+        <translation>Ezek az Ön kifizetéseinek küldésekor használandó LitecoinFinance-címek. Fizetés indítása előtt mindig ellenőrizze az összeget és a fogadó címet!</translation>
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezek az Ön fizetéseinek fogadásakor használandó Bitcoin-címek. Célszerű minden tranzakcióhoz új fogadó címet használni.</translation>
+        <translation>Ezek az Ön fizetéseinek fogadásakor használandó LitecoinFinance-címek. Célszerű minden tranzakcióhoz új fogadó címet használni.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Üzenet &amp;aláírása</translation>
@@ -350,8 +350,8 @@
         <translation>Üzenet &amp;ellenőrzése</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -419,7 +419,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Litecoin Finance network</source>
-        <translation><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform></translation>
+        <translation><numerusform>%n aktív kapcsolat a LitecoinFinance-hálózaton</numerusform><numerusform>%n aktív kapcsolat a LitecoinFinance-hálózaton</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -815,8 +815,8 @@
         <translation>Egyéni adatmappa használata:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1259,7 +1259,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin Finance address or malformed URI parameters.</source>
-        <translation>Az URI nem dolgozható fel! Ennek oka lehet egy érvénytelen Bitcoin-cím, vagy hibás URI-paraméterek.</translation>
+        <translation>Az URI nem dolgozható fel! Ennek oka lehet egy érvénytelen LitecoinFinance-cím, vagy hibás URI-paraméterek.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1357,7 +1357,7 @@
     </message>
     <message>
         <source>Enter a Litecoin Finance address (e.g. %1)</source>
-        <translation>Adjon meg egy Bitcoin-címet (pl. %1)</translation>
+        <translation>Adjon meg egy LitecoinFinance-címet (pl. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>

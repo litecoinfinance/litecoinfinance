@@ -1,6 +1,6 @@
 # PSBT Howto for Litecoin Finance Core
 
-Since Litecoin Finance Core 0.17, an RPC interface exists for Partially Signed Bitcoin
+Since Litecoin Finance Core 0.17, an RPC interface exists for Partially Signed LitecoinFinance
 Transactions (PSBTs, as specified in
 [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)).
 

@@ -168,7 +168,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Wallet:</source>
         <translation>तिजोरी </translation>

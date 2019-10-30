@@ -80,9 +80,9 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>ביטקוין</translation>
     </message>
     </context>
@@ -109,7 +109,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>ביטקוין</translation>
     </message>
     </context>

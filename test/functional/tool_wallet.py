@@ -6,10 +6,10 @@
 import subprocess
 import textwrap
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import LitecoinFinanceTestFramework
 from test_framework.util import assert_equal
 
-class ToolWalletTest(BitcoinTestFramework):
+class ToolWalletTest(LitecoinFinanceTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

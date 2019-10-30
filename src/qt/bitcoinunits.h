@@ -44,12 +44,12 @@
 /** Litecoin Finance unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class BitcoinUnits: public QAbstractListModel
+class LitecoinFinanceUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit BitcoinUnits(QObject *parent);
+    explicit LitecoinFinanceUnits(QObject *parent);
 
     /** Litecoin Finance units.
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
@@ -124,8 +124,8 @@ public:
     static CAmount maxMoney();
 
 private:
-    QList<BitcoinUnits::Unit> unitlist;
+    QList<LitecoinFinanceUnits::Unit> unitlist;
 };
-typedef BitcoinUnits::Unit BitcoinUnit;
+typedef LitecoinFinanceUnits::Unit LitecoinFinanceUnit;
 
 #endif // LITECOINFINANCE_QT_LITECOINFINANCEUNITS_H

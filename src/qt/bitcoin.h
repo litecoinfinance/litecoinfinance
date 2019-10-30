@@ -13,7 +13,7 @@
 #include <memory>
 #include <vector>
 
-class BitcoinGUI;
+class LitecoinFinanceGUI;
 class ClientModel;
 class NetworkStyle;
 class OptionsModel;
@@ -30,11 +30,11 @@ class Node;
 /** Class encapsulating Litecoin Finance Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class BitcoinCore: public QObject
+class LitecoinFinanceCore: public QObject
 {
     Q_OBJECT
 public:
-    explicit BitcoinCore(interfaces::Node& node);
+    explicit LitecoinFinanceCore(interfaces::Node& node);
 
 public Q_SLOTS:
     void initialize();
@@ -53,12 +53,12 @@ private:
 };
 
 /** Main Litecoin Finance application object */
-class BitcoinApplication: public QApplication
+class LitecoinFinanceApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit BitcoinApplication(interfaces::Node& node, int &argc, char **argv);
-    ~BitcoinApplication();
+    explicit LitecoinFinanceApplication(interfaces::Node& node, int &argc, char **argv);
+    ~LitecoinFinanceApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -83,7 +83,7 @@ public:
     /// Get process return value
     int getReturnValue() const { return returnValue; }
 
-    /// Get window identifier of QMainWindow (BitcoinGUI)
+    /// Get window identifier of QMainWindow (LitecoinFinanceGUI)
     WId getMainWinId() const;
 
     /// Setup platform style
@@ -99,14 +99,14 @@ Q_SIGNALS:
     void requestedInitialize();
     void requestedShutdown();
     void splashFinished();
-    void windowShown(BitcoinGUI* window);
+    void windowShown(LitecoinFinanceGUI* window);
 
 private:
     QThread *coreThread;
     interfaces::Node& m_node;
     OptionsModel *optionsModel;
     ClientModel *clientModel;
-    BitcoinGUI *window;
+    LitecoinFinanceGUI *window;
     QTimer *pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer{nullptr};

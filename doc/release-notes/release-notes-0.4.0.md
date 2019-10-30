@@ -1,5 +1,5 @@
 Litecoin Finance version 0.4.0 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.4.0/
+http://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.4.0/
 
 The main feature in this release is wallet private key encryption;
 you can set a passphrase that must be entered before sending coins.
@@ -28,13 +28,13 @@ Optimize database writes for large (lots of inputs) transactions
 Wallet Encryption
 
 Litecoin Finance supports native wallet encryption so that people who steal your
-wallet file don't automatically get access to all of your Bitcoins.
+wallet file don't automatically get access to all of your LitecoinFinances.
 In order to enable this feature, choose "Encrypt Wallet" from the
 Options menu.  You will be prompted to enter a passphrase, which
 will be used as the key to encrypt your wallet and will be needed
-every time you wish to send Bitcoins.  If you lose this passphrase,
+every time you wish to send LitecoinFinances.  If you lose this passphrase,
 you will lose access to spend all of the litecoin finances in your wallet,
-no one, not even the Litecoin Finance developers can recover your Bitcoins.
+no one, not even the Litecoin Finance developers can recover your LitecoinFinances.
 This means you are responsible for your own security, store your
 passphrase in a secure location and do not forget it.
 
@@ -48,7 +48,7 @@ your coins.
 It is recommended that you backup your wallet file before you
 encrypt your wallet.  To do this, close the Litecoin Finance client and
 copy the wallet.dat file from ~/.bitcoin/ on Linux, /Users/(user
-name)/Application Support/Bitcoin/ on Mac OSX, and %APPDATA%/Bitcoin/
+name)/Application Support/LitecoinFinance/ on Mac OSX, and %APPDATA%/LitecoinFinance/
 on Windows (that is /Users/(user name)/AppData/Roaming/Litecoin Finance on
 Windows Vista and 7 and /Documents and Settings/(user name)/Application
 Data/Litecoin Finance on Windows XP).  Once you have copied that file to a
@@ -60,7 +60,7 @@ able to go back to a version of the Litecoin Finance client older than 0.4.
 Keep in mind that you are always responsible for your own security.
 All it takes is a slightly more advanced wallet-stealing trojan which
 installs a keylogger to steal your wallet passphrase as you enter it
-in addition to your wallet file and you have lost all your Bitcoins.
+in addition to your wallet file and you have lost all your LitecoinFinances.
 Wallet encryption cannot keep you safe if you do not practice
 good security, such as running up-to-date antivirus software, only
 entering your wallet passphrase in the Litecoin Finance client and using the

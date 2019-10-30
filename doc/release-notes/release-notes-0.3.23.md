@@ -1,5 +1,5 @@
 Win32, Linux, MacOSX and source releases for litecoin finance v0.3.23 have been uploaded to
-https://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.23/
+https://sourceforge.net/projects/bitcoin/files/LitecoinFinance/bitcoin-0.3.23/
 
 This is another quick bugfix release, trying to deal with the influx of new litecoin finance users.
 

@@ -149,7 +149,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Send coins to a Litecoin Finance address</source>
         <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Litecoin Finance មួយ</translation>

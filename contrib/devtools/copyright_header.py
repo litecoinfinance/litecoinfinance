@@ -571,7 +571,7 @@ def insert_cmd(argv):
 ################################################################################
 
 USAGE = """
-copyright_header.py - utilities for managing copyright headers of 'The Bitcoin
+copyright_header.py - utilities for managing copyright headers of 'The LitecoinFinance
 Core developers' in repository source files.
 
 Usage:

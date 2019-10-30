@@ -14,14 +14,14 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), uninstall all
-earlier versions of Bitcoin, then run the installer (on Windows) or just copy
-over /Applications/Bitcoin-Qt (on Mac) or bitcoind/bitcoin-qt (on Linux).
+earlier versions of LitecoinFinance, then run the installer (on Windows) or just copy
+over /Applications/LitecoinFinance-Qt (on Mac) or bitcoind/bitcoin-qt (on Linux).
 
 If you are upgrading from version 0.7.2 or earlier, the first time you run
 0.9.0 your blockchain files will be re-indexed, which will take anywhere from 
 30 minutes to several hours, depending on the speed of your machine.
 
-On Windows, do not forget to uninstall all earlier versions of the Bitcoin
+On Windows, do not forget to uninstall all earlier versions of the LitecoinFinance
 client first, especially if you are switching to the 64-bit version.
 
 Windows 64-bit installer
@@ -62,7 +62,7 @@ of minutes on a typical machine).
 Rebranding to Litecoin Finance Core
 ---------------------------
 
-To reduce confusion between Bitcoin-the-network and Bitcoin-the-software we
+To reduce confusion between LitecoinFinance-the-network and LitecoinFinance-the-software we
 have renamed the reference client to Litecoin Finance Core.
 
 
@@ -85,13 +85,13 @@ Autotools build system
 For 0.9.0 we switched to an autotools-based build system instead of individual
 (q)makefiles.
 
-Using the standard "./autogen.sh; ./configure; make" to build Bitcoin-Qt and
+Using the standard "./autogen.sh; ./configure; make" to build LitecoinFinance-Qt and
 bitcoind makes it easier for experienced open source developers to contribute 
 to the project.
 
 Be sure to check doc/build-*.md for your platform before building from source.
 
-Bitcoin-cli
+LitecoinFinance-cli
 -------------
 
 Another change in the 0.9 release is moving away from the bitcoind executable

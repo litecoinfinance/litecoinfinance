@@ -224,7 +224,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Падпісаць паведамленне...</translation>
@@ -314,7 +314,7 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>Біткойн</translation>
     </message>
     <message>
@@ -643,7 +643,7 @@
         <translation>Вітаем</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>Біткойн</translation>
     </message>
     <message>

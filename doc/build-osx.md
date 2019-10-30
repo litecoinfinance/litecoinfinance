@@ -82,17 +82,17 @@ Litecoin Finance Core is now available at `./src/bitcoind`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/Bitcoin"
+    mkdir -p "/Users/${USER}/Library/Application Support/LitecoinFinance"
 
-    touch "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
+    touch "/Users/${USER}/Library/Application Support/LitecoinFinance/bitcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/LitecoinFinance/bitcoin.conf"
 
 The first time you run bitcoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Bitcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/LitecoinFinance/debug.log
 
 Other commands:
 -------

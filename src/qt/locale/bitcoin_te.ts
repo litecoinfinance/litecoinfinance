@@ -132,13 +132,13 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>E&amp;xit</source>
         <translation>నిష్క్రమించు</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>బిట్కోయిన్</translation>
     </message>
     <message>
@@ -193,7 +193,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>బిట్కోయిన్</translation>
     </message>
     <message>

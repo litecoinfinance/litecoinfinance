@@ -9,10 +9,10 @@
 - Stop the node and restart it with -reindex-chainstate. Verify that the node has reindexed up to block 3.
 """
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import LitecoinFinanceTestFramework
 from test_framework.util import wait_until
 
-class ReindexTest(BitcoinTestFramework):
+class ReindexTest(LitecoinFinanceTestFramework):
 
     def set_test_params(self):
         self.setup_clean_chain = True

@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Litecoin Finance adressen om betalingen te verzenden. Controleer altijd het bedrag en het ontvang adres voordat u Bitcoins verstuurd.</translation>
+        <translation>Dit zijn uw Litecoin Finance adressen om betalingen te verzenden. Controleer altijd het bedrag en het ontvang adres voordat u LitecoinFinances verstuurd.</translation>
     </message>
     <message>
         <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -144,10 +144,10 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     </context>
 <context>
@@ -169,8 +169,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>LitecoinFinance</source>
+        <translation>LitecoinFinance</translation>
     </message>
     </context>
 <context>

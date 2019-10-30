@@ -17,7 +17,7 @@ QT_END_NAMESPACE
 
 /** Widget for entering litecoin finance amounts.
   */
-class BitcoinAmountField: public QWidget
+class LitecoinFinanceAmountField: public QWidget
 {
     Q_OBJECT
 
@@ -26,7 +26,7 @@ class BitcoinAmountField: public QWidget
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY valueChanged USER true)
 
 public:
-    explicit BitcoinAmountField(QWidget *parent = nullptr);
+    explicit LitecoinFinanceAmountField(QWidget *parent = nullptr);
 
     CAmount value(bool *value=nullptr) const;
     void setValue(const CAmount& value);

@@ -16,9 +16,9 @@ Verify that:
 """
 import os
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import LitecoinFinanceTestFramework
 
-class IncludeConfTest(BitcoinTestFramework):
+class IncludeConfTest(LitecoinFinanceTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = False
         self.num_nodes = 1

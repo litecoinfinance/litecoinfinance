@@ -204,7 +204,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>LitecoinFinanceGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>签名 &amp;消息...</translation>
@@ -286,7 +286,7 @@
         <translation>&amp;验证消息...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>比特币</translation>
     </message>
     <message>
@@ -391,7 +391,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
-        <translation>显示%1帮助消息以获得可能包含Bitcoin命令行选项的列表</translation>
+        <translation>显示%1帮助消息以获得可能包含LitecoinFinance命令行选项的列表</translation>
     </message>
     <message>
         <source>Open Wallet Failed</source>
@@ -541,7 +541,7 @@
         <translation>使用默认的数据目录</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>LitecoinFinance</source>
         <translation>比特币</translation>
     </message>
     <message>

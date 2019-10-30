@@ -5,7 +5,7 @@ Litecoin Finance Core integration/staging tree
 
 https://bitcoincore.org
 
-What is Bitcoin?
+What is LitecoinFinance?
 ----------------
 
 Litecoin Finance is an experimental digital currency that enables instant payments to
