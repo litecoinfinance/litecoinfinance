@@ -552,7 +552,7 @@ struct PartiallySignedTransaction
 bool PSBTInputSigned(PSBTInput& input);
 
 /** Signs a PSBTInput, verifying that all provided data matches what is being signed. */
-bool SignPSBTInput(const SigningProvider& provider, PartiallySignedTransaction& psbt, int index, int sighash = SIGHASH_ALL, SignatureData* out_sigdata = nullptr, bool use_dummy = false);
+bool SignPSBTInput(const SigningProvider& provider, PartiallySignedTransaction& psbt, int index, int sighash = SIGHASH_ALL | SIGHASH_FORKID, SignatureData* out_sigdata = nullptr, bool use_dummy = false);
 
 /**
  * Finalizes a PSBT if possible, combining partial signatures.

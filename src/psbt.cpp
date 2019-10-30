@@ -287,7 +287,7 @@ bool FinalizePSBT(PartiallySignedTransaction& psbtx)
     //   script.
     bool complete = true;
     for (unsigned int i = 0; i < psbtx.tx->vin.size(); ++i) {
-        complete &= SignPSBTInput(DUMMY_SIGNING_PROVIDER, psbtx, i, SIGHASH_ALL);
+        complete &= SignPSBTInput(DUMMY_SIGNING_PROVIDER, psbtx, i, SIGHASH_ALL | SIGHASH_FORKID);
     }
 
     return complete;
