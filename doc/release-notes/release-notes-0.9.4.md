@@ -7,7 +7,7 @@ translations. Upgrading to this release is recommended.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
+  https://github.com/litecoinfinance/litecoinfinance/issues
 
 How to Upgrade
 ===============

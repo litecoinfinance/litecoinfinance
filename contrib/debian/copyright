@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: LitecoinFinance
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#litecoinfinance@freenode.net
-Source: https://github.com/bitcoin/bitcoin
+Source: https://github.com/litecoinfinance/litecoinfinance
 
 Files: *
 Copyright: 2009-2019, Bitcoin Core developers

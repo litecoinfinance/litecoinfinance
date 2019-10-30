@@ -1633,7 +1633,7 @@ void static ProcessOrphanTx(CConnman* connman, std::set<uint256>& orphan_work_se
             if (!orphanTx.HasWitness() && !stateDummy.CorruptionPossible()) {
                 // Do not use rejection cache for witness transactions or
                 // witness-stripped transactions, as they can have been malleated.
-                // See https://github.com/bitcoin/bitcoin/issues/8279 for details.
+                // See https://github.com/litecoinfinance/litecoinfinance/issues/8279 for details.
                 assert(recentRejects);
                 recentRejects->insert(orphanHash);
             }
@@ -2346,7 +2346,7 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             if (!tx.HasWitness() && !state.CorruptionPossible()) {
                 // Do not use rejection cache for witness transactions or
                 // witness-stripped transactions, as they can have been malleated.
-                // See https://github.com/bitcoin/bitcoin/issues/8279 for details.
+                // See https://github.com/litecoinfinance/litecoinfinance/issues/8279 for details.
                 assert(recentRejects);
                 recentRejects->insert(tx.GetHash());
                 if (RecursiveDynamicUsage(*ptx) < 100000) {

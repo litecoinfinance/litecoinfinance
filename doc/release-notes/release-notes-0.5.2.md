@@ -4,7 +4,7 @@ http://sourceforge.net/projects/litecoinfinance/files/LitecoinFinance/litecoinfi
 This is a bugfix-only release based on 0.5.1.
 
 Please report bugs using the issue tracker at github:
-https://github.com/bitcoin/bitcoin/issues
+https://github.com/litecoinfinance/litecoinfinance/issues
 
 Stable source code is hosted at Gitorious:
 http://gitorious.org/litecoinfinance/litecoinfinanced-stable/archive-tarball/v0.5.2#.tar.gz

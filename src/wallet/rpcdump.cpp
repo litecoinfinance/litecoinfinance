@@ -791,7 +791,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
 
     /* Prevent arbitrary files from being overwritten. There have been reports
      * that users have overwritten wallet files this way:
-     * https://github.com/bitcoin/bitcoin/issues/9934
+     * https://github.com/litecoinfinance/litecoinfinance/issues/9934
      * It may also avoid other security issues.
      */
     if (fs::exists(filepath)) {

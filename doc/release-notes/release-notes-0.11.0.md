@@ -7,7 +7,7 @@ bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/litecoinfinance/litecoinfinance/issues>
 
 Upgrading and downgrading
 =========================

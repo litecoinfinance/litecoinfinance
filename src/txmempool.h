@@ -515,7 +515,7 @@ public:
      * @par Consistency bug
      *
      * The second guarantee above is not currently enforced, but
-     * https://github.com/bitcoin/bitcoin/pull/14193 will fix it. No known code
+     * https://github.com/litecoinfinance/litecoinfinance/pull/14193 will fix it. No known code
      * in litecoin finance currently depends on second guarantee, but it is important to
      * fix for third party code that needs be able to frequently poll the
      * mempool without locking `cs_main` and without encountering missing

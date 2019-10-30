@@ -7,7 +7,7 @@ as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/litecoinfinance/litecoinfinance/issues>
 
 To receive security and update notifications, please subscribe to:
 

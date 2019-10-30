@@ -7,7 +7,7 @@ bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
+  https://github.com/litecoinfinance/litecoinfinance/issues
 
 Upgrading and downgrading
 =========================
@@ -230,7 +230,7 @@ bindings such as [python-litecoinfinancelib](https://pypi.python.org/pypi/python
 alternative node implementations.
 
 This library is called `liblitecoinfinanceconsensus.so` (or, `.dll` for Windows).
-Its interface is defined in the C header [litecoinfinanceconsensus.h](https://github.com/bitcoin/bitcoin/blob/0.10/src/script/litecoinfinanceconsensus.h).
+Its interface is defined in the C header [litecoinfinanceconsensus.h](https://github.com/litecoinfinance/litecoinfinance/blob/0.10/src/script/litecoinfinanceconsensus.h).
 
 In its initial version the API includes two functions:
 
