@@ -1,5 +1,5 @@
 ---
-name: "litecoinfinance-linux-0.18"
+name: "litecoinfinance-linux-2.0"
 enable_cache: true
 suites:
 - "bionic"

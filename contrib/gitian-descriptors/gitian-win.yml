@@ -1,5 +1,5 @@
 ---
-name: "litecoinfinance-win-0.18"
+name: "litecoinfinance-win-2.0"
 enable_cache: true
 suites:
 - "bionic"
