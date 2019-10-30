@@ -60,7 +60,7 @@ Represents the view to a single wallet.
 
 * UI elements like LitecoinFinanceAmountField, which inherit from QWidget.
 * `litecoinfinancestrings.cpp`: automatically generated
-* `litecoinfinanceunits.(h/cpp)`: BTC / mBTC / etc handling
+* `litecoinfinanceunits.(h/cpp)`: LTFN / mLTFN / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions

@@ -150,7 +150,7 @@ bool parseLitecoinFinanceURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!LitecoinFinanceUnits::parse(LitecoinFinanceUnits::BTC, i->second, &rv.amount))
+                if(!LitecoinFinanceUnits::parse(LitecoinFinanceUnits::LTFN, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -181,7 +181,7 @@ QString formatLitecoinFinanceURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(LitecoinFinanceUnits::format(LitecoinFinanceUnits::BTC, info.amount, false, LitecoinFinanceUnits::separatorNever));
+        ret += QString("?amount=%1").arg(LitecoinFinanceUnits::format(LitecoinFinanceUnits::LTFN, info.amount, false, LitecoinFinanceUnits::separatorNever));
         paramCount++;
     }
 

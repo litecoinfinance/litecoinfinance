@@ -121,7 +121,7 @@ public:
 
             const QFontMetrics fm(fontMetrics());
             int h = lineEdit()->minimumSizeHint().height();
-            int w = fm.width(LitecoinFinanceUnits::format(LitecoinFinanceUnits::BTC, LitecoinFinanceUnits::maxMoney(), false, LitecoinFinanceUnits::separatorAlways));
+            int w = fm.width(LitecoinFinanceUnits::format(LitecoinFinanceUnits::LTFN, LitecoinFinanceUnits::maxMoney(), false, LitecoinFinanceUnits::separatorAlways));
             w += 2; // cursor blinking space
 
             QStyleOptionSpinBox opt;
@@ -147,7 +147,7 @@ public:
     }
 
 private:
-    int currentUnit{LitecoinFinanceUnits::BTC};
+    int currentUnit{LitecoinFinanceUnits::LTFN};
     CAmount singleStep{CAmount(100000)}; // satoshis
     mutable QSize cachedMinimumSizeHint;
     bool m_allow_empty{true};
