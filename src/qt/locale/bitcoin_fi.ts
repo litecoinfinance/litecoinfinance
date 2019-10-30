@@ -3135,7 +3135,7 @@
         <translation>HTTP-palvelinta ei voitu käynnistää. Katso debug-lokista lisätietoja.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>Bitcoin-ydin</translation>
     </message>
     <message>

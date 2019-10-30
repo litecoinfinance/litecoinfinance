@@ -3197,8 +3197,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Неможливо запустити HTTP-сервер. Детальніший опис наведено в журналі зневадження.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Litecoin Finance Core</source>
+        <translation>Litecoin Finance Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

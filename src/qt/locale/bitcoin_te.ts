@@ -391,7 +391,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>బిట్కోయిన్ కోర్</translation>
     </message>
     <message>

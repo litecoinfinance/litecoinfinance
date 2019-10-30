@@ -3251,8 +3251,8 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satos
         <translation>Kunne ikke starte HTTP-server. Se fejlretningslog for detaljer.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Litecoin Finance Core</source>
+        <translation>Litecoin Finance Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

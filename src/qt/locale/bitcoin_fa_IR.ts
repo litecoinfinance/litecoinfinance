@@ -2305,7 +2305,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>هسته بیت کوین</translation>
     </message>
     <message>

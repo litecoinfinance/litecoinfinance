@@ -1187,8 +1187,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Litecoin Finance Core</source>
+        <translation>Litecoin Finance Core</translation>
     </message>
     <message>
         <source>Error loading block database</source>

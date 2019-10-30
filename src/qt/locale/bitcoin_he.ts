@@ -3055,7 +3055,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>שרת ה HTTP לא עלה. ראו את ה debug לוג לפרטים.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>ליבת ביטקוין</translation>
     </message>
     <message>

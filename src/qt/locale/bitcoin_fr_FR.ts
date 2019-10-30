@@ -2275,8 +2275,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Litecoin Finance Core</source>
+        <translation>Litecoin Finance Core</translation>
     </message>
     <message>
         <source>Importing...</source>

@@ -2039,7 +2039,7 @@ word die fooi eweredig verdeel.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>Bitcoin Kern</translation>
     </message>
     <message>

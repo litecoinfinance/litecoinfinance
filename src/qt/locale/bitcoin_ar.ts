@@ -2955,7 +2955,7 @@
         <translation>غير قادر على بدء خادم ال HTTP. راجع سجل تصحيح الأخطاء للحصول على التفاصيل.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation>جوهر بيتكوين</translation>
     </message>
     <message>

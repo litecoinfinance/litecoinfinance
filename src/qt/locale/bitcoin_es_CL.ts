@@ -2818,8 +2818,8 @@
         <translation>No se ha podido iniciar el servidor HTTP. Ver debug log para detalles.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>bitcoin core</translation>
+        <source>Litecoin Finance Core</source>
+        <translation>Litecoin Finance Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

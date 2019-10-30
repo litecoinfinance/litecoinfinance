@@ -27,7 +27,7 @@ class Handler;
 class Node;
 } // namespace interfaces
 
-/** Class encapsulating Bitcoin Core startup and shutdown.
+/** Class encapsulating Litecoin Finance Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore: public QObject

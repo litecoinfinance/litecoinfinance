@@ -1849,7 +1849,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Litecoin Finance Core</source>
         <translation> هسته Bitcoin </translation>
     </message>
     <message>

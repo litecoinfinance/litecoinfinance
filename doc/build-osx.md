@@ -38,17 +38,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-osx.md#disable-wallet-mode)).
 
-Build Bitcoin Core
+Build Litecoin Finance Core
 ------------------------
 
-1. Clone the Bitcoin Core source code:
+1. Clone the Litecoin Finance Core source code:
 
         git clone https://github.com/bitcoin/bitcoin
         cd bitcoin
 
-2.  Build Bitcoin Core:
+2.  Build Litecoin Finance Core:
 
-    Configure and build the headless Bitcoin Core binaries as well as the GUI (if Qt is found).
+    Configure and build the headless Litecoin Finance Core binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -66,7 +66,7 @@ Build Bitcoin Core
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, Bitcoin Core may be compiled in
+When the intention is to run only a P2P node without a wallet, Litecoin Finance Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -78,7 +78,7 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-Bitcoin Core is now available at `./src/bitcoind`
+Litecoin Finance Core is now available at `./src/bitcoind`
 
 Before running, you may create an empty configuration file:
 

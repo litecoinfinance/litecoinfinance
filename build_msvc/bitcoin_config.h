@@ -23,10 +23,10 @@
 #define COPYRIGHT_HOLDERS "The %s developers"
 
 /* Copyright holder(s) */
-#define COPYRIGHT_HOLDERS_FINAL "The Bitcoin Core developers"
+#define COPYRIGHT_HOLDERS_FINAL "The Litecoin Finance developers"
 
 /* Replacement for %s in copyright holders string */
-#define COPYRIGHT_HOLDERS_SUBSTITUTION "Bitcoin Core"
+#define COPYRIGHT_HOLDERS_SUBSTITUTION "Litecoin Finance Core"
 
 /* Copyright year */
 #define COPYRIGHT_YEAR 2018
@@ -343,10 +343,10 @@
 #define PACKAGE_BUGREPORT "https://github.com/bitcoin/bitcoin/issues"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Bitcoin Core"
+#define PACKAGE_NAME "Litecoin Finance Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Bitcoin Core 0.17.99"
+#define PACKAGE_STRING "Litecoin Finance Core 0.17.99"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "bitcoin"
