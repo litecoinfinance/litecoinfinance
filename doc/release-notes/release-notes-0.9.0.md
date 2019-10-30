@@ -254,7 +254,7 @@ Protocol and network:
 - Improve logging of failed connections
 - Bump protocol version to 70002
 - Add some additional logging to give extra network insight
-- Added new DNS seed from bitcoinstats.com
+- Added new DNS seed from litecoin financestats.com
 
 Validation:
 

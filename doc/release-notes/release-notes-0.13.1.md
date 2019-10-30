@@ -89,8 +89,8 @@ covered by the txid. This provides several immediate benefits:
   (such as hardware wallets), reduces the amount of data the signature
   generator needs to download, and allows the signature generator to operate
   more quickly.  This is made possible by having the generator sign the amount
-  of bitcoins they think they are spending, and by having full nodes refuse to
-  accept those signatures unless the amount of bitcoins being spent is exactly
+  of litecoin finances they think they are spending, and by having full nodes refuse to
+  accept those signatures unless the amount of litecoin finances being spent is exactly
   the same as was signed.  For non-segwit transactions, wallets instead had to
   download the complete previous transactions being spent for every payment
   they made, which could be a slow operation on hardware wallets and in other
@@ -275,7 +275,7 @@ git merge commit are mentioned.
 - #8612 `2215c22` Check for compatibility with download in FindNextBlocksToDownload (sipa)
 - #8606 `bbf379b` Fix some locks (sipa)
 - #8594 `ab295bb` Do not add random inbound peers to addrman (gmaxwell)
-- #8940 `5b4192b` Add x9 service bit support to dnsseed.bluematt.me, seed.bitcoinstats.com (TheBlueMatt, cdecker)
+- #8940 `5b4192b` Add x9 service bit support to dnsseed.bluematt.me, seed.litecoin financestats.com (TheBlueMatt, cdecker)
 - #8944 `685e4c7` Remove bogus assert on number of oubound connections. (TheBlueMatt)
 - #8949 `0dbc48a` Be more agressive in getting connections to peers with relevant services (gmaxwell)
 
@@ -337,7 +337,7 @@ git merge commit are mentioned.
 - #8754 `0e2c6bd` Target protobuf 2.6 in OS X build notes. (fanquake)
 - #8461 `b17a3f9` Document return value of networkhashps for getmininginfo RPC endpoint (jlopp)
 - #8512 `156e305` Corrected JSON typo on setban of net.cpp (sevastos)
-- #8683 `8a7d7ff` Fix incorrect file name bitcoin.qrc  (bitcoinsSG)
+- #8683 `8a7d7ff` Fix incorrect file name bitcoin.qrc  (litecoin financesSG)
 - #8891 `5e0dd9e` Update bips.md for Segregated Witness (fanquake)
 - #8545 `863ae74` Update git-subtree-check.sh README (MarcoFalke)
 - #8607 `486650a` Fix doxygen off-by-one comments, fix typos (MarcoFalke)

@@ -188,7 +188,7 @@
         <translation>Lommeboken er kryptert</translation>
     </message>
     <message>
-        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your litecoin finances from being stolen by malware infecting your computer.</source>
         <translation>Lommeboken din er nå kryptert. Husk at kryptering ikke er tilstrekkelig for å beskytte dine litecoin finance i lommeboken fra å bli stjålet av skadelig programvare som har infisert maskinen din.</translation>
     </message>
     <message>
