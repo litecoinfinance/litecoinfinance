@@ -980,7 +980,7 @@ static UniValue signrawtransactionwithkey(const JSONRPCRequest& request)
                                 },
                         },
                         },
-                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL", "The signature hash type. Must be one of:\n"
+                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL|FORKID" , "The signature hash type. Must be one of, use signatures only with FORKID:\n"
             "       \"ALL\"\n"
             "       \"NONE\"\n"
             "       \"SINGLE\"\n"
