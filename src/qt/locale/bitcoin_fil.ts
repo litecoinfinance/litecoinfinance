@@ -164,8 +164,8 @@
         <translation>Kumpirmahin ang encryption ng walet.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Babala: Kapag i-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA ANG LAHAT NG IYONG BITCOINS !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOIN FINANCES&lt;/b&gt;!</source>
+        <translation>Babala: Kapag i-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA ANG LAHAT NG IYONG LITECOIN FINANCES !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
