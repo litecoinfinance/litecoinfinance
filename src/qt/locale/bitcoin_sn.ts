@@ -182,8 +182,8 @@
         <translation>Marii </translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Nyora kero ye Bitcoin (sekuti %1)</translation>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
+        <translation>Nyora kero ye Litecoin Finance (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>

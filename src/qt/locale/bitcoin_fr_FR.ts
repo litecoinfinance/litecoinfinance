@@ -66,12 +66,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ceci sont vos addresses Bitcoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ceci sont vos addresses Litecoin Finance pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ceci sont vos addresses Bitcoin pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ceci sont vos addresses Litecoin Finance pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -342,7 +342,7 @@
         <translation>Le proxy est &lt;b&gt;activé&lt;/b&gt; : %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Litecoin Finance address</source>
         <translation>Envoyer des pièces à une adresse Bitcoin</translation>
     </message>
     <message>
@@ -390,12 +390,12 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Bitcoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Litecoin Finance pour prouver que vous les détenez</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Bitcoin spécifiées</translation>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
+        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Litecoin Finance spécifiées</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -434,7 +434,7 @@
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Litecoin Finance network</source>
         <translation><numerusform>%n connexion active avec le réseau Bitcoin</numerusform><numerusform>%n connexions actives avec le réseau Bitcoin</numerusform></translation>
     </message>
     <message>
@@ -498,7 +498,7 @@
         <translation>Fermer portefeuille</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
         <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Bitcoin</translation>
     </message>
     <message>
@@ -590,8 +590,8 @@
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a eu lieu. Bitcoin ne peut plus continuer en toute sécurité et va s'éteindre</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a eu lieu. Litecoin Finance ne peut plus continuer en toute sécurité et va s'éteindre</translation>
     </message>
 </context>
 <context>
@@ -780,8 +780,8 @@
         <translation>Éditer l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Bitcoin valide.</translation>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Litecoin Finance valide.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -946,8 +946,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Bitcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Litecoin Finance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Litecoin Finance automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1146,8 +1146,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Bitcoin (e.g. %1)</translation>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
+        <translation>Entrer une adresse Litecoin Finance (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1707,8 +1707,8 @@
         <translation>Demande de paiement expirée.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Attention: Adresse Bitcoin Invalide</translation>
+        <source>Warning: Invalid Litecoin Finance address</source>
+        <translation>Attention: Adresse Litecoin Finance Invalide</translation>
     </message>
     <message>
         <source>(no label)</source>

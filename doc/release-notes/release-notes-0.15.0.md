@@ -144,7 +144,7 @@ Multi-wallet support
 
 Litecoin Finance Core now supports loading multiple, separate wallets (See [PR 8694](https://github.com/bitcoin/bitcoin/pull/8694), [PR 10849](https://github.com/bitcoin/bitcoin/pull/10849)). The wallets are completely separated, with individual balances, keys and received transactions.
 
-Multi-wallet is enabled by using more than one `-wallet` argument when starting Bitcoin, either on the command line or in the Bitcoin config file.
+Multi-wallet is enabled by using more than one `-wallet` argument when starting Bitcoin, either on the command line or in the Litecoin Finance config file.
 
 **In Bitcoin-Qt, only the first wallet will be displayed and accessible for creating and signing transactions.** GUI selectable multiple wallets will be supported in a future version. However, even in 0.15 other loaded wallets will remain synchronized to the node's current tip in the background. This can be useful if running a pruned node, since loading a wallet where the most recent sync is beyond the pruned height results in having to download and revalidate the whole blockchain. Continuing to synchronize all wallets in the background avoids this problem.
 
@@ -771,7 +771,7 @@ Low-level RPC changes
 - #10837 `8bc6d1f` Fix resource leak on error in GetDevURandom (corebob)
 - #10832 `89bb036` init: Factor out AppInitLockDataDirectory and fix startup core dump issue (laanwj)
 - #10914 `b995a37` Add missing lock in CScheduler::AreThreadsServicingQueue() (TheBlueMatt)
-- #10958 `659c096` Update to latest Bitcoin patches for LevelDB (sipa)
+- #10958 `659c096` Update to latest Litecoin Finance patches for LevelDB (sipa)
 - #10919 `c1c671f` Fix more init bugs (TheBlueMatt)
 
 Credits

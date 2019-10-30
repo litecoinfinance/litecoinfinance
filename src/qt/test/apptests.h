@@ -37,7 +37,7 @@ private:
         ~HandleCallback();
     };
 
-    //! Bitcoin application.
+    //! Litecoin Finance application.
     BitcoinApplication& m_app;
 
     //! Set of pending callback names. Used to track expected callbacks and shut

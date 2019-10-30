@@ -1,4 +1,4 @@
-Bitcoin version 0.7.0 is now available for download at:
+Litecoin Finance version 0.7.0 is now available for download at:
   http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.7.0/
 
 We recommend that everybody running prior versions of bitcoind/Bitcoin-Qt
@@ -45,7 +45,7 @@ Incompatible Changes
   and 'getrawmempool' commands.
 * Remove deprecated RPC 'getblocknumber'
 
-Bitcoin Improvement Proposals implemented
+Litecoin Finance Improvement Proposals implemented
 
 BIP 22 - 'getblocktemplate', 'submitblock' RPCs
 BIP 34 - block version 2, height in coinbase

@@ -74,7 +74,7 @@ BIP112 soft fork to enforce OP_CHECKSEQUENCEVERIFY
 --------------------------------------------------
 
 [BIP112][] redefines the existing OP_NOP3 as OP_CHECKSEQUENCEVERIFY (CSV)
-for a new opcode in the Bitcoin scripting system that in combination with
+for a new opcode in the Litecoin Finance scripting system that in combination with
 [BIP68][] allows execution pathways of a script to be restricted based
 on the age of the output being spent.
 
@@ -88,7 +88,7 @@ Litecoin Finance Core 0.11.2 previously introduced mempool-only locktime
 enforcement using GetMedianTimePast(). This release seeks to
 consensus enforce the rule.
 
-Bitcoin transactions currently may specify a locktime indicating when
+Litecoin Finance transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.

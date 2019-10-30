@@ -66,12 +66,12 @@
         <translation>Alamat-alamat penerima</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Berikut ialah alamat-alamat Litecoin Finance Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerimaan baru untuk setiap transaksi.</translation>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Berikut ialah alamat-alamat Litecoin Finance Anda yang digunakan untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerimaan baru untuk setiap transaksi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -342,7 +342,7 @@
         <translation>Proxy di &lt;b&gt;aktifkan&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Litecoin Finance address</source>
         <translation>Kirim koin ke alamat Bitcoin</translation>
     </message>
     <message>
@@ -390,12 +390,12 @@
         <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Bitcoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Litecoin Finance Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Bitcoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Litecoin Finance tertentu</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -434,7 +434,7 @@
         <translation>&amp;pilihan Command-line</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Litecoin Finance network</source>
         <translation><numerusform>%n koneksi aktif ke jaringan Bitcoin</numerusform></translation>
     </message>
     <message>
@@ -486,8 +486,8 @@
         <translation>&amp;Address penerima</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bitcoin yang memungkinkan</translation>
+        <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Litecoin Finance yang memungkinkan</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -590,8 +590,8 @@
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. Bitcoin Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>Terjadi Kesalahan Fatal. Litecoin Finance Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
     </message>
 </context>
 <context>
@@ -776,8 +776,8 @@
         <translation>Ubah alamat pengirim</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Bitcoin yang valid.</translation>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
+        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Litecoin Finance yang valid.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -885,8 +885,8 @@
         <translation>%1 GB data akan disimpan di direktori ini.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan Bitcoin block chain.</translation>
+        <source>%1 will download and store a copy of the Litecoin Finance block chain.</source>
+        <translation>%1 akan mengunduh dan menyimpan salinan Litecoin Finance block chain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1098,8 +1098,8 @@
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Bitcoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <source>Automatically open the Litecoin Finance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port client Litecoin Finance di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1114,8 +1114,8 @@
         <translation>Terima koneksi-koneksi masuk</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Bitcoin melalui SOCKS5 proxy.</translation>
+        <source>Connect to the Litecoin Finance network through a SOCKS5 proxy.</source>
+        <translation>Hubungkan ke jaringan Litecoin Finance melalui SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1150,7 +1150,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Litecoin Finance network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Koneksi ke jaringan bitcoin melalui proxy SOCKS5 yang berbeda untuk layanan Tor tersembunyi.</translation>
     </message>
     <message>
@@ -1257,8 +1257,8 @@
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Bitcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin Finance network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Litecoin Finance ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1348,8 +1348,8 @@
         <translation>URL permintaan pembayaran tidak valid: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI tidak bisa dimengerti! Hal ini bisa disebabkan karena alamat Bitcoin yang tidak sah atau parameter URI yang tidak tepat.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Litecoin Finance address or malformed URI parameters.</source>
+        <translation>URI tidak bisa dimengerti! Hal ini bisa disebabkan karena alamat Litecoin Finance yang tidak sah atau parameter URI yang tidak tepat.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1402,8 +1402,8 @@
         <translation>Nilai</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Masukkan alamat Bitcoin (contoh %1)</translation>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
+        <translation>Masukkan alamat Litecoin Finance (contoh %1)</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1937,8 +1937,8 @@
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Bitcoin ini</translation>
+        <source>Sign the message to prove you own this Litecoin Finance address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Litecoin Finance ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

@@ -62,11 +62,11 @@
         <translation>Fogadó címek</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ezek az Ön kifizetéseinek küldésekor használandó Bitcoin-címek. Fizetés indítása előtt mindig ellenőrizze az összeget és a fogadó címet!</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ezek az Ön fizetéseinek fogadásakor használandó Bitcoin-címek. Célszerű minden tranzakcióhoz új fogadó címet használni.</translation>
     </message>
     <message>
@@ -326,8 +326,8 @@
         <translation>A blokkok újraindexelése folyik a merevlemezen...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Érmék küldése egy Bitcoin címre</translation>
+        <source>Send coins to a Litecoin Finance address</source>
+        <translation>Érmék küldése egy Litecoin Finance címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -374,12 +374,12 @@
         <translation>Tárcájához tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Írja alá az üzeneteit a Bitcoin címével, hogy bizonyítsa Öntől származnak</translation>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
+        <translation>Írja alá az üzeneteit a Litecoin Finance címével, hogy bizonyítsa Öntől származnak</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Ellenőrizze az üzeneteket, hogy a megadott Bitcoin címekkel lettek-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
+        <translation>Ellenőrizze az üzeneteket, hogy a megadott Litecoin Finance címekkel lettek-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -418,7 +418,7 @@
         <translation>&amp;Parancssor beállításai</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Litecoin Finance network</source>
         <translation><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform></translation>
     </message>
     <message>
@@ -462,8 +462,8 @@
         <translation>Naprakész</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mutassa a %1 súgó üzenetet a lehetséges Bitcoin parancssori beállítások listájáért</translation>
+        <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
+        <translation>Mutassa a %1 súgó üzenetet a lehetséges Litecoin Finance parancssori beállítások listájáért</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -536,8 +536,8 @@
         <translation>Tárca &lt;b&gt;titkosítva&lt;/b&gt; és jelenleg &lt;b&gt;zárolva&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Fatális hiba történt. A Bitcoin program nem tud tovább biztonságosan működni és be fog záródni.</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>Fatális hiba történt. A Litecoin Finance program nem tud tovább biztonságosan működni és be fog záródni.</translation>
     </message>
 </context>
 <context>
@@ -726,8 +726,8 @@
         <translation>Küldési cím szerkesztése</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>A megadott cím"%1" nem egy érvényes Bitcoin cím.</translation>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
+        <translation>A megadott cím"%1" nem egy érvényes Litecoin Finance cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -827,8 +827,8 @@
         <translation>Hozzávetőlegesen %1 GB adatot fogunk ebben a könyvtárban tárolni.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 le fog töltődni és a Bitcoin blokk lánc egy másolatát fogja tárolni.</translation>
+        <source>%1 will download and store a copy of the Litecoin Finance block chain.</source>
+        <translation>%1 le fog töltődni és a Litecoin Finance blokk lánc egy másolatát fogja tárolni.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1012,8 +1012,8 @@
         <translation>&amp;Költése a a jóváhagyatlan visszajárónak</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatikusan nyissa meg a Bitcoin kliens által használt portot a routeren. Ez csak akkor működik, ha a router támogatja a UPnP-t, és engedélyezett ez a beállítás.</translation>
+        <source>Automatically open the Litecoin Finance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatikusan nyissa meg a Litecoin Finance kliens által használt portot a routeren. Ez csak akkor működik, ha a router támogatja a UPnP-t, és engedélyezett ez a beállítás.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1028,8 +1028,8 @@
         <translation>&amp;Bejövő kapcsolatok engedélyezése</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Bitcoin hálózathoz SOCKS5 proxy használatával.</translation>
+        <source>Connect to the Litecoin Finance network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Litecoin Finance hálózathoz SOCKS5 proxy használatával.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1064,8 +1064,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Csatlakozás a Bitcoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <source>Connect to the Litecoin Finance network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Csatlakozás a Litecoin Finance hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1171,7 +1171,7 @@
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin Finance network after a connection is established, but this process has not completed yet.</source>
         <translation>Lehet, hogy a megjelenített információ elavult. A tárcája automatikusan szinkronizál a hálózattal kapcsolódás után, de a folyamat még nem ért véget.</translation>
     </message>
     <message>
@@ -1258,7 +1258,7 @@
         <translation>Érvénytelen fizetési cím %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Litecoin Finance address or malformed URI parameters.</source>
         <translation>Az URI nem dolgozható fel! Ennek oka lehet egy érvénytelen Bitcoin-cím, vagy hibás URI-paraméterek.</translation>
     </message>
     <message>
@@ -1356,7 +1356,7 @@
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
         <translation>Adjon meg egy Bitcoin-címet (pl. %1)</translation>
     </message>
     <message>
@@ -1768,8 +1768,8 @@
         <translation>&amp;Üzenet:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Opciónális üzenet csatolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Bitcoin hálózaton.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin Finance network.</source>
+        <translation>Opciónális üzenet csatolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Litecoin Finance hálózaton.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2089,8 +2089,8 @@
         <translation>Fizetési kérelem lejárt</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Figyelem: érvénytelen Bitcoin cím</translation>
+        <source>Warning: Invalid Litecoin Finance address</source>
+        <translation>Figyelem: érvénytelen Litecoin Finance cím</translation>
     </message>
     <message>
         <source>Confirm custom change address</source>
@@ -2554,7 +2554,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Litecoin Finance Core</source>
-        <translation>Bitcoin Mag</translation>
+        <translation>Litecoin Finance Mag</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

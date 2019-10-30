@@ -46,11 +46,11 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这些是你的比特币支付地址。在发送之前，一定要核对金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>这些是您的比特币接收地址。建议每个交易使用一个新的接收地址。</translation>
     </message>
     <message>
@@ -262,7 +262,7 @@
         <translation>启用代理:%1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Litecoin Finance address</source>
         <translation>发送比特币到一个比特币地址</translation>
     </message>
     <message>
@@ -310,11 +310,11 @@
         <translation>加密您的钱包私钥</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
         <translation>用您的比特币地址签名信息，以证明拥有它们</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
         <translation>验证消息，确保它们是用指定的比特币地址签名的</translation>
     </message>
     <message>
@@ -350,7 +350,7 @@
         <translation>&amp;命令行选项</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Litecoin Finance network</source>
         <translation><numerusform>%n 活动的比特币网络连接</numerusform></translation>
     </message>
     <message>
@@ -390,7 +390,7 @@
         <translation>&amp;接受地址</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
         <translation>显示%1帮助消息以获得可能包含Bitcoin命令行选项的列表</translation>
     </message>
     <message>
@@ -450,7 +450,7 @@
         <translation>钱包是&lt;b&gt;加密的&lt;/b&gt;，目前&lt;b&gt;已锁定&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
         <translation>发生了致命错误。比特币无法继续安全运行，将退出。</translation>
     </message>
 </context>
@@ -520,7 +520,7 @@
         <translation>与此地址列表项关联的地址。只能修改为发送地址。</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
         <translation>输入的地址"%1"不是有效的比特币地址。</translation>
     </message>
     <message>
@@ -746,7 +746,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation><numerusform>估计在%n块内确认。</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Litecoin Finance address</source>
         <translation>警告：比特币地址无效</translation>
     </message>
     <message>
@@ -769,7 +769,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>这是一个标准的付款方式。</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Litecoin Finance address to send the payment to</source>
         <translation>支付到的比特币地址</translation>
     </message>
     <message>
@@ -785,7 +785,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>输入此地址的标签，将其添加到使用的地址列表中</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin Finance network.</source>
         <translation>附在比特币上的消息:URI将与交易一起存储，供参考。注意：此信息不会通过比特币网络发送。</translation>
     </message>
     <message>

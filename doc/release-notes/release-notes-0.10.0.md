@@ -172,7 +172,7 @@ improved by making the signatures constant time and deterministic.
 
 This change is a result of switching signing to use libsecp256k1
 instead of OpenSSL. Libsecp256k1 is a cryptographic library
-optimized for the curve Bitcoin uses which was created by Bitcoin
+optimized for the curve Litecoin Finance uses which was created by Bitcoin
 Core developer Pieter Wuille.
 
 There exist attacks[1] against most ECC implementations where an
@@ -187,7 +187,7 @@ long time, but this functionality has still not made its
 way into a released version of OpenSSL. Libsecp256k1 achieves
 significantly stronger protection: As far as we're aware this is
 the only deployed implementation of constant time signing for
-the curve Bitcoin uses and we have reason to believe that
+the curve Litecoin Finance uses and we have reason to believe that
 libsecp256k1 is better tested and more thoroughly reviewed
 than the implementation in OpenSSL.
 
@@ -247,7 +247,7 @@ Standard script rules relaxed for P2SH addresses
 The IsStandard() rules have been almost completely removed for P2SH
 redemption scripts, allowing applications to make use of any valid
 script type, such as "n-of-m OR y", hash-locked oracle addresses, etc.
-While the Bitcoin protocol has always supported these types of script,
+While the Litecoin Finance protocol has always supported these types of script,
 actually using them on mainnet has been previously inconvenient as
 standard Litecoin Finance Core nodes wouldn't relay them to miners, nor would
 most miners include them in blocks they mined.
@@ -315,7 +315,7 @@ BIP 66: strict DER encoding for signatures
 
 Litecoin Finance Core 0.10 implements BIP 66, which introduces block version 3, and a new
 consensus rule, which prohibits non-DER signatures. Such transactions have been
-non-standard since Bitcoin v0.8.0 (released in February 2013), but were
+non-standard since Litecoin Finance v0.8.0 (released in February 2013), but were
 technically still permitted inside blocks.
 
 This change breaks the dependency on OpenSSL's signature parsing, and is

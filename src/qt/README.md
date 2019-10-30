@@ -32,7 +32,7 @@ Tests.
 
 ### bitcoingui.(h/cpp)
 
-Represents the main window of the Bitcoin UI.
+Represents the main window of the Litecoin Finance UI.
 
 ### \*model.(h/cpp)
 

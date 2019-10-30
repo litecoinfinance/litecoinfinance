@@ -52,7 +52,7 @@ private:
     interfaces::Node& m_node;
 };
 
-/** Main Bitcoin application object */
+/** Main Litecoin Finance application object */
 class BitcoinApplication: public QApplication
 {
     Q_OBJECT

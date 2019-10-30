@@ -42,7 +42,7 @@
         <translation>Auswählen</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dies sind Ihre Bitcoin-Adressen für den Empfang von Zahlungen. Es wird empfohlen, für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
@@ -246,11 +246,11 @@
         <translation>Verschlüssele die Private Keys, die zu deiner Brieftasche gehören</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
         <translation>Nachrichten mit Ihrer Bitcoin-Adresse signieren, um zu beweisen, dass sie Ihnen gehören</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
         <translation>Überprüfen Sie Nachrichten, um sicherzustellen, dass sie mit den angegebenen Bitcoin-Adressen signiert wurden</translation>
     </message>
     <message>
@@ -316,8 +316,8 @@
         <translation>Überweisung empfangen</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Ein schwerwiegender Fehler ist aufgetreten. Bitcoin kann nicht mehr sicher fortfahren und beendet sich.</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>Ein schwerwiegender Fehler ist aufgetreten. Litecoin Finance kann nicht mehr sicher fortfahren und beendet sich.</translation>
     </message>
 </context>
 <context>
@@ -460,8 +460,8 @@
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Bitcoin Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
+        <translation>Litecoin Finance Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>N/A</source>

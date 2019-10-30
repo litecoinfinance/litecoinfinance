@@ -66,12 +66,12 @@
         <translation>Address na tatanggap</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ito ang iyong mga Bitcoin addresses para sa pagpapadala ng bayad. Laging suriin ang halaga at ang address na tatanggap bago magpadala ng coins.</translation>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ito ang iyong mga Litecoin Finance addresses para sa pagpapadala ng bayad. Laging suriin ang halaga at ang address na tatanggap bago magpadala ng coins.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ito ang iyong mga Bitcoin addresses para sa pagtanggap ng bayad. Inirerekomenda na gumamit ng bagong tanggapang address sa bawat transaksyon.</translation>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ito ang iyong mga Litecoin Finance addresses para sa pagtanggap ng bayad. Inirerekomenda na gumamit ng bagong tanggapang address sa bawat transaksyon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -318,8 +318,8 @@
         <translation>Ang panghalili ay pinagana: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Ipadala ang coins sa Bitcoin address</translation>
+        <source>Send coins to a Litecoin Finance address</source>
+        <translation>Ipadala ang coins sa Litecoin Finance address</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,12 +366,12 @@
         <translation>I-encrypt ang private keys ng iyong walet</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Pirmahan ang mga mensahe gamit ang iyong mga Bitcoin address upang mapatunayang ikaw ang may-ari nito</translation>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
+        <translation>Pirmahan ang mga mensahe gamit ang iyong mga Litecoin Finance address upang mapatunayang ikaw ang may-ari nito</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Tiyakin ang katotohanan ng mga mensahe para siguruhing ang mga ito ay pinirmahan gamit ang tinukoy na mga Bitcoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
+        <translation>Tiyakin ang katotohanan ng mga mensahe para siguruhing ang mga ito ay pinirmahan gamit ang tinukoy na mga Litecoin Finance addresses</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -466,8 +466,8 @@
         <translation>Isara ang walet</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Ipakita sa %1 ang tulong na mensahe upang makuha ang talaan ng mga posibleng opsyon ng Bitcoin command-line</translation>
+        <source>Show the %1 help message to get a list with possible Litecoin Finance command-line options</source>
+        <translation>Ipakita sa %1 ang tulong na mensahe upang makuha ang talaan ng mga posibleng opsyon ng Litecoin Finance command-line</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -570,8 +570,8 @@
         <translation>Walet ay na-encrypt at kasalukuyang naka-lock.</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>May nangyaring malubhang kamalian. Hindi na kayang magpatuloy ng ligtas ang Bitcoin at ito ay hihinto na.</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>May nangyaring malubhang kamalian. Hindi na kayang magpatuloy ng ligtas ang Litecoin Finance at ito ay hihinto na.</translation>
     </message>
 </context>
 <context>
@@ -716,8 +716,8 @@
         <translation>Baguhin ang address para sa pagpapadala</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ang address na in-enter "%1" ay hindi isang wastong Bitcoin address.</translation>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
+        <translation>Ang address na in-enter "%1" ay hindi isang wastong Litecoin Finance address.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -817,8 +817,8 @@
         <translation>Humigit-kumulang na %1 GB na data ay maiimbak sa direktoryong ito.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 ay mag-do-download at magiimbak ng kopya ng Bitcoin blockchain.</translation>
+        <source>%1 will download and store a copy of the Litecoin Finance block chain.</source>
+        <translation>%1 ay mag-do-download at magiimbak ng kopya ng Litecoin Finance blockchain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1014,8 +1014,8 @@
         <translation>Gastusin ang sukli na hindi pa nakumpirma</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Kusang buksan ang Bitcoin client port sa router. Gumagana lamang ito kapag ang iyong router ay sumusuporta ng UPnP at ito ay pinagana.</translation>
+        <source>Automatically open the Litecoin Finance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Kusang buksan ang Litecoin Finance client port sa router. Gumagana lamang ito kapag ang iyong router ay sumusuporta ng UPnP at ito ay pinagana.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1030,8 +1030,8 @@
         <translation>Ipahintulot ang mga papasok na koneksyon</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Kumunekta sa Bitcoin network sa pamamagitan ng SOCKS5 proxy.</translation>
+        <source>Connect to the Litecoin Finance network through a SOCKS5 proxy.</source>
+        <translation>Kumunekta sa Litecoin Finance network sa pamamagitan ng SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1066,8 +1066,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Kumunekta sa Bitcoin network sa pamamagitan ng hiwalay na SOCKS5 proxy para sa mga tagong serbisyo ng Tor.</translation>
+        <source>Connect to the Litecoin Finance network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Kumunekta sa Litecoin Finance network sa pamamagitan ng hiwalay na SOCKS5 proxy para sa mga tagong serbisyo ng Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>

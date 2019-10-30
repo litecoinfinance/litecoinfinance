@@ -33,7 +33,7 @@ const std::function<std::string(const char*)> G_TRANSLATION_FUN = nullptr;
  * \section intro_sec Introduction
  *
  * This is the developer documentation of the reference client for an experimental new digital currency called Bitcoin,
- * which enables instant payments to anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
+ * which enables instant payments to anyone, anywhere in the world. Litecoin Finance uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -147,7 +147,7 @@ static bool AppInit(int argc, char* argv[])
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #endif
-            tfm::format(std::cout, "Bitcoin server starting\n");
+            tfm::format(std::cout, "Litecoin Finance server starting\n");
 
             // Daemonize
             if (daemon(1, 0)) { // don't chdir (1), do close FDs (0)

@@ -9,7 +9,7 @@
 # in ExecStart=
 
 [Unit]
-Description=Bitcoin daemon
+Description=Litecoin Finance daemon
 After=network.target
 
 [Service]

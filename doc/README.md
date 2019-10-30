@@ -3,7 +3,7 @@ Litecoin Finance Core
 
 Setup
 ---------------------
-Litecoin Finance Core is the original Bitcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bitcoin transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Litecoin Finance Core is the original Litecoin Finance client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Litecoin Finance transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 To download Litecoin Finance Core, visit [bitcoincore.org](https://bitcoincore.org/en/download/).
 
@@ -28,7 +28,7 @@ Drag Litecoin Finance Core to your applications folder, and then run Litecoin Fi
 
 ### Need Help?
 
-* See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
+* See the documentation at the [Litecoin Finance Wiki](https://en.bitcoin.it/wiki/Main_Page)
 for help and more information.
 * Ask for help on [#bitcoin](http://webchat.freenode.net?channels=bitcoin) on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net?channels=bitcoin).
 * Ask for help on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
@@ -48,7 +48,7 @@ The following are developer notes on how to build Litecoin Finance Core on your 
 
 Development
 ---------------------
-The Bitcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Litecoin Finance repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Productivity Notes](productivity.md)
@@ -68,7 +68,7 @@ The Bitcoin repo's [root README](/README.md) contains relevant information on th
 ### Resources
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
 * Discuss project-specific development on #bitcoin-core-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=bitcoin-core-dev).
-* Discuss general Bitcoin development on #bitcoin-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=bitcoin-dev).
+* Discuss general Litecoin Finance development on #bitcoin-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=bitcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

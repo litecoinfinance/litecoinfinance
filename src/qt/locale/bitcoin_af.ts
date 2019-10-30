@@ -62,11 +62,11 @@
         <translation>Ontvanger adresse</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hierdie is die adresse vanwaar u Bitcoin betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hierdie is die adresse vanwaar u Litecoin Finance betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Hierdie is die adresse waar u Bitcoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
@@ -322,8 +322,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Stuur munte na 'n Bitcoin adres</translation>
+        <source>Send coins to a Litecoin Finance address</source>
+        <translation>Stuur munte na 'n Litecoin Finance adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -370,12 +370,12 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u Bitcoin adresse om u eienaarskap te bewys</translation>
+        <source>Sign messages with your Litecoin Finance addresses to prove you own them</source>
+        <translation>Onderteken boodskappe met u Litecoin Finance adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Bitcoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Litecoin Finance addresses</source>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Litecoin Finance adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -504,8 +504,8 @@
         <translation>Inkomende transaksie</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>'N fatale fout het voorgekom. Bitcoin kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
+        <source>A fatal error occurred. Litecoin Finance can no longer continue safely and will quit.</source>
+        <translation>'N fatale fout het voorgekom. Litecoin Finance kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
     </message>
 </context>
 <context>
@@ -694,8 +694,8 @@
         <translation>Wysig stuur adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Die ingevoerde adres "%1" is nie 'n geldige Bitcoin adres nie.</translation>
+        <source>The entered address "%1" is not a valid Litecoin Finance address.</source>
+        <translation>Die ingevoerde adres "%1" is nie 'n geldige Litecoin Finance adres nie.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -1120,8 +1120,8 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Voer in 'n Bitcoin adres (bv. %1)</translation>
+        <source>Enter a Litecoin Finance address (e.g. %1)</source>
+        <translation>Voer in 'n Litecoin Finance adres (bv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1697,7 +1697,7 @@ transaksievertragingsrisiko.</translation>
         <translation>Betalings versoek verstryk.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Litecoin Finance address</source>
         <translation>Waarskuwing: Ongeldige Bitcoinadres</translation>
     </message>
     <message>
@@ -1730,7 +1730,7 @@ Is u seker?</translation>
         <translation>Hierdie is 'n gewone betaling</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Litecoin Finance address to send the payment to</source>
         <translation>Die Bitcoinadres waarheen die betaling gestuur word</translation>
     </message>
     <message>
@@ -2040,7 +2040,7 @@ word die fooi eweredig verdeel.</translation>
     <name>bitcoin-core</name>
     <message>
         <source>Litecoin Finance Core</source>
-        <translation>Bitcoin Kern</translation>
+        <translation>Litecoin Finance Kern</translation>
     </message>
     <message>
         <source>Error loading %s</source>

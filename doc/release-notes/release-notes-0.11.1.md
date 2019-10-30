@@ -93,7 +93,7 @@ still cooperate to break transactions.  Nor does it replace the
 need for wallet software to handle malleability sanely[1]. This
 only eliminates the cheap and irritating DOS attack.
 
-[1] On the Malleability of Bitcoin Transactions
+[1] On the Malleability of Litecoin Finance Transactions
 Marcin Andrychowicz, Stefan Dziembowski, Daniel Malinowski, Łukasz Mazurek
 http://fc15.ifca.ai/preproceedings/bitcoin/paper_9.pdf
 

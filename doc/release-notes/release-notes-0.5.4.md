@@ -1,4 +1,4 @@
-Bitcoin version 0.5.4 is now available for download at:
+Litecoin Finance version 0.5.4 is now available for download at:
 http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.5.4/
 NOTE: 0.5.4rc3 is being renamed to 0.5.4 final with no changes.
 
@@ -31,7 +31,7 @@ Print detailed wallet loading errors to debug.log when it is corrupt.
 Allocate exactly the amount of space needed for signing transactions, instead of a fixed 10k buffer.
 Workaround for improbable memory access violation.
 Check wallet's minimum version before trying to load it.
-Remove wxBitcoin properly when installing Bitcoin-Qt over it. (Windows)
+Remove wxLitecoin Finance properly when installing Bitcoin-Qt over it. (Windows)
 Detail reorganization information better in debug log.
 Use a messagebox to display the error when -server is provided without configuring a RPC password.
 Testing suite build now honours provided CXXFLAGS.

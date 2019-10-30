@@ -66,12 +66,12 @@
         <translation>Adrese primalaca</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Bitcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
+        <source>These are your Litecoin Finance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše Litecoin Finance adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ovo su vaše Bitcoin adrese za primanje novca. Preporučljivo je da koristite novu adresu primaoca za svaku transakciju.</translation>
+        <source>These are your Litecoin Finance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ovo su vaše Litecoin Finance adrese za primanje novca. Preporučljivo je da koristite novu adresu primaoca za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -280,7 +280,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Litecoin Finance Core</source>
-        <translation>Bitcoin Jezrga</translation>
+        <translation>Litecoin Finance Jezrga</translation>
     </message>
     </context>
 </TS>

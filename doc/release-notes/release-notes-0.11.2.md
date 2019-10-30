@@ -100,7 +100,7 @@ version 0.4.3 or any version from 0.5.2 onward.
 BIP113 mempool-only locktime enforcement using GetMedianTimePast()
 ----------------------------------------------------------------
 
-Bitcoin transactions currently may specify a locktime indicating when
+Litecoin Finance transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.

@@ -833,7 +833,7 @@ details.
 ### Consensus Compatibility
 
 It is possible for LevelDB changes to inadvertently change consensus
-compatibility between nodes. This happened in Bitcoin 0.8 (when LevelDB was
+compatibility between nodes. This happened in Litecoin Finance 0.8 (when LevelDB was
 first introduced). When upgrading LevelDB you should review the upstream changes
 to check for issues affecting consensus compatibility.
 
