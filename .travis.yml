@@ -33,26 +33,13 @@ install:
 before_script:
   - set -o errexit; source .travis/test_05_before_script.sh
 script:
-  - if [ $SECONDS -gt 1200 ]; then set +o errexit; echo "Travis early exit to cache current state"; false; else set -o errexit; source .travis/test_06_script_a.sh; fi
-  - if [ $SECONDS -gt 1800 ]; then set +o errexit; echo "Travis early exit to cache current state"; false; else set -o errexit; source .travis/test_06_script_b.sh; fi
+  - if [ $SECONDS -gt 10000 ]; then set +o errexit; echo "Travis early exit to cache current state"; false; else set -o errexit; source .travis/test_06_script_a.sh; fi
+  - if [ $SECONDS -gt 10000 ]; then set +o errexit; echo "Travis early exit to cache current state"; false; else set -o errexit; source .travis/test_06_script_b.sh; fi
 after_script:
   - echo $TRAVIS_COMMIT_RANGE
   - echo $TRAVIS_COMMIT_LOG
 jobs:
   include:
-
-    - stage: lint
-      name: 'lint'
-      env:
-      cache: false
-      language: python
-      python: '3.4' # Oldest supported version according to doc/dependencies.md
-      install:
-        - set -o errexit; source .travis/lint_04_install.sh
-      before_script:
-        - set -o errexit; source .travis/lint_05_before_script.sh
-      script:
-        - set -o errexit; source .travis/lint_06_script.sh
 
     - stage: test
       name: 'ARM  [GOAL: install]  [no unit or functional tests]'
