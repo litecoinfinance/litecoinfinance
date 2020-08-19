@@ -1,5 +1,5 @@
 ---
-name: "litecoinfinance-core-linux-0.20"
+name: "litecoinfinance-core-linux-3.0.0.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
