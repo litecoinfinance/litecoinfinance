@@ -59,7 +59,7 @@ Network magic: a7b388e9
 
 Postmine: 10m
 
-FORKID 42
+forkid: 42
 
 sighash forkid: 0x40
 
