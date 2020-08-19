@@ -132,7 +132,7 @@
         <translation>ওয়ালেট এনক্রিপশন নিশ্চিত করুন</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINFINANCES&lt;/b&gt;!</source>
         <translation>সতর্কতা : ওয়ালেট এনক্রিপ্ট করে পাসফ্রেজ ভুলে গেলে আপনি &lt;b&gt;সব বিটকয়েন হারাবেন&lt;/b&gt;!</translation>
     </message>
     <message>
