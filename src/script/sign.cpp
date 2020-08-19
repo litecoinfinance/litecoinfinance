@@ -421,7 +421,7 @@ public:
         vchSig[4 + m_r_len] = 0x02;
         vchSig[5 + m_r_len] = m_s_len;
         vchSig[6 + m_r_len] = 0x01;
-        vchSig[6 + m_r_len + m_s_len] = SIGHASH_ALL;
+        vchSig[6 + m_r_len + m_s_len] = SIGHASH_ALL | SIGHASH_FORKID;
         return true;
     }
 };

@@ -218,7 +218,7 @@ public:
     /** Sign a message with the given script */
     virtual SigningResult SignMessage(const std::string& message, const PKHash& pkhash, std::string& str_sig) const { return SigningResult::SIGNING_FAILED; };
     /** Adds script and derivation path information to a PSBT, and optionally signs it. */
-    virtual TransactionError FillPSBT(PartiallySignedTransaction& psbt, int sighash_type = 1 /* SIGHASH_ALL */, bool sign = true, bool bip32derivs = false) const { return TransactionError::INVALID_PSBT; }
+    virtual TransactionError FillPSBT(PartiallySignedTransaction& psbt, int sighash_type = 65 /* SIGHASH_ALL  | SIGHASH_FORKID */, bool sign = true, bool bip32derivs = false) const { return TransactionError::INVALID_PSBT; }
 
     virtual uint256 GetID() const { return uint256(); }
 

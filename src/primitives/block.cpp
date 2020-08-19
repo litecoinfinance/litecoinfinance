@@ -4,22 +4,41 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <primitives/block.h>
+
 #include <util/strencodings.h>
 #include <hash.h>
 #include <tinyformat.h>
 #include <crypto/common.h>
 #include <crypto/scrypt.h>
+#include "versionbits.h"
+
+extern "C" void yescrypt_hash(const char *input, char *output);
 
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
 }
 
-uint256 CBlockHeader::GetPoWHash() const
+uint256 CBlockHeader::GetPoWOldHash() const
 {
     uint256 thash;
-    scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
+    scrypt_1024_1_1_256((char *) &nVersion, (char *) &thash);
     return thash;
+}
+
+uint256 CBlockHeader::GetPoWNewHash() const
+{
+    uint256 thash;
+    yescrypt_hash((char *) &nVersion, (char *) &thash);
+    return thash;
+}
+
+uint256 CBlockHeader::GetPoWHash() const
+{
+	if (nVersion & VERSIONBITS_FORK_CPU)
+		return GetPoWNewHash();
+	else
+		return GetPoWOldHash();
 }
 
 std::string CBlock::ToString() const

@@ -3274,13 +3274,19 @@ UniValue signrawtransactionwithwallet(const JSONRPCRequest& request)
                             },
                         },
                     },
-                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL", "The signature hash type. Must be one of\n"
+                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL|FORKID", "The signature hash type. Must be one of, use signatures only with FORKID\n"
             "       \"ALL\"\n"
             "       \"NONE\"\n"
             "       \"SINGLE\"\n"
             "       \"ALL|ANYONECANPAY\"\n"
+            "       \"ALL|FORKID\"\n"
+            "       \"ALL|FORKID|ANYONECANPAY\"\n"
             "       \"NONE|ANYONECANPAY\"\n"
-            "       \"SINGLE|ANYONECANPAY\""},
+            "       \"NONE|FORKID\"\n"
+            "       \"NONE|FORKID|ANYONECANPAY\"\n"
+            "       \"SINGLE|ANYONECANPAY\"\n"
+            "       \"SINGLE|FORKID\"\n"
+            "       \"SINGLE|FORKID|ANYONECANPAY\""},
                 },
                 RPCResult{
                     RPCResult::Type::OBJ, "", "",
@@ -4075,13 +4081,19 @@ UniValue walletprocesspsbt(const JSONRPCRequest& request)
                 {
                     {"psbt", RPCArg::Type::STR, RPCArg::Optional::NO, "The transaction base64 string"},
                     {"sign", RPCArg::Type::BOOL, /* default */ "true", "Also sign the transaction when updating"},
-                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL", "The signature hash type to sign with if not specified by the PSBT. Must be one of\n"
+                    {"sighashtype", RPCArg::Type::STR, /* default */ "ALL|FORKID", "The signature hash type to sign with if not specified by the PSBT. Must be one of, use signatures only with FORKID\n"
             "       \"ALL\"\n"
             "       \"NONE\"\n"
             "       \"SINGLE\"\n"
             "       \"ALL|ANYONECANPAY\"\n"
+            "       \"ALL|FORKID\"\n"
+            "       \"ALL|FORKID|ANYONECANPAY\"\n"
             "       \"NONE|ANYONECANPAY\"\n"
-            "       \"SINGLE|ANYONECANPAY\""},
+            "       \"NONE|FORKID\"\n"
+            "       \"NONE|FORKID|ANYONECANPAY\"\n"
+            "       \"SINGLE|ANYONECANPAY\"\n"
+            "       \"SINGLE|FORKID\"\n"
+            "       \"SINGLE|FORKID|ANYONECANPAY\""},
                     {"bip32derivs", RPCArg::Type::BOOL, /* default */ "true", "Include BIP 32 derivation paths for public keys if we know them"},
                 },
                 RPCResult{
