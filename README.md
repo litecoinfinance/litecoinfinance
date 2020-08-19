@@ -47,6 +47,8 @@ Bech32 Address prefix: ltfn
 
 2-way replay protection: Yes
 
+Block time: 2.5m ( 150 second )
+
 Maturity: 100 + 1 blocks
 
 Block maximum size: 8 mb
