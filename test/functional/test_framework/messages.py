@@ -8,7 +8,7 @@
 
 CBlock, CTransaction, CBlockHeader, CTxIn, CTxOut, etc....:
     data structures that should map to corresponding structures in
-    bitcoin/primitives
+    litecoinfinance/primitives
 
 msg_block, msg_tx, msg_headers, etc.:
     data structures that represent network messages

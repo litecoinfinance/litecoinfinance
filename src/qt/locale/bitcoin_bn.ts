@@ -50,7 +50,7 @@
         <translation>গ্রহণের ঠিকানা</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>এগুলো আপনার পেমেন্ট পাঠানোর বিটকয়েন ঠিকানা। কয়েন পাঠানোর আগে পরিমাণ ও গ্রহণের ঠিকানা সব সময় যাচাই করুন।</translation>
     </message>
     <message>
