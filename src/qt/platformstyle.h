@@ -1,9 +1,9 @@
-// Copyright (c) 2015 The Bitcoin Core developers
+// Copyright (c) 2015-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_QT_PLATFORMSTYLE_H
-#define LITECOINFINANCE_QT_PLATFORMSTYLE_H
+#ifndef BITCOIN_QT_PLATFORMSTYLE_H
+#define BITCOIN_QT_PLATFORMSTYLE_H
 
 #include <QIcon>
 #include <QPixmap>
@@ -33,9 +33,6 @@ public:
     /** Colorize an icon (given object) with the icon color */
     QIcon SingleColorIcon(const QIcon& icon) const;
 
-    /** Colorize an icon (given filename) with the text color */
-    QIcon TextColorIcon(const QString& filename) const;
-
     /** Colorize an icon (given object) with the text color */
     QIcon TextColorIcon(const QIcon& icon) const;
 
@@ -51,5 +48,5 @@ private:
     /* ... more to come later */
 };
 
-#endif // LITECOINFINANCE_QT_PLATFORMSTYLE_H
+#endif // BITCOIN_QT_PLATFORMSTYLE_H
 

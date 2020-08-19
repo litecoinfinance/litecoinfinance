@@ -1,9 +1,9 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef LITECOINFINANCE_POLICY_FEES_H
-#define LITECOINFINANCE_POLICY_FEES_H
+#ifndef BITCOIN_POLICY_FEES_H
+#define BITCOIN_POLICY_FEES_H
 
 #include <amount.h>
 #include <policy/feerate.h>
@@ -43,10 +43,7 @@ enum class FeeReason {
     PAYTXFEE,
     FALLBACK,
     REQUIRED,
-    MAXTXFEE,
 };
-
-std::string StringForFeeReason(FeeReason reason);
 
 /* Used to determine type of fee estimation requested */
 enum class FeeEstimateMode {
@@ -54,8 +51,6 @@ enum class FeeEstimateMode {
     ECONOMICAL,   //!< Force estimateSmartFee to use non-conservative estimates
     CONSERVATIVE, //!< Force estimateSmartFee to use conservative estimates
 };
-
-bool FeeModeFromString(const std::string& mode_string, FeeEstimateMode& fee_estimate_mode);
 
 /* Used to return detailed information about a feerate bucket */
 struct EstimatorBucket
@@ -228,7 +223,7 @@ public:
     unsigned int HighestTargetTracked(FeeEstimateHorizon horizon) const;
 
 private:
-    mutable CCriticalSection m_cs_fee_estimator;
+    mutable RecursiveMutex m_cs_fee_estimator;
 
     unsigned int nBestSeenHeight GUARDED_BY(m_cs_fee_estimator);
     unsigned int firstRecordedHeight GUARDED_BY(m_cs_fee_estimator);
@@ -293,4 +288,4 @@ private:
     FastRandomContext insecure_rand;
 };
 
-#endif // LITECOINFINANCE_POLICY_FEES_H
+#endif // BITCOIN_POLICY_FEES_H

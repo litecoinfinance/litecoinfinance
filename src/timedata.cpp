@@ -1,9 +1,9 @@
-// Copyright (c) 2014-2018 The Bitcoin Core developers
+// Copyright (c) 2014-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/litecoinfinance-config.h>
+#include <config/bitcoin-config.h>
 #endif
 
 #include <timedata.h>
@@ -12,11 +12,11 @@
 #include <sync.h>
 #include <ui_interface.h>
 #include <util/system.h>
-#include <util/strencodings.h>
+#include <util/translation.h>
 #include <warnings.h>
 
 
-static CCriticalSection cs_nTimeOffset;
+static RecursiveMutex cs_nTimeOffset;
 static int64_t nTimeOffset GUARDED_BY(cs_nTimeOffset) = 0;
 
 /**
@@ -42,20 +42,20 @@ static int64_t abs64(int64_t n)
     return (n >= 0 ? n : -n);
 }
 
-#define LITECOINFINANCE_TIMEDATA_MAX_SAMPLES 200
+#define BITCOIN_TIMEDATA_MAX_SAMPLES 200
 
 void AddTimeData(const CNetAddr& ip, int64_t nOffsetSample)
 {
     LOCK(cs_nTimeOffset);
     // Ignore duplicates
     static std::set<CNetAddr> setKnown;
-    if (setKnown.size() == LITECOINFINANCE_TIMEDATA_MAX_SAMPLES)
+    if (setKnown.size() == BITCOIN_TIMEDATA_MAX_SAMPLES)
         return;
     if (!setKnown.insert(ip).second)
         return;
 
     // Add data
-    static CMedianFilter<int64_t> vTimeOffsets(LITECOINFINANCE_TIMEDATA_MAX_SAMPLES, 0);
+    static CMedianFilter<int64_t> vTimeOffsets(BITCOIN_TIMEDATA_MAX_SAMPLES, 0);
     vTimeOffsets.input(nOffsetSample);
     LogPrint(BCLog::NET,"added time data, samples %d, offset %+d (%+d minutes)\n", vTimeOffsets.size(), nOffsetSample, nOffsetSample/60);
 
@@ -101,7 +101,7 @@ void AddTimeData(const CNetAddr& ip, int64_t nOffsetSample)
                 if (!fMatch)
                 {
                     fDone = true;
-                    std::string strMessage = strprintf(_("Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly."), _(PACKAGE_NAME));
+                    std::string strMessage = strprintf(_("Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.").translated, PACKAGE_NAME);
                     SetMiscWarning(strMessage);
                     uiInterface.ThreadSafeMessageBox(strMessage, "", CClientUIInterface::MSG_WARNING);
                 }

@@ -2,13 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_QT_UTILITYDIALOG_H
-#define LITECOINFINANCE_QT_UTILITYDIALOG_H
+#ifndef BITCOIN_QT_UTILITYDIALOG_H
+#define BITCOIN_QT_UTILITYDIALOG_H
 
 #include <QDialog>
-#include <QObject>
+#include <QWidget>
 
-class LitecoinFinanceGUI;
+QT_BEGIN_NAMESPACE
+class QMainWindow;
+QT_END_NAMESPACE
 
 namespace interfaces {
     class Node;
@@ -46,10 +48,10 @@ class ShutdownWindow : public QWidget
 
 public:
     explicit ShutdownWindow(QWidget *parent=nullptr, Qt::WindowFlags f=Qt::Widget);
-    static QWidget *showShutdownWindow(LitecoinFinanceGUI *window);
+    static QWidget* showShutdownWindow(QMainWindow* window);
 
 protected:
     void closeEvent(QCloseEvent *event);
 };
 
-#endif // LITECOINFINANCE_QT_UTILITYDIALOG_H
+#endif // BITCOIN_QT_UTILITYDIALOG_H

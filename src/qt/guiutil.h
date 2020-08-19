@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_QT_GUIUTIL_H
-#define LITECOINFINANCE_QT_GUIUTIL_H
+#ifndef BITCOIN_QT_GUIUTIL_H
+#define BITCOIN_QT_GUIUTIL_H
 
 #include <amount.h>
 #include <fs.h>
@@ -36,7 +36,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Litecoin Finance Qt UI.
+/** Utility functions used by the Bitcoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -50,10 +50,10 @@ namespace GUIUtil
     // Set up widget for address
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
 
-    // Parse "litecoinfinance:" URI into recipient object, return true on successful parsing
-    bool parseLitecoinFinanceURI(const QUrl &uri, SendCoinsRecipient *out);
-    bool parseLitecoinFinanceURI(QString uri, SendCoinsRecipient *out);
-    QString formatLitecoinFinanceURI(const SendCoinsRecipient &info);
+    // Parse "bitcoin:" URI into recipient object, return true on successful parsing
+    bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+    QString formatBitcoinURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
     bool isDust(interfaces::Node& node, const QString& address, const CAmount& amount);
@@ -78,6 +78,11 @@ namespace GUIUtil
     QList<QModelIndex> getEntryData(QAbstractItemView *view, int column);
 
     void setClipboard(const QString& str);
+
+    /**
+     * Determine default data directory for operating system.
+     */
+    QString getDefaultDataDirectory();
 
     /** Get save filename, mimics QFileDialog::getSaveFileName, except that it appends a default suffix
         when no suffix is provided by the user.
@@ -123,7 +128,7 @@ namespace GUIUtil
     void openDebugLogfile();
 
     // Open the config file
-    bool openLitecoinFinanceConf();
+    bool openBitcoinConf();
 
     /** Qt event filter that intercepts ToolTipChange events, and replaces the tooltip with a rich text
       representation if needed. This assures that Qt can word-wrap long tooltip messages.
@@ -197,8 +202,8 @@ namespace GUIUtil
     /* Format CNodeStats.nServices bitmask into a user-readable string */
     QString formatServicesStr(quint64 mask);
 
-    /* Format a CNodeCombinedStats.dPingTime into a user-readable string or display N/A, if 0*/
-    QString formatPingTime(double dPingTime);
+    /* Format a CNodeStats.m_ping_usec into a user-readable string or display N/A, if 0*/
+    QString formatPingTime(int64_t ping_usec);
 
     /* Format a CNodeCombinedStats.nTimeOffset into a user-readable string. */
     QString formatTimeOffset(int64_t nTimeOffset);
@@ -252,6 +257,19 @@ namespace GUIUtil
 
     // Fix known bugs in QProgressDialog class.
     void PolishProgressDialog(QProgressDialog* dialog);
+
+    /**
+     * Returns the distance in pixels appropriate for drawing a subsequent character after text.
+     *
+     * In Qt 5.12 and before the QFontMetrics::width() is used and it is deprecated since Qt 13.0.
+     * In Qt 5.11 the QFontMetrics::horizontalAdvance() was introduced.
+     */
+    int TextWidth(const QFontMetrics& fm, const QString& text);
+
+    /**
+     * Writes to debug.log short info about the used Qt and the host system.
+     */
+    void LogQtInfo();
 } // namespace GUIUtil
 
-#endif // LITECOINFINANCE_QT_GUIUTIL_H
+#endif // BITCOIN_QT_GUIUTIL_H

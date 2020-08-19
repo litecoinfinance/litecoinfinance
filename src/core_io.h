@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_CORE_IO_H
-#define LITECOINFINANCE_CORE_IO_H
+#ifndef BITCOIN_CORE_IO_H
+#define BITCOIN_CORE_IO_H
 
 #include <amount.h>
 #include <attributes.h>
@@ -16,7 +16,6 @@ class CBlockHeader;
 class CScript;
 class CTransaction;
 struct CMutableTransaction;
-struct PartiallySignedTransaction;
 class uint256;
 class UniValue;
 
@@ -37,11 +36,6 @@ bool DecodeHexBlockHeader(CBlockHeader&, const std::string& hex_header);
  */
 bool ParseHashStr(const std::string& strHex, uint256& result);
 std::vector<unsigned char> ParseHexUV(const UniValue& v, const std::string& strName);
-
-//! Decode a base64ed PSBT into a PartiallySignedTransaction
-NODISCARD bool DecodeBase64PSBT(PartiallySignedTransaction& decoded_psbt, const std::string& base64_psbt, std::string& error);
-//! Decode a raw (binary blob) PSBT into a PartiallySignedTransaction
-NODISCARD bool DecodeRawPSBT(PartiallySignedTransaction& decoded_psbt, const std::string& raw_psbt, std::string& error);
 int ParseSighashString(const UniValue& sighash);
 
 // core_write.cpp
@@ -53,4 +47,4 @@ void ScriptPubKeyToUniv(const CScript& scriptPubKey, UniValue& out, bool fInclud
 void ScriptToUniv(const CScript& script, UniValue& out, bool include_address);
 void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry, bool include_hex = true, int serialize_flags = 0);
 
-#endif // LITECOINFINANCE_CORE_IO_H
+#endif // BITCOIN_CORE_IO_H

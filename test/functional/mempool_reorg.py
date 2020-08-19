@@ -9,11 +9,11 @@ that spend (directly or indirectly) coinbase transactions.
 """
 
 from test_framework.blocktools import create_raw_transaction
-from test_framework.test_framework import LitecoinFinanceTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error
 
 
-class MempoolCoinbaseTest(LitecoinFinanceTestFramework):
+class MempoolCoinbaseTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
 
@@ -76,7 +76,7 @@ class MempoolCoinbaseTest(LitecoinFinanceTestFramework):
         spend_101_id = self.nodes[0].sendrawtransaction(spend_101_raw)
         spend_102_1_id = self.nodes[0].sendrawtransaction(spend_102_1_raw)
 
-        self.sync_all()
+        self.sync_all(timeout=720)
 
         assert_equal(set(self.nodes[0].getrawmempool()), {spend_101_id, spend_102_1_id, timelock_tx_id})
 
@@ -91,10 +91,11 @@ class MempoolCoinbaseTest(LitecoinFinanceTestFramework):
         for node in self.nodes:
             node.invalidateblock(new_blocks[0])
 
-        self.sync_all()
+        self.sync_all(timeout=720)
 
         # mempool should be empty.
         assert_equal(set(self.nodes[0].getrawmempool()), set())
+
 
 if __name__ == '__main__':
     MempoolCoinbaseTest().main()

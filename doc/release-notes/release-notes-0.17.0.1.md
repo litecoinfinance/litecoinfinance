@@ -1,12 +1,12 @@
-Litecoin Finance Core version 0.17.0.1 is now available from:
+Bitcoin Core version 0.17.0.1 is now available from:
 
-  <https://bitcoincore.org/bin/litecoinfinance-core-0.17.0.1/>
+  <https://bitcoincore.org/bin/bitcoin-core-0.17.0.1/>
 
 This release provides a minor bug fix for 0.17.0.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/litecoinfinance/litecoinfinance/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 

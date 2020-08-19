@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018 The Bitcoin Core developers
+// Copyright (c) 2017-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -31,6 +31,8 @@ fs::path GetWalletDir()
 
 static bool IsBerkeleyBtree(const fs::path& path)
 {
+    if (!fs::exists(path)) return false;
+
     // A Berkeley DB Btree file has at least 4K.
     // This check also prevents opening lock files.
     boost::system::error_code ec;
@@ -78,7 +80,7 @@ std::vector<fs::path> ListWalletDir()
                 // as a wallet.
                 paths.emplace_back();
             } else {
-                // Found top-level btree file not called wallet.dat. Current litecoinfinance
+                // Found top-level btree file not called wallet.dat. Current bitcoin
                 // software will never create these files but will allow them to be
                 // opened in a shared database environment for backwards compatibility.
                 // Add it to the list of available wallets.

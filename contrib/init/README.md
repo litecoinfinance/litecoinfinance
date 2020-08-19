@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: litecoinfinanced.service
-Upstart: litecoinfinanced.conf
-OpenRC:  litecoinfinanced.openrc
-         litecoinfinanced.openrcconf
-CentOS:  litecoinfinanced.init
-macOS:   org.litecoinfinance.litecoinfinanced.plist
+SystemD: bitcoind.service
+Upstart: bitcoind.conf
+OpenRC:  bitcoind.openrc
+         bitcoind.openrcconf
+CentOS:  bitcoind.init
+macOS:   org.bitcoin.bitcoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

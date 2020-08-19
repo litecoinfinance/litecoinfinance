@@ -1,12 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_TEST_SCRIPTNUM10_H
-#define LITECOINFINANCE_TEST_SCRIPTNUM10_H
+#ifndef BITCOIN_TEST_SCRIPTNUM10_H
+#define BITCOIN_TEST_SCRIPTNUM10_H
 
-#include <algorithm>
 #include <limits>
 #include <stdexcept>
 #include <stdint.h>
@@ -23,7 +22,7 @@ public:
 class CScriptNum10
 {
 /**
- * The ScriptNum implementation from Litecoin Finance Core 0.10.0, for cross-comparison.
+ * The ScriptNum implementation from Bitcoin Core 0.10.0, for cross-comparison.
  */
 public:
 
@@ -180,4 +179,4 @@ private:
 };
 
 
-#endif // LITECOINFINANCE_TEST_BIGNUM_H
+#endif // BITCOIN_TEST_BIGNUM_H

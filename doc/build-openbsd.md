@@ -2,7 +2,7 @@ OpenBSD build guide
 ======================
 (updated for OpenBSD 6.4)
 
-This guide describes how to build litecoinfinanced and command-line utilities on OpenBSD.
+This guide describes how to build bitcoind and command-line utilities on OpenBSD.
 
 OpenBSD is most commonly used as a server OS, so this guide does not contain instructions for building the GUI.
 
@@ -17,7 +17,7 @@ pkg_add autoconf # (select highest version, e.g. 2.69)
 pkg_add automake # (select highest version, e.g. 1.16)
 pkg_add python # (select highest version, e.g. 3.6)
 
-git clone https://github.com/litecoinfinance/litecoinfinance.git
+git clone https://github.com/bitcoin/bitcoin.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
@@ -38,19 +38,19 @@ from ports, for the same reason as boost above (g++/libstd++ incompatibility).
 If you have to build it yourself, you can use [the installation script included
 in contrib/](/contrib/install_db4.sh) like so:
 
-```shell
+```bash
 ./contrib/install_db4.sh `pwd` CC=cc CXX=c++
 ```
 
 from the root of the repository. Then set `BDB_PREFIX` for the next section:
 
-```shell
+```bash
 export BDB_PREFIX="$PWD/db4"
 ```
 
-### Building Litecoin Finance Core
+### Building Bitcoin Core
 
-**Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
+**Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 
 Preparation:
 ```bash
@@ -70,12 +70,14 @@ Make sure `BDB_PREFIX` is set to the appropriate path from the above steps.
 To configure with wallet:
 ```bash
 ./configure --with-gui=no CC=cc CXX=c++ \
-    BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
+    BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" \
+    BDB_CFLAGS="-I${BDB_PREFIX}/include" \
+    MAKE=gmake
 ```
 
 To configure without wallet:
 ```bash
-./configure --disable-wallet --with-gui=no CC=cc CXX=c++
+./configure --disable-wallet --with-gui=no CC=cc CXX=c++ MAKE=gmake
 ```
 
 Build and run the tests:
@@ -95,7 +97,7 @@ The standard ulimit restrictions in OpenBSD are very strict:
     data(kbytes)         1572864
 
 This is, unfortunately, in some cases not enough to compile some `.cpp` files in the project,
-(see issue [#6658](https://github.com/litecoinfinance/litecoinfinance/issues/6658)).
+(see issue [#6658](https://github.com/bitcoin/bitcoin/issues/6658)).
 If your user is in the `staff` group the limit can be raised with:
 
     ulimit -d 3000000

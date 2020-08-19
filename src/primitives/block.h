@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_PRIMITIVES_BLOCK_H
-#define LITECOINFINANCE_PRIMITIVES_BLOCK_H
+#ifndef BITCOIN_PRIMITIVES_BLOCK_H
+#define BITCOIN_PRIMITIVES_BLOCK_H
 
 #include <primitives/transaction.h>
 #include <serialize.h>
@@ -61,12 +61,6 @@ public:
     }
 
     uint256 GetHash() const;
-
-    uint256 GetPoWHash() const;
-
-    uint256 GetPoWOldHash() const;
-
-    uint256 GetPoWNewHash() const;
 
     int64_t GetBlockTime() const
     {
@@ -158,4 +152,4 @@ struct CBlockLocator
     }
 };
 
-#endif // LITECOINFINANCE_PRIMITIVES_BLOCK_H
+#endif // BITCOIN_PRIMITIVES_BLOCK_H

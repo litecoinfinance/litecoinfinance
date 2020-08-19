@@ -1,17 +1,16 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_SCRIPT_INTERPRETER_H
-#define LITECOINFINANCE_SCRIPT_INTERPRETER_H
+#ifndef BITCOIN_SCRIPT_INTERPRETER_H
+#define BITCOIN_SCRIPT_INTERPRETER_H
 
 #include <script/script_error.h>
 #include <primitives/transaction.h>
 
 #include <vector>
 #include <stdint.h>
-#include <string>
 
 class CPubKey;
 class CScript;
@@ -24,17 +23,8 @@ enum
     SIGHASH_ALL = 1,
     SIGHASH_NONE = 2,
     SIGHASH_SINGLE = 3,
-    SIGHASH_FORKID = 0x40,
     SIGHASH_ANYONECANPAY = 0x80,
 };
-
-/** Fork IDs **/
-enum
-{
-    FORKID_LTNF = 42,
-};
-
-static const int FORKID_IN_USE = FORKID_LTNF;
 
 /** Script verification flags.
  *
@@ -124,10 +114,6 @@ enum
     // Making OP_CODESEPARATOR and FindAndDelete fail any non-segwit scripts
     //
     SCRIPT_VERIFY_CONST_SCRIPTCODE = (1U << 16),
-
-	// Allow NON_FORKID TX for old chain.
-	//
-    SCRIPT_ALLOW_NON_FORKID = (1U << 17),
 };
 
 bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned int flags, ScriptError* serror);
@@ -152,7 +138,7 @@ static constexpr size_t WITNESS_V0_SCRIPTHASH_SIZE = 32;
 static constexpr size_t WITNESS_V0_KEYHASH_SIZE = 20;
 
 template <class T>
-uint256 SignatureHash(const CScript& scriptCode, const T& txTo, unsigned int nIn, int nHashType, const CAmount& amount, SigVersion sigversion, const PrecomputedTransactionData* cache = nullptr, const int forkid=FORKID_IN_USE);
+uint256 SignatureHash(const CScript& scriptCode, const T& txTo, unsigned int nIn, int nHashType, const CAmount& amount, SigVersion sigversion, const PrecomputedTransactionData* cache = nullptr);
 
 class BaseSignatureChecker
 {
@@ -205,4 +191,4 @@ size_t CountWitnessSigOps(const CScript& scriptSig, const CScript& scriptPubKey,
 
 int FindAndDelete(CScript& script, const CScript& b);
 
-#endif // LITECOINFINANCE_SCRIPT_INTERPRETER_H
+#endif // BITCOIN_SCRIPT_INTERPRETER_H

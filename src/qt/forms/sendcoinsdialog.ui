@@ -324,7 +324,7 @@
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="text">
-                  <string notr="true">0.00 LTFN</string>
+                  <string notr="true">0.00 BTC</string>
                  </property>
                  <property name="textInteractionFlags">
                   <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -404,7 +404,7 @@
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="text">
-                  <string notr="true">0.00 LTFN</string>
+                  <string notr="true">0.00 BTC</string>
                  </property>
                  <property name="textInteractionFlags">
                   <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -455,7 +455,7 @@
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="text">
-                  <string notr="true">0.00 LTFN</string>
+                  <string notr="true">0.00 BTC</string>
                  </property>
                  <property name="textInteractionFlags">
                   <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -484,7 +484,7 @@
                   <enum>Qt::ActionsContextMenu</enum>
                  </property>
                  <property name="text">
-                  <string notr="true">0.00 LTFN</string>
+                  <string notr="true">0.00 BTC</string>
                  </property>
                  <property name="textInteractionFlags">
                   <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -797,7 +797,7 @@
           <item>
            <widget class="QPushButton" name="buttonMinimizeFee">
             <property name="toolTip">
-             <string>collapse fee-settings</string>
+             <string>Hide transaction fee settings</string>
             </property>
             <property name="text">
              <string>Hide</string>
@@ -858,7 +858,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
                   </widget>
                  </item>
                  <item>
-                  <widget class="LitecoinFinanceAmountField" name="customFee"/>
+                  <widget class="BitcoinAmountField" name="customFee"/>
                  </item>
                  <item>
                   <spacer name="horizontalSpacer_6">
@@ -883,7 +883,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
                     <bool>true</bool>
                    </property>
                    <property name="toolTip">
-                    <string>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for litecoin finance transactions than the network can process.</string>
+                    <string>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</string>
                    </property>
                    <property name="text">
                     <string>A too low fee might result in a never confirming transaction (read the tooltip)</string>
@@ -1120,7 +1120,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../litecoinfinance.qrc">
+        <iconset resource="../bitcoin.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="autoDefault">
@@ -1146,7 +1146,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../litecoinfinance.qrc">
+        <iconset resource="../bitcoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoDefault">
@@ -1163,7 +1163,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../litecoinfinance.qrc">
+        <iconset resource="../bitcoin.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -1190,7 +1190,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <number>3</number>
        </property>
        <item>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="labelBalanceName">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -1214,7 +1214,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">123.456 LTFN</string>
+          <string notr="true">123.456 BTC</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1234,14 +1234,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
    <header>qt/qvalidatedlineedit.h</header>
   </customwidget>
   <customwidget>
-   <class>LitecoinFinanceAmountField</class>
+   <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>
-   <header>qt/litecoinfinanceamountfield.h</header>
+   <header>qt/bitcoinamountfield.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../litecoinfinance.qrc"/>
+  <include location="../bitcoin.qrc"/>
  </resources>
  <connections/>
  <buttongroups>

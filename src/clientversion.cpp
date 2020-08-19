@@ -9,10 +9,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both litecoinfinanced and litecoinfinance-qt, to make it harder for attackers to
+ * for both bitcoind and bitcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("LitecoinFinance");
+const std::string CLIENT_NAME("Satoshi");
 
 /**
  * Client version number
@@ -44,8 +44,8 @@ const std::string CLIENT_NAME("LitecoinFinance");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "fa27a0760792b251585f2a70eccdd547f915b7e4"
-#define GIT_COMMIT_DATE "Fri, 2 Aug 2019 22:33:05 +0200"
+#define GIT_COMMIT_ID "7ff64311bee570874c4f0dfa18f518552188df08"
+#define GIT_COMMIT_DATE "Fri, 31 Jul 2020 14:02:21 +0200"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
@@ -83,7 +83,7 @@ std::string FormatFullVersion()
 }
 
 /**
- * Format the subversion field according to BIP 14 spec (https://github.com/litecoinfinance/bips/blob/master/bip-0014.mediawiki)
+ * Format the subversion field according to BIP 14 spec (https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki)
  */
 std::string FormatSubVersion(const std::string& name, int nClientVersion, const std::vector<std::string>& comments)
 {

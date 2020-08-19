@@ -1,9 +1,11 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_QT_GUICONSTANTS_H
-#define LITECOINFINANCE_QT_GUICONSTANTS_H
+#ifndef BITCOIN_QT_GUICONSTANTS_H
+#define BITCOIN_QT_GUICONSTANTS_H
+
+#include <cstdint>
 
 /* Milliseconds between model updates */
 static const int MODEL_UPDATE_DELAY = 250;
@@ -11,7 +13,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* LitecoinFinanceGUI -- Size of icons in status bar */
+/* BitcoinGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -37,22 +39,19 @@ static const bool DEFAULT_SPLASHSCREEN = true;
  */
 static const int TOOLTIP_WRAP_THRESHOLD = 80;
 
-/* Maximum allowed URI length */
-static const int MAX_URI_LENGTH = 255;
-
-/* QRCodeDialog -- size of exported QR Code image */
-#define QR_IMAGE_SIZE 300
-
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "LitecoinFinance"
-#define QAPP_ORG_DOMAIN "ltfn.org"
-#define QAPP_APP_NAME_DEFAULT "LitecoinFinance-Qt"
-#define QAPP_APP_NAME_TESTNET "LitecoinFinance-Qt-testnet"
-#define QAPP_APP_NAME_REGTEST "LitecoinFinance-Qt-regtest"
+#define QAPP_ORG_NAME "Bitcoin"
+#define QAPP_ORG_DOMAIN "bitcoin.org"
+#define QAPP_APP_NAME_DEFAULT "Bitcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Bitcoin-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "Bitcoin-Qt-regtest"
 
 /* One gigabyte (GB) in bytes */
 static constexpr uint64_t GB_BYTES{1000000000};
 
-#endif // LITECOINFINANCE_QT_GUICONSTANTS_H
+// Default prune target displayed in GUI.
+static constexpr int DEFAULT_PRUNE_TARGET_GB{2};
+
+#endif // BITCOIN_QT_GUICONSTANTS_H

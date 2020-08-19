@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. litecoinfinance_test
+	$(MAKE) -C .. bitcoin_test
 clean:
-	$(MAKE) -C .. litecoinfinance_test_clean
+	$(MAKE) -C .. bitcoin_test_clean
 check:
-	$(MAKE) -C .. litecoinfinance_test_check
+	$(MAKE) -C .. bitcoin_test_check

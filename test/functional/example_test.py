@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
+# Copyright (c) 2017-2019 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """An example functional test
@@ -22,7 +22,7 @@ from test_framework.mininode import (
     msg_block,
     msg_getdata,
 )
-from test_framework.test_framework import LitecoinFinanceTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (
     assert_equal,
     connect_nodes,
@@ -64,12 +64,12 @@ def custom_function():
 
     If this function is more generally useful for other tests, consider
     moving it to a module in test_framework."""
-    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the LitecoinFinanceTestFramework
+    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the BitcoinTestFramework
     pass
 
 
-class ExampleTest(LitecoinFinanceTestFramework):
-    # Each functional test is a subclass of the LitecoinFinanceTestFramework class.
+class ExampleTest(BitcoinTestFramework):
+    # Each functional test is a subclass of the BitcoinTestFramework class.
 
     # Override the set_test_params(), skip_test_if_missing_module(), add_options(), setup_chain(), setup_network()
     # and setup_nodes() methods to customize the test setup as required.
@@ -117,7 +117,7 @@ class ExampleTest(LitecoinFinanceTestFramework):
         # sync_all() should not include node2, since we're not expecting it to
         # sync.
         connect_nodes(self.nodes[0], 1)
-        self.sync_all([self.nodes[0:2]])
+        self.sync_all(self.nodes[0:2])
 
     # Use setup_nodes() to customize the node start behaviour (for example if
     # you don't want to start all nodes at the start of the test).
@@ -129,7 +129,7 @@ class ExampleTest(LitecoinFinanceTestFramework):
 
         Define it in a method here because you're going to use it repeatedly.
         If you think it's useful in general, consider moving it to the base
-        LitecoinFinanceTestFramework class so other tests can use it."""
+        BitcoinTestFramework class so other tests can use it."""
 
         self.log.info("Running custom_method")
 
@@ -141,7 +141,7 @@ class ExampleTest(LitecoinFinanceTestFramework):
 
         # Generating a block on one of the nodes will get us out of IBD
         blocks = [int(self.nodes[0].generate(nblocks=1)[0], 16)]
-        self.sync_all([self.nodes[0:2]])
+        self.sync_all(self.nodes[0:2])
 
         # Notice above how we called an RPC by calling a method with the same
         # name on the node object. Notice also how we used a keyword argument
@@ -186,12 +186,15 @@ class ExampleTest(LitecoinFinanceTestFramework):
         self.log.info("Connect node2 and node1")
         connect_nodes(self.nodes[1], 2)
 
+        self.log.info("Wait for node2 to receive all the blocks from node1")
+        self.sync_all()
+
         self.log.info("Add P2P connection to node2")
         self.nodes[0].disconnect_p2ps()
 
         self.nodes[2].add_p2p_connection(BaseNode())
 
-        self.log.info("Wait for node2 reach current tip. Test that it has propagated all the blocks to us")
+        self.log.info("Test that node2 propagates all the blocks to us")
 
         getdata_request = msg_getdata()
         for block in blocks:

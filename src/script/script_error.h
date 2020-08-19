@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_SCRIPT_SCRIPT_ERROR_H
-#define LITECOINFINANCE_SCRIPT_SCRIPT_ERROR_H
+#ifndef BITCOIN_SCRIPT_SCRIPT_ERROR_H
+#define BITCOIN_SCRIPT_SCRIPT_ERROR_H
 
 typedef enum ScriptError_t
 {
@@ -68,9 +68,6 @@ typedef enum ScriptError_t
     SCRIPT_ERR_OP_CODESEPARATOR,
     SCRIPT_ERR_SIG_FINDANDDELETE,
 
-    /* fork id */
-    SCRIPT_ERR_MUST_USE_FORKID,
-
     SCRIPT_ERR_ERROR_COUNT
 } ScriptError;
 
@@ -78,4 +75,4 @@ typedef enum ScriptError_t
 
 const char* ScriptErrorString(const ScriptError error);
 
-#endif // LITECOINFINANCE_SCRIPT_SCRIPT_ERROR_H
+#endif // BITCOIN_SCRIPT_SCRIPT_ERROR_H

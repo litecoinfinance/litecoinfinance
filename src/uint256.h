@@ -1,14 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_UINT256_H
-#define LITECOINFINANCE_UINT256_H
+#ifndef BITCOIN_UINT256_H
+#define BITCOIN_UINT256_H
 
 #include <assert.h>
 #include <cstring>
-#include <stdexcept>
 #include <stdint.h>
 #include <string>
 #include <vector>
@@ -145,4 +144,6 @@ inline uint256 uint256S(const std::string& str)
     return rv;
 }
 
-#endif // LITECOINFINANCE_UINT256_H
+uint256& UINT256_ONE();
+
+#endif // BITCOIN_UINT256_H

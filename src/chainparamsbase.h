@@ -1,25 +1,26 @@
-// Copyright (c) 2014-2018 The Bitcoin Core developers
+// Copyright (c) 2014-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_CHAINPARAMSBASE_H
-#define LITECOINFINANCE_CHAINPARAMSBASE_H
+#ifndef BITCOIN_CHAINPARAMSBASE_H
+#define BITCOIN_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
-#include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between litecoinfinance-cli and litecoinfinanced)
- * of a given instance of the Litecoin Finance system.
+ * CBaseChainParams defines the base parameters (shared between bitcoin-cli and bitcoind)
+ * of a given instance of the Bitcoin system.
  */
 class CBaseChainParams
 {
 public:
-    /** BIP70 chain name strings (main, test or regtest) */
+    ///@{
+    /** Chain name strings */
     static const std::string MAIN;
     static const std::string TESTNET;
     static const std::string REGTEST;
+    ///@}
 
     const std::string& DataDir() const { return strDataDir; }
     int RPCPort() const { return nRPCPort; }
@@ -53,4 +54,4 @@ const CBaseChainParams& BaseParams();
 /** Sets the params returned by Params() to those for the given network. */
 void SelectBaseParams(const std::string& chain);
 
-#endif // LITECOINFINANCE_CHAINPARAMSBASE_H
+#endif // BITCOIN_CHAINPARAMSBASE_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_QT_RECEIVECOINSDIALOG_H
-#define LITECOINFINANCE_QT_RECEIVECOINSDIALOG_H
+#ifndef BITCOIN_QT_RECEIVECOINSDIALOG_H
+#define BITCOIN_QT_RECEIVECOINSDIALOG_H
 
 #include <qt/guiutil.h>
 
@@ -26,7 +26,7 @@ QT_BEGIN_NAMESPACE
 class QModelIndex;
 QT_END_NAMESPACE
 
-/** Dialog for requesting payment of litecoin finances */
+/** Dialog for requesting payment of bitcoins */
 class ReceiveCoinsDialog : public QDialog
 {
     Q_OBJECT
@@ -77,4 +77,4 @@ private Q_SLOTS:
     void copyAmount();
 };
 
-#endif // LITECOINFINANCE_QT_RECEIVECOINSDIALOG_H
+#endif // BITCOIN_QT_RECEIVECOINSDIALOG_H

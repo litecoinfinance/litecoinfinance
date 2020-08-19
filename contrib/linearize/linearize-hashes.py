@@ -2,7 +2,7 @@
 #
 # linearize-hashes.py:  List blocks in a linear, no-fork version of the chain.
 #
-# Copyright (c) 2013-2018 The Bitcoin Core developers
+# Copyright (c) 2013-2019 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
@@ -22,7 +22,7 @@ def hex_switchEndian(s):
     pairList = [s[i:i+2].encode() for i in range(0, len(s), 2)]
     return b''.join(pairList[::-1]).decode()
 
-class LitecoinFinanceRPC:
+class BitcoinRPC:
     def __init__(self, host, port, username, password):
         authpair = "%s:%s" % (username, password)
         authpair = authpair.encode('utf-8')
@@ -64,7 +64,7 @@ class LitecoinFinanceRPC:
         return 'error' in resp_obj and resp_obj['error'] is not None
 
 def get_block_hashes(settings, max_blocks_per_call=10000):
-    rpc = LitecoinFinanceRPC(settings['host'], settings['port'],
+    rpc = BitcoinRPC(settings['host'], settings['port'],
              settings['rpcuser'], settings['rpcpassword'])
 
     height = settings['min_height']
@@ -106,12 +106,12 @@ if __name__ == '__main__':
     f = open(sys.argv[1], encoding="utf8")
     for line in f:
         # skip comment lines
-        m = re.search('^\s*#', line)
+        m = re.search(r'^\s*#', line)
         if m:
             continue
 
         # parse key=value lines
-        m = re.search('^(\w+)\s*=\s*(\S.*)$', line)
+        m = re.search(r'^(\w+)\s*=\s*(\S.*)$', line)
         if m is None:
             continue
         settings[m.group(1)] = m.group(2)
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     if 'host' not in settings:
         settings['host'] = '127.0.0.1'
     if 'port' not in settings:
-        settings['port'] = 39327
+        settings['port'] = 8332
     if 'min_height' not in settings:
         settings['min_height'] = 0
     if 'max_height' not in settings:

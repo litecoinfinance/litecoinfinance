@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_CHECKQUEUE_H
-#define LITECOINFINANCE_CHECKQUEUE_H
+#ifndef BITCOIN_CHECKQUEUE_H
+#define BITCOIN_CHECKQUEUE_H
 
 #include <sync.h>
 
@@ -90,8 +90,7 @@ private:
                         nTotal--;
                         bool fRet = fAllOk;
                         // reset the status for new work later
-                        if (fMaster)
-                            fAllOk = true;
+                        fAllOk = true;
                         // return the current status
                         return fRet;
                     }
@@ -211,4 +210,4 @@ public:
     }
 };
 
-#endif // LITECOINFINANCE_CHECKQUEUE_H
+#endif // BITCOIN_CHECKQUEUE_H

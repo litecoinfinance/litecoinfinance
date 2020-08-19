@@ -2,16 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_TEST_FUZZ_FUZZ_H
-#define LITECOINFINANCE_TEST_FUZZ_FUZZ_H
+#ifndef BITCOIN_TEST_FUZZ_FUZZ_H
+#define BITCOIN_TEST_FUZZ_FUZZ_H
 
-#include <functional>
 #include <stdint.h>
 #include <vector>
 
+void initialize();
+void test_one_input(const std::vector<uint8_t>& buffer);
 
-const std::function<std::string(const char*)> G_TRANSLATION_FUN = nullptr;
-
-void test_one_input(std::vector<uint8_t> buffer);
-
-#endif // LITECOINFINANCE_TEST_FUZZ_FUZZ_H
+#endif // BITCOIN_TEST_FUZZ_FUZZ_H

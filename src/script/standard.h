@@ -1,17 +1,16 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_SCRIPT_STANDARD_H
-#define LITECOINFINANCE_SCRIPT_STANDARD_H
+#ifndef BITCOIN_SCRIPT_STANDARD_H
+#define BITCOIN_SCRIPT_STANDARD_H
 
 #include <script/interpreter.h>
 #include <uint256.h>
 
 #include <boost/variant.hpp>
 
-#include <stdint.h>
 
 static const bool DEFAULT_ACCEPT_DATACARRIER = true;
 
@@ -48,10 +47,10 @@ extern unsigned nMaxDatacarrierBytes;
  * but in the future other flags may be added, such as a soft-fork to enforce
  * strict DER encoding.
  *
- * Failing one of these tests may trigger a DoS ban - see CheckInputs() for
+ * Failing one of these tests may trigger a DoS ban - see CheckInputScripts() for
  * details.
  */
-static const unsigned int MANDATORY_SCRIPT_VERIFY_FLAGS = SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_STRICTENC;
+static const unsigned int MANDATORY_SCRIPT_VERIFY_FLAGS = SCRIPT_VERIFY_P2SH;
 
 enum txnouttype
 {
@@ -71,6 +70,27 @@ class CNoDestination {
 public:
     friend bool operator==(const CNoDestination &a, const CNoDestination &b) { return true; }
     friend bool operator<(const CNoDestination &a, const CNoDestination &b) { return true; }
+};
+
+struct PKHash : public uint160
+{
+    PKHash() : uint160() {}
+    explicit PKHash(const uint160& hash) : uint160(hash) {}
+    explicit PKHash(const CPubKey& pubkey);
+    using uint160::uint160;
+};
+
+struct WitnessV0KeyHash;
+struct ScriptHash : public uint160
+{
+    ScriptHash() : uint160() {}
+    // These don't do what you'd expect.
+    // Use ScriptHash(GetScriptForDestination(...)) instead.
+    explicit ScriptHash(const WitnessV0KeyHash& hash) = delete;
+    explicit ScriptHash(const PKHash& hash) = delete;
+    explicit ScriptHash(const uint160& hash) : uint160(hash) {}
+    explicit ScriptHash(const CScript& script);
+    using uint160::uint160;
 };
 
 struct WitnessV0ScriptHash : public uint256
@@ -113,14 +133,14 @@ struct WitnessUnknown
 /**
  * A txout script template with a specific destination. It is either:
  *  * CNoDestination: no destination set
- *  * CKeyID: TX_PUBKEYHASH destination (P2PKH)
- *  * CScriptID: TX_SCRIPTHASH destination (P2SH)
+ *  * PKHash: TX_PUBKEYHASH destination (P2PKH)
+ *  * ScriptHash: TX_SCRIPTHASH destination (P2SH)
  *  * WitnessV0ScriptHash: TX_WITNESS_V0_SCRIPTHASH destination (P2WSH)
  *  * WitnessV0KeyHash: TX_WITNESS_V0_KEYHASH destination (P2WPKH)
  *  * WitnessUnknown: TX_WITNESS_UNKNOWN destination (P2W???)
- *  A CTxDestination is the internal data type encoded in a litecoin finance address
+ *  A CTxDestination is the internal data type encoded in a bitcoin address
  */
-typedef boost::variant<CNoDestination, CKeyID, CScriptID, WitnessV0ScriptHash, WitnessV0KeyHash, WitnessUnknown> CTxDestination;
+typedef boost::variant<CNoDestination, PKHash, ScriptHash, WitnessV0ScriptHash, WitnessV0KeyHash, WitnessUnknown> CTxDestination;
 
 /** Check whether a CTxDestination is a CNoDestination. */
 bool IsValidDestination(const CTxDestination& dest);
@@ -153,8 +173,7 @@ bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet)
  * multisig scripts, this populates the addressRet vector with the pubkey IDs
  * and nRequiredRet with the n required to spend. For other destinations,
  * addressRet is populated with a single value and nRequiredRet is set to 1.
- * Returns true if successful. Currently does not extract address from
- * pay-to-witness scripts.
+ * Returns true if successful.
  *
  * Note: this function confuses destinations (a subset of CScripts that are
  * encodable as an address) with key identifiers (of keys involved in a
@@ -163,7 +182,7 @@ bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet)
 bool ExtractDestinations(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<CTxDestination>& addressRet, int& nRequiredRet);
 
 /**
- * Generate a Litecoin Finance scriptPubKey for the given CTxDestination. Returns a P2PKH
+ * Generate a Bitcoin scriptPubKey for the given CTxDestination. Returns a P2PKH
  * script for a CKeyID destination, a P2SH script for a CScriptID, and an empty
  * script for CNoDestination.
  */
@@ -185,4 +204,4 @@ CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
  */
 CScript GetScriptForWitness(const CScript& redeemscript);
 
-#endif // LITECOINFINANCE_SCRIPT_STANDARD_H
+#endif // BITCOIN_SCRIPT_STANDARD_H

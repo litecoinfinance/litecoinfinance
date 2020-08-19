@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,15 +7,14 @@
 #error This header can only be compiled as C++.
 #endif
 
-#ifndef LITECOINFINANCE_PROTOCOL_H
-#define LITECOINFINANCE_PROTOCOL_H
+#ifndef BITCOIN_PROTOCOL_H
+#define BITCOIN_PROTOCOL_H
 
 #include <netaddress.h>
 #include <serialize.h>
 #include <uint256.h>
 #include <version.h>
 
-#include <atomic>
 #include <stdint.h>
 #include <string>
 
@@ -38,6 +37,10 @@ public:
     typedef unsigned char MessageStartChars[MESSAGE_START_SIZE];
 
     explicit CMessageHeader(const MessageStartChars& pchMessageStartIn);
+
+    /** Construct a P2P message header from message-start characters, a command and the size of the message.
+     * @note Passing in a `pszCommand` longer than COMMAND_SIZE will result in a run-time assertion error.
+     */
     CMessageHeader(const MessageStartChars& pchMessageStartIn, const char* pszCommand, unsigned int nMessageSizeIn);
 
     std::string GetCommand() const;
@@ -61,7 +64,7 @@ public:
 };
 
 /**
- * Litecoin Finance protocol message types. When adding new message types, don't forget
+ * Bitcoin protocol message types. When adding new message types, don't forget
  * to update allNetMessageTypes in protocol.cpp.
  */
 namespace NetMsgType {
@@ -193,13 +196,6 @@ extern const char *FILTERADD;
  */
 extern const char *FILTERCLEAR;
 /**
- * The reject message informs the receiving node that one of its previous
- * messages has been rejected.
- * @since protocol version 70002 as described by BIP61.
- * @see https://bitcoin.org/en/developer-reference#reject
- */
-extern const char *REJECT;
-/**
  * Indicates that a node prefers to receive new block announcements via a
  * "headers" message rather than an "inv".
  * @since protocol version 70012 as described by BIP130.
@@ -245,25 +241,23 @@ const std::vector<std::string> &getAllNetMessageTypes();
 
 /** nServices flags */
 enum ServiceFlags : uint64_t {
+    // NOTE: When adding here, be sure to update qt/guiutil.cpp's formatServicesStr too
     // Nothing
     NODE_NONE = 0,
     // NODE_NETWORK means that the node is capable of serving the complete block chain. It is currently
-    // set by all Litecoin Finance Core non pruned nodes, and is unset by SPV clients or other light clients.
+    // set by all Bitcoin Core non pruned nodes, and is unset by SPV clients or other light clients.
     NODE_NETWORK = (1 << 0),
     // NODE_GETUTXO means the node is capable of responding to the getutxo protocol request.
-    // Litecoin Finance Core does not support this but a patch set called Litecoin Finance XT does.
+    // Bitcoin Core does not support this but a patch set called Bitcoin XT does.
     // See BIP 64 for details on how this is implemented.
     NODE_GETUTXO = (1 << 1),
     // NODE_BLOOM means the node is capable and willing to handle bloom-filtered connections.
-    // Litecoin Finance Core nodes used to support this by default, without advertising this bit,
+    // Bitcoin Core nodes used to support this by default, without advertising this bit,
     // but no longer do as of protocol version 70011 (= NO_BLOOM_VERSION)
     NODE_BLOOM = (1 << 2),
     // NODE_WITNESS indicates that a node can be asked for blocks and transactions including
     // witness data.
     NODE_WITNESS = (1 << 3),
-    // NODE_XTHIN means the node supports Xtreme Thinblocks
-    // If this is turned off then the node will not service nor make xthin requests
-    NODE_XTHIN = (1 << 4),
     // NODE_NETWORK_LIMITED means the same as NODE_NETWORK with the limitation of only
     // serving the last 288 (2 day) blocks
     // See BIP159 for details on how this is implemented.
@@ -271,7 +265,7 @@ enum ServiceFlags : uint64_t {
 
     // Bits 24-31 are reserved for temporary experiments. Just pick a bit that
     // isn't getting used, or one not being used much, and notify the
-    // litecoinfinance-development mailing list. Remember that service bits are just
+    // bitcoin-development mailing list. Remember that service bits are just
     // unauthenticated advertisements, so your code must be robust against
     // collisions and other cases where nodes may be advertising a service they
     // do not actually support. Other service bits should be allocated via the
@@ -407,4 +401,4 @@ public:
     uint256 hash;
 };
 
-#endif // LITECOINFINANCE_PROTOCOL_H
+#endif // BITCOIN_PROTOCOL_H

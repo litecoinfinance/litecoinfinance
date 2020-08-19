@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,8 +11,8 @@
  * - E-mail usually won't line-break if there's no punctuation to break at.
  * - Double-clicking selects the whole string as one word if it's all alphanumeric.
  */
-#ifndef LITECOINFINANCE_BASE58_H
-#define LITECOINFINANCE_BASE58_H
+#ifndef BITCOIN_BASE58_H
+#define BITCOIN_BASE58_H
 
 #include <attributes.h>
 
@@ -35,13 +35,13 @@ std::string EncodeBase58(const std::vector<unsigned char>& vch);
  * return true if decoding is successful.
  * psz cannot be nullptr.
  */
-NODISCARD bool DecodeBase58(const char* psz, std::vector<unsigned char>& vchRet);
+NODISCARD bool DecodeBase58(const char* psz, std::vector<unsigned char>& vchRet, int max_ret_len);
 
 /**
  * Decode a base58-encoded string (str) into a byte vector (vchRet).
  * return true if decoding is successful.
  */
-NODISCARD bool DecodeBase58(const std::string& str, std::vector<unsigned char>& vchRet);
+NODISCARD bool DecodeBase58(const std::string& str, std::vector<unsigned char>& vchRet, int max_ret_len);
 
 /**
  * Encode a byte vector into a base58-encoded string, including checksum
@@ -52,12 +52,12 @@ std::string EncodeBase58Check(const std::vector<unsigned char>& vchIn);
  * Decode a base58-encoded string (psz) that includes a checksum into a byte
  * vector (vchRet), return true if decoding is successful
  */
-NODISCARD bool DecodeBase58Check(const char* psz, std::vector<unsigned char>& vchRet);
+NODISCARD bool DecodeBase58Check(const char* psz, std::vector<unsigned char>& vchRet, int max_ret_len);
 
 /**
  * Decode a base58-encoded string (str) that includes a checksum into a byte
  * vector (vchRet), return true if decoding is successful
  */
-NODISCARD bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRet);
+NODISCARD bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRet, int max_ret_len);
 
-#endif // LITECOINFINANCE_BASE58_H
+#endif // BITCOIN_BASE58_H

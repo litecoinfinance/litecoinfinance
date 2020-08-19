@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_CRYPTO_COMMON_H
-#define LITECOINFINANCE_CRYPTO_COMMON_H
+#ifndef BITCOIN_CRYPTO_COMMON_H
+#define BITCOIN_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/litecoinfinance-config.h>
+#include <config/bitcoin-config.h>
 #endif
 
 #include <stdint.h>
@@ -100,4 +100,4 @@ uint64_t static inline CountBits(uint64_t x)
     return ret;
 }
 
-#endif // LITECOINFINANCE_CRYPTO_COMMON_H
+#endif // BITCOIN_CRYPTO_COMMON_H

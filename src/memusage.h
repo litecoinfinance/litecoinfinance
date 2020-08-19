@@ -2,13 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef LITECOINFINANCE_MEMUSAGE_H
-#define LITECOINFINANCE_MEMUSAGE_H
+#ifndef BITCOIN_MEMUSAGE_H
+#define BITCOIN_MEMUSAGE_H
 
 #include <indirectmap.h>
+#include <prevector.h>
 
 #include <stdlib.h>
 
+#include <cassert>
 #include <map>
 #include <memory>
 #include <set>
@@ -167,4 +169,4 @@ static inline size_t DynamicUsage(const std::unordered_map<X, Y, Z>& m)
 
 }
 
-#endif // LITECOINFINANCE_MEMUSAGE_H
+#endif // BITCOIN_MEMUSAGE_H
