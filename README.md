@@ -58,3 +58,12 @@ Maximum coin supply: 94m
 Network magic: a7b388e9
 
 Postmine: 10m
+
+FORKID 42
+
+sighash forkid: 0x40
+
+Tx Sighash structure: SIGHASH_ALL | SIGHASH_FORKID
+
+SIGHASH_ALL | SIGHASH_FORKID in decimal: 65
+
