@@ -5,6 +5,7 @@ configuration: Release
 platform: x64
 clone_depth: 5
 environment:
+  PACKAGES: berkeleydb boost-filesystem boost-signals2 boost-test libevent openssl zeromq
   PATH: 'C:\Python37-x64;C:\Python37-x64\Scripts;%PATH%'
   PYTHONUTF8: 1
   QT_DOWNLOAD_URL: 'https://github.com/sipsorcery/qt_win_binary/releases/download/v1.6/Qt5.9.8_x64_static_vs2019.zip'
