@@ -1,7 +1,7 @@
 Litecoin Finance integration/staging tree
 =====================================
 
-https://ltfn.org
+https://ltfn.scalaris.info/
 
 What is LitecoinFinance?
 ----------------
@@ -10,7 +10,7 @@ Litecoin Finance / LTFN is a fork of Litecoin baced on CPU mining to provide bet
 All holders of original LTC can split coins to chain LTFN if they was no spendet before block 1550000.
 
 For more information, as well as an immediately useable, binary version of
-the Litecoin Finance software, see [https://ltfn.org](https://ltfn.org).
+the Litecoin Finance software, see [https://ltfn.scalaris.info/](https://ltfn.scalaris.info/).
 
 License
 -------
