@@ -1,6 +1,8 @@
-Litecoin Finance integration/staging tree
+Litecoin Finance integration/staging treeq
 =====================================
 
+Important Official site url is changet!
+=======================================
 https://ltfn.scalaris.info/
 
 What is LitecoinFinance?
