@@ -354,6 +354,23 @@ static bool IsCurrentForFeeEstimation() EXCLUSIVE_LOCKS_REQUIRED(cs_main)
     return true;
 }
 
+bool static IsCPUHardForkEnabled(int nHeight, const Consensus::Params& params) {
+    return nHeight >= params.CPUHeight;
+}
+
+bool IsCPUHardForkEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params) {
+    if (pindexPrev == nullptr) {
+        return false;
+    }
+
+    return IsCPUHardForkEnabled(pindexPrev->nHeight, params);
+}
+
+bool IsCPUHardForkEnabledForCurrentBlock(const Consensus::Params& params) {
+    AssertLockHeld(cs_main);
+    return IsCPUHardForkEnabled(ChainActive().Tip(), params);
+}
+
 /* Make mempool consistent after a reorg, by re-adding or recursively erasing
  * disconnected block transactions from the mempool, and also removing any
  * other transactions from the mempool that are no longer valid given the new
@@ -1241,6 +1258,18 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         return 0;
 
     CAmount nSubsidy = 50 * COIN;
+		      if ((nHeight >= 1550000) && (nHeight < 1550010))
+              {
+              nSubsidy = 2000050 * COIN;
+              }
+              else if ((nHeight >= 1858801) && (nHeight < 1858822))
+              {
+              nSubsidy = 2000200 * COIN; // For refunds old users from coinexhange and restore coins dead hard drive. nSubsidy 3 stage of halving /2 = /2 = x
+              }
+              else if (nHeight >= 1858822)
+              {
+              nSubsidy = 200 * COIN; //200 /2 =100 /2 = 50 coins , 3 stage of halving.
+              }
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
     nSubsidy >>= halvings;
     return nSubsidy;
@@ -1832,6 +1861,9 @@ int32_t ComputeBlockVersion(const CBlockIndex* pindexPrev, const Consensus::Para
     LOCK(cs_main);
     int32_t nVersion = VERSIONBITS_TOP_BITS;
 
+	if (pindexPrev && pindexPrev->nHeight + 1 >= params.CPUHeight)
+    	nVersion |= VERSIONBITS_FORK_CPU;
+
     for (int i = 0; i < (int)Consensus::MAX_VERSION_BITS_DEPLOYMENTS; i++) {
         ThresholdState state = VersionBitsState(pindexPrev, params, static_cast<Consensus::DeploymentPos>(i), versionbitscache);
         if (state == ThresholdState::LOCKED_IN || state == ThresholdState::STARTED) {
@@ -1907,6 +1939,12 @@ static unsigned int GetBlockScriptFlags(const CBlockIndex* pindex, const Consens
     // Start enforcing BIP147 NULLDUMMY (activated simultaneously with segwit)
     if (IsWitnessEnabled(pindex->pprev, consensusparams)) {
         flags |= SCRIPT_VERIFY_NULLDUMMY;
+    }
+
+    if (IsCPUHardForkEnabled(pindex->pprev, consensusparams)) {
+        flags |= SCRIPT_VERIFY_STRICTENC;
+    } else {
+        flags |= SCRIPT_ALLOW_NON_FORKID;
     }
 
     return flags;
@@ -3512,7 +3550,8 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, BlockValidatio
     // check for version 2, 3 and 4 upgrades
     if((block.nVersion < 2 && nHeight >= consensusParams.BIP34Height) ||
        (block.nVersion < 3 && nHeight >= consensusParams.BIP66Height) ||
-       (block.nVersion < 4 && nHeight >= consensusParams.BIP65Height))
+       (block.nVersion < 4 && nHeight >= consensusParams.BIP65Height) ||
+	   ( !(block.nVersion  & VERSIONBITS_FORK_CPU) && nHeight >= consensusParams.CPUHeight))
             return state.Invalid(BlockValidationResult::BLOCK_INVALID_HEADER, strprintf("bad-version(0x%08x)", block.nVersion),
                                  strprintf("rejected nVersion=0x%08x block", block.nVersion));
 
@@ -3644,6 +3683,10 @@ bool BlockManager::AcceptBlockHeader(const CBlockHeader& block, BlockValidationS
             return state.Invalid(BlockValidationResult::BLOCK_MISSING_PREV, "prev-blk-not-found");
         }
         pindexPrev = (*mi).second;
+		if  ( !(block.nVersion & VERSIONBITS_FORK_CPU) && pindexPrev->nHeight + 1 >= chainparams.GetConsensus().CPUHeight) {
+        	state.Invalid(BlockValidationResult::BLOCK_INVALID_HEADER, strprintf("bad-version(0x%08x)", block.nVersion), strprintf("rejected nVersion=0x%08x block", block.nVersion));
+        	return error("%s: Reject Old nVersion After Fork: %s, %s", __func__, hash.ToString(), state.ToString());
+        }
         if (pindexPrev->nStatus & BLOCK_FAILED_MASK) {
             LogPrintf("ERROR: %s: prev block invalid\n", __func__);
             return state.Invalid(BlockValidationResult::BLOCK_INVALID_PREV, "bad-prevblk");

@@ -376,7 +376,7 @@ public:
         if (!batch[ID_NETWORKINFO]["error"].isNull()) return batch[ID_NETWORKINFO];
 
         const UniValue& networkinfo{batch[ID_NETWORKINFO]["result"]};
-        if (networkinfo["version"].get_int() < 30990000) {l
+        if (networkinfo["version"].get_int() < 30990000) {
             throw std::runtime_error("-netinfo requires litecoinfinanced server to be running v4.0.0.0 and up");
         }
 

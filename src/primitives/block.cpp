@@ -13,17 +13,35 @@
 #include <stdint.h>
 #include <string>
 #include <span.h>
+#include "versionbits.h"
+
+extern "C" void yespower_hash(const char *input, char *output);
 
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
 }
 
-uint256 CBlockHeader::GetPoWHash() const
+uint256 CBlockHeader::GetPoWOldHash() const
 {
     uint256 thash;
     scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
     return thash;
+}
+
+uint256 CBlockHeader::GetPoWNewHash() const
+{
+    uint256 thash;
+    yespower_hash(BEGIN(nVersion), BEGIN(thash));
+    return thash;
+}
+
+uint256 CBlockHeader::GetPoWHash() const
+{
+	if (nVersion & VERSIONBITS_FORK_CPU)
+		return GetPoWNewHash();
+	else
+		return GetPoWOldHash();
 }
 
 std::string CBlock::ToString() const

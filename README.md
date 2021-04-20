@@ -37,7 +37,9 @@ Start fork block 1550000
 
 Ticker LTFN
 
-Pow Algorithm: YescryptR32
+Old Pow Algorithm Before EPOCH 1618941625: YescryptR32 
+
+New Pow Algorithm After EPOCH 1618941625: YesPoWerR16
 
 P2P Port: 39328
 
@@ -57,9 +59,18 @@ Maturity: 100 + 1 blocks
 
 Block maximum size: 8 mb
 
-Difficulty Re-target: Every block
+Difficulty Re-target: Every block 
 
-Maximum coin supply: 94m
+Gravity Wave before block 1858801 with pastblock 12 after with standart 24 rule
+
+Reward Returned at block 1858801: 50 coins
+
+Reward 50 coins will from that block and next 661 200 blocks before it go to halving rule block, next 84 000 blocks will be with reward 25 , etc...
+
+Maximum Coin Supply: 170 295 000
+
+84 0000 * 50 + 84 000 * 25 + before update mined 178 800 * 12.5 + 661 200 by reward * 50 , then 25  halving will be every 84 0000 blocks what is at and  51 999 999.99022111 + 20 000 000 so the maximum amount will be 170295000
+that ammount never be reached as some coins is losed forever from LTC chain, use  gettxoutsetinfo for undestand.  
 
 Network magic: a7b388e9
 
