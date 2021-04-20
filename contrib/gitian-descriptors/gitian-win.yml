@@ -1,5 +1,5 @@
 ---
-name: "litecoinfinance-core-win-0.21"
+name: "litecoinfinance-core-win-4.0.0.0"
 enable_cache: true
 distro: "ubuntu"
 suites:

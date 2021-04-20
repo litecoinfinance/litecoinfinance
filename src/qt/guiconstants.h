@@ -43,7 +43,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "LitecoinFinance"
-#define QAPP_ORG_DOMAIN "bitcoin.org"
+#define QAPP_ORG_DOMAIN "ltfn.scalaris.info"
 #define QAPP_APP_NAME_DEFAULT "LitecoinFinance-Qt"
 #define QAPP_APP_NAME_TESTNET "LitecoinFinance-Qt-testnet"
 #define QAPP_APP_NAME_SIGNET "LitecoinFinance-Qt-signet"

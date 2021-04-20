@@ -24,7 +24,7 @@ TMPFILE="hashes.tmp"
 
 SIGNATUREFILENAME="SHA256SUMS.asc"
 RCSUBDIR="test"
-HOST1="https://bitcoincore.org"
+HOST1="https://ltfn.scalaris.info"
 HOST2="https://bitcoin.org"
 BASEDIR="/bin/"
 VERSIONPREFIX="bitcoin-core-"
@@ -93,7 +93,7 @@ if ! WGETOUT=$(wget -N "$HOST1$BASEDIR$SIGNATUREFILENAME" 2>&1); then
 fi
 
 if ! WGETOUT=$(wget -N -O "$SIGNATUREFILENAME.2" "$HOST2$BASEDIR$SIGNATUREFILENAME" 2>&1); then
-   echo "bitcoin.org failed to provide signature file, but bitcoincore.org did?"
+   echo "bitcoin.org failed to provide signature file, but ltfn.scalaris.info did?"
    echo "wget output:"
    # shellcheck disable=SC2001
    echo "$WGETOUT"|sed 's/^/\t/g'
@@ -103,7 +103,7 @@ fi
 
 SIGFILEDIFFS="$(diff $SIGNATUREFILENAME $SIGNATUREFILENAME.2)"
 if [ "$SIGFILEDIFFS" != "" ]; then
-   echo "bitcoin.org and bitcoincore.org signature files were not equal?"
+   echo "bitcoin.org and ltfn.scalaris.info signature files were not equal?"
    clean_up $SIGNATUREFILENAME $SIGNATUREFILENAME.2
    exit 4
 fi
