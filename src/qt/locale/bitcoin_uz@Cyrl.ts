@@ -66,8 +66,8 @@
         <translation>Қабул қилинадиган манзиллар</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Улар тўловларни жўнатиш учун сизнинг LitecoinFinance манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Улар тўловларни жўнатиш учун сизнинг Bitcoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,8 +160,8 @@
         <translation>Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINFINANCES&lt;/b&gt;!</source>
-        <translation>Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА LITECOINFINANCE ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА BITCOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -278,8 +278,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a LitecoinFinance address</source>
-        <translation>Тангаларни LitecoinFinance манзилига жўнатиш</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Тангаларни Bitcoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,12 +314,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your LitecoinFinance addresses to prove you own them</source>
-        <translation>LitecoinFinance манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Bitcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LitecoinFinance addresses</source>
-        <translation>Хабарларни махсус LitecoinFinance манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Хабарларни махсус Bitcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -338,8 +338,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoinfinance: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва litecoinfinance ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва bitcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -354,8 +354,8 @@
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to LitecoinFinance network</source>
-        <translation><numerusform>%n та LitecoinFinance тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n та Bitcoin тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -413,11 +413,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Ҳамён &lt;b&gt;кодланган&lt;/b&gt; ва вақтинча &lt;b&gt;қулфланган&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. LitecoinFinance can no longer continue safely and will quit.</source>
-        <translation>Жиддий хато юз берди. LitecoinFinance хавфсиз ишлай олмайди, шунинг учун чиқиб кетилади.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -594,8 +590,8 @@
         <translation>Жунатилувчи манзилни тахрирлаш</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid LitecoinFinance address.</source>
-        <translation>Киритилган "%1" манзили тўғри LitecoinFinance манзили эмас.</translation>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>Киритилган "%1" манзили тўғри Bitcoin манзили эмас.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -655,8 +651,8 @@
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-        <source>LitecoinFinance</source>
-        <translation>LitecoinFinance</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -802,8 +798,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LitecoinFinance network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг LitecoinFinance тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Bitcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -865,7 +861,14 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>Жорий умумий баланс фақат кўринадиган манзилларда</translation>
     </message>
-</context>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>or</source>
+        <translation>ёки</translation>
+    </message>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -895,8 +898,8 @@
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a LitecoinFinance address (e.g. %1)</source>
-        <translation>LitecoinFinance манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Bitcoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -1021,10 +1024,6 @@
         <translation>Хизматлар</translation>
     </message>
     <message>
-        <source>Ban Score</source>
-        <translation>Тезликни бан қилиш</translation>
-    </message>
-    <message>
         <source>Connection Time</source>
         <translation>Уланиш вақти</translation>
     </message>
@@ -1091,14 +1090,6 @@
     <message>
         <source>Outbound</source>
         <translation>Ташқи йўналиш</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>Ҳа</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Йўқ</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1171,12 +1162,20 @@
         <source>Copy amount</source>
         <translation>Кийматни нусхала</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Ҳамён қулфдан чиқмади.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Коди</translation>
+        <source>Amount:</source>
+        <translation>Миқдори:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Хабар</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
@@ -1193,30 +1192,6 @@
     <message>
         <source>Payment information</source>
         <translation>Тўлов маълумоти</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Манзил</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Миқдори</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Ёрлиқ</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Хабар</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Ҳамён</translation>
     </message>
 </context>
 <context>
@@ -1389,8 +1364,8 @@
         <translation>Тўлов миқдори 0. дан катта бўлиши керак. </translation>
     </message>
     <message>
-        <source>Warning: Invalid LitecoinFinance address</source>
-        <translation>Диққат: Нотўғр LitecoinFinance манзили</translation>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Диққат: Нотўғр Bitcoin манзили</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1793,11 +1768,7 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Хали бирорта хамён юкланмади</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1814,6 +1785,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Жорий ички ойна ичидаги маълумотларни файлга экспорт қилиш</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Хатолик</translation>
     </message>
     </context>
 <context>

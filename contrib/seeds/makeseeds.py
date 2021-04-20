@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2013-2019 The Bitcoin Core developers
+# Copyright (c) 2013-2020 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
@@ -27,14 +27,15 @@ PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
 PATTERN_AGENT = re.compile(
-    r"^/LitecoinFinace:("
+    r"^/Satoshi:("
     r"0.14.(0|1|2|3|99)|"
     r"0.15.(0|1|2|99)|"
     r"0.16.(0|1|2|3|99)|"
     r"0.17.(0|0.1|1|2|99)|"
     r"0.18.(0|1|99)|"
     r"0.19.(0|1|99)|"
-    r"0.20.99"
+    r"0.20.(0|1|99)|"
+    r"0.21.99"
     r")")
 
 def parseline(line):

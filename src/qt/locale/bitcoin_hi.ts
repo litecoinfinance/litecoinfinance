@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>एड्रेस या लेबल को बदलने के लिए राइट-क्लिक करें </translation>
+        <translation>पता व नामपत्र बदलने के लिए दायीं कुंजी दबाइए </translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -66,12 +66,8 @@
         <translation>एड्रेस प्राप्त किए जा रहें हैं</translation>
     </message>
     <message>
-        <source>These are your LitecoinFinance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>भुगतान करने के लिए ये आपके बिटकॉइन एड्रेस हैं। कॉइन भेजने से पहले राशि और गंतव्य एड्रेस की हमेशा जाँच करें </translation>
-    </message>
-    <message>
-        <source>These are your LitecoinFinance addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>भुगतान प्राप्त करने के लिए ये आपके बिटकॉइन एड्रेस हैं। नया एड्रेस बनाने के लिए रिसीव टैब में 'नया एड्रेस बनाएं' बटन का प्रयोग करें</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,7 +164,7 @@
         <translation>वॉलेट एन्क्रिप्शन की पुष्टि करें</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINFINANCES&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>चेतावनी: यदि आपने वॉलेट को एन्क्रिप्ट करने के बाद पदबंध खो दी तो &lt;b&gt;आप सारे बिटकॉइन खो देंगे &lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +184,7 @@
         <translation>वॉलेट में पुराना एवं नया सुरक्षा संवाद दर्ज करें ।</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your litecoinfinances from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>याद रखें कि अपने बटुए (वॉलेट) एन्क्रिप्ट करना आपके कंप्यूटर को संक्रमित करने वाले मैलवेयर द्वारा आपके बिटकॉइन को चोरी होने से पूरी तरह से सुरक्षित नहीं कर सकता है।</translation>
     </message>
     <message>
@@ -259,7 +255,7 @@
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>नेटवर्क से समकालिक (मिल) रहा है ...</translation>
+        <translation>नेटवर्क से समकालिकरण जारी है ...</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
@@ -319,12 +315,72 @@
         <translation>और पासफ़्रेज़ बदलें</translation>
     </message>
     <message>
+        <source>Create Wallet...</source>
+        <translation>वॉलेट बनाएं</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>नया वॉलेट बनाएं</translation>
+    </message>
+    <message>
         <source>Wallet:</source>
         <translation>तिजोरी</translation>
     </message>
     <message>
+        <source>Click to disable network activity.</source>
+        <translation>नेटवर्क एक्टिविटी बंद करने के लिए क्लिक करें</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>नेटवर्क एक्टिविटी बंद हो गई है.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>नेटवर्क एक्टिविटी दोबारा शुरू करने के लिए क्लिक करें.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>हेडर्स सिंक हो रहे हैं (%1%)...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation>डिस्क पर ब्लॉक्स री-इंडेक्सिंग हो रहे हैं...</translation>
+    </message>
+    <message>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>प्रॉक्सी &lt;b&gt; चालू है &lt;/b&gt; : %1</translation>
+    </message>
+    <message>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>इस पते पर बिटकौइन भेजें</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation>वॉलेट का दूसरी जगह पर बैकअप लें</translation>
+    </message>
+    <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>पहचान शब्द/अक्षर जो वॉलेट एनक्रिपशन के लिए इस्तेमाल किया है उसे बदलिए!</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation>&amp;मैसेज वैरीफ़ाई करें...</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;भेजें</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;प्राप्त करें</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;दिखाएं/छिपाएं</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation>मुख्य विंडो को दिखाएं या छिपाएं</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -363,6 +419,22 @@
         <translation>नवीनतम</translation>
     </message>
     <message>
+        <source>Open a wallet</source>
+        <translation>बटुआ खोलें</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>बटुआ बंद करें...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>बटुआ बंद करें</translation>
+    </message>
+    <message>
+        <source>Close All Wallets...</source>
+        <translation>सारे बटुएँ बंद करें...</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>भेजी ट्रांजक्शन</translation>
     </message>
@@ -382,6 +454,10 @@
 <context>
     <name>CoinControlDialog</name>
     <message>
+        <source>Quantity:</source>
+        <translation>मात्रा :</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>राशि :</translation>
     </message>
@@ -396,6 +472,14 @@
     <message>
         <source>Confirmed</source>
         <translation>पक्का</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>हाँ</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>नहीं</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -436,7 +520,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>LitecoinFinance</source>
+        <source>Bitcoin</source>
         <translation>बीटकोइन</translation>
     </message>
     <message>
@@ -486,6 +570,9 @@
         <source>Form</source>
         <translation>फार्म</translation>
     </message>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -538,26 +625,18 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Amount:</source>
+        <translation>राशि :</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>तिजोरी</translation>
+    </message>
+    <message>
         <source>Copy &amp;Address</source>
         <translation>&amp;पता कॉपी करे</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>पता</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>राशि</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>परचा</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>वॉलेट</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -578,6 +657,10 @@
     <message>
         <source>Send Coins</source>
         <translation>सिक्के भेजें|</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>मात्रा :</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -660,7 +743,15 @@
     <name>TransactionDesc</name>
     <message>
         <source>Date</source>
-        <translation>taareek</translation>
+        <translation>दिनांक</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>स्रोत</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>उत्पन्न</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -725,10 +816,18 @@
     </context>
 <context>
     <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>बटुआ बंद करें</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>नया वॉलेट बनाएं</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -746,9 +845,17 @@
         <source>Export the data in the current tab to a file</source>
         <translation>डेटा को मौजूदा टैब से एक फ़ाइल में निर्यात करें</translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation>भूल</translation>
+    </message>
     </context>
 <context>
     <name>bitcoin-core</name>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation>यह एक पूर्व-रिलीज़ परीक्षण बिल्ड है - अपने जोखिम पर उपयोग करें - खनन या व्यापारी अनुप्रयोगों के लिए उपयोग न करें</translation>
+    </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>ब्लॉक्स जाँचे जा रहा है...</translation>
@@ -760,6 +867,10 @@
     <message>
         <source>Loading wallet...</source>
         <translation>वॉलेट आ रहा है...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>वॉलेट को डाउनग्रेड नहीं कर सकते</translation>
     </message>
     <message>
         <source>Rescanning...</source>
