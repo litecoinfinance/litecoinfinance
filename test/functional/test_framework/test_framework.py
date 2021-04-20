@@ -217,8 +217,8 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             "src",
             "bitcoin-cli" + config["environment"]["EXEEXT"],
         )
-        self.options.bitcoind = os.getenv("BITCOIND", default=fname_bitcoind)
-        self.options.bitcoincli = os.getenv("BITCOINCLI", default=fname_bitcoincli)
+        self.options.bitcoind = os.getenv("LITECOINFINANCED", default=fname_bitcoind)
+        self.options.bitcoincli = os.getenv("LITECOINFINANCECLI", default=fname_bitcoincli)
 
         os.environ['PATH'] = os.pathsep.join([
             os.path.join(config['environment']['BUILDDIR'], 'src'),
