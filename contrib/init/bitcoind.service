@@ -1,11 +1,11 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit bitcoind.service
+# $ systemctl edit litecoinfinanced.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/bitcoin/bitcoin.conf, but keep in mind those explicitly
+# /etc/litecoinfinance/litecoinfinance.conf, but keep in mind those explicitly
 # specified as arguments in ExecStart= will override those in the
 # config file.
 
@@ -14,40 +14,40 @@ Description=Bitcoin daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/bitcoind -daemon \
-                            -pid=/run/bitcoind/bitcoind.pid \
-                            -conf=/etc/bitcoin/bitcoin.conf \
-                            -datadir=/var/lib/bitcoind
+ExecStart=/usr/bin/litecoinfinanced -daemon \
+                            -pid=/run/litecoinfinanced/litecoinfinanced.pid \
+                            -conf=/etc/litecoinfinance/litecoinfinance.conf \
+                            -datadir=/var/lib/litecoinfinanced
 
 # Make sure the config directory is readable by the service user
 PermissionsStartOnly=true
-ExecStartPre=/bin/chgrp bitcoin /etc/bitcoin
+ExecStartPre=/bin/chgrp litecoinfinance /etc/litecoinfinance
 
 # Process management
 ####################
 
 Type=forking
-PIDFile=/run/bitcoind/bitcoind.pid
+PIDFile=/run/litecoinfinanced/litecoinfinanced.pid
 Restart=on-failure
 TimeoutStopSec=600
 
 # Directory creation and permissions
 ####################################
 
-# Run as bitcoin:bitcoin
-User=bitcoin
-Group=bitcoin
+# Run as litecoinfinance:litecoinfinance
+User=litecoinfinance
+Group=litecoinfinance
 
-# /run/bitcoind
-RuntimeDirectory=bitcoind
+# /run/litecoinfinanced
+RuntimeDirectory=litecoinfinanced
 RuntimeDirectoryMode=0710
 
-# /etc/bitcoin
-ConfigurationDirectory=bitcoin
+# /etc/litecoinfinance
+ConfigurationDirectory=litecoinfinance
 ConfigurationDirectoryMode=0710
 
-# /var/lib/bitcoind
-StateDirectory=bitcoind
+# /var/lib/litecoinfinanced
+StateDirectory=litecoinfinanced
 StateDirectoryMode=0710
 
 # Hardening measures

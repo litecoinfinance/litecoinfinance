@@ -167,8 +167,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Биткоин</translation>
+        <source>LitecoinFinance</source>
+        <translation>Лайткойн Финанс</translation>
     </message>
     <message>
         <source>Error</source>

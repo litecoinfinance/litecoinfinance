@@ -126,8 +126,8 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Испрати биткоини на Биткоин адреса</translation>
+        <source>Send coins to a LitecoinFinance address</source>
+        <translation>Испрати лайткойн финанси на Лайткойн Финанс адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -285,8 +285,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Биткоин</translation>
+        <source>LitecoinFinance</source>
+        <translation>Лайткойн Финанс</translation>
     </message>
     <message>
         <source>Error</source>
