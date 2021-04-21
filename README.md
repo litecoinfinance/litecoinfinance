@@ -69,7 +69,7 @@ Reward 50 coins will from that block and next 661 200 blocks before it go to hal
 
 Maximum Coin Supply: 170 295 000
 
-84 0000 * 50 + 84 000 * 25 + before update mined 178 800 * 12.5 + 661 200 by reward * 50 , then 25  halving will be every 84 0000 blocks what is at and  51 999 999.99022111 + 20 000 000 so the maximum amount will be 170295000
+84 0000 * 50 + 84 000 * 25 + before update mined 178 800 * 12.5 + 661 200 by reward * 50 , then 25  halving will be every 84 0000 blocks what is at and  51 999 999.99022111 + 20 000 000 so the maximum amount will be 170835000
 that ammount never be reached as some coins is losed forever from LTC chain, use  gettxoutsetinfo for undestand.  
 
 Network magic: a7b388e9
