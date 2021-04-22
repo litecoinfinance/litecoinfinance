@@ -4,7 +4,7 @@ Litecoin Finance integration/staging treeq
 [Discord](https://discord.gg/vtCFvTb) | [Telegram](https://t.me/LitecoinFinance)
 -------------|-------------
 
-Important Official site url is changet from ltfn.org to!
+Important Official site url is changed from ltfn.org to!
 =====================================
 
 https://ltfn.scalaris.info/
