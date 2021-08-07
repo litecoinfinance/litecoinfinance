@@ -1,7 +1,7 @@
 Litecoin Finance integration/staging treeq
 =====================================
 
-[Discord](https://discord.gg/vtCFvTb) | [Telegram](https://t.me/LitecoinFinance)
+[Discord](https://discord.gg/t8Tc5us5jq) | [Telegram](https://t.me/LitecoinFinance)
 -------------|-------------
 
 Important Official site url is changed from ltfn.org to!
